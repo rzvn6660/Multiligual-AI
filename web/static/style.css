@@ -135,11 +135,19 @@ h1 {
     -webkit-text-fill-color: var(--accent-color);
 }
 
+
 .subtitle {
     font-size: 0.8rem;
     color: var(--text-secondary);
     margin-top: 4px;
     opacity: 0.8;
+}
+
+.subtitle.santali {
+    font-family: var(--santali-font);
+    font-size: 0.9rem;
+    /* Slightly larger for Ol Chiki legibility */
+    margin-top: 2px;
 }
 
 /* --- Main Content Area --- */
@@ -335,12 +343,26 @@ canvas {
     align-items: center;
 }
 
+
+
 .control-group.left {
     justify-content: flex-start;
+    padding-right: 30px;
+    /* Spacing between Left (Model/Auto) and Center (Record) */
 }
 
+/* Specific spacing for the rightmost group to push it further away */
 .control-group.right {
     justify-content: flex-end;
+    padding-left: 30px;
+    /* Add breathing room between center and right */
+}
+
+/* Specific spacing for the rightmost group to push it further away */
+.control-group.right {
+    justify-content: flex-end;
+    padding-left: 30px;
+    /* Add breathing room between center and right */
 }
 
 /* Center Record Button */
@@ -583,7 +605,116 @@ footer {
     border-color: var(--accent-color);
 }
 
+
 .mode-select option {
     background: var(--primary-bg);
     color: var(--text-primary);
+}
+
+/* Input Toggle Switch */
+.toggle-switch {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch label {
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.toggle-switch input:checked+label {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.4);
+}
+
+
+.toggle-switch label:hover {
+    color: white;
+}
+
+
+
+.control-group.center {
+    justify-content: center;
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+}
+
+/* Specific spacing for the rightmost group to push it further away */
+.control-group.right {
+    justify-content: flex-end;
+    padding-left: 30px;
+    /* Add breathing room between center and right */
+}
+
+/* New Input Selector (Side-by-side radio icons) */
+.input-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+}
+
+.input-selector input {
+    display: none;
+}
+
+.input-selector label {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.input-selector label:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+
+.usage-disclaimer {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.usage-disclaimer label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.usage-disclaimer input[type="checkbox"] {
+    accent-color: var(--accent-color);
+    width: 14px;
+    height: 14px;
 }

@@ -68,8 +68,8 @@ class FAQManager:
                 # List of questions
                 questions = [r[0] for r in all_rows]
                 
-                # Get close matches (cutoff 0.7 means 70% similarity)
-                matches = difflib.get_close_matches(clean_q, questions, n=1, cutoff=0.7)
+                # Get close matches (cutoff 0.8 means 80% similarity)
+                matches = difflib.get_close_matches(clean_q, questions, n=1, cutoff=0.8)
                 
                 if matches:
                     best_match_q = matches[0]
