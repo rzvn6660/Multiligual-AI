@@ -182,6 +182,7 @@ def process_audio():
         clean_input_filename = f"clean_input_{session_id}.wav"
         
         # Enhanced FFmpeg command for Noise Cancellation & Cleanup
+        # silenceremove: Trims initial silence (start_threshold=-60dB) to avoid processing dead air
         # fast-afftdn: FFT-based Denoising
         # highpass=200: Remove low rumble
         # lowpass=3000: Remove high frequency hiss (speech is mostly < 3kHz)
@@ -189,7 +190,7 @@ def process_audio():
         convert_cmd = [
             ffmpeg_exe, "-y",
             "-i", input_filename,
-            "-af", "highpass=f=200,lowpass=f=3000,afftdn=nf=-25,dynaudnorm=f=150:g=15",
+            "-af", "silenceremove=start_periods=1:start_threshold=-60dB:start_duration=0.1s,highpass=f=200,lowpass=f=3000,afftdn=nf=-25,dynaudnorm=f=150:g=15",
             "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le",
             clean_input_filename
         ]

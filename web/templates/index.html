@@ -22,8 +22,10 @@
 <body>
     <div class="glass-container">
         <header>
+
             <h1>TRIEM <span class="highlight">AI</span></h1>
-            <p class="subtitle">Tribal Responsive Intelligent Engagement Model</p>
+            <p class="subtitle">Tribal Responsive Intelligent Empowerment Model</p>
+            <p class="subtitle santali">ᱡᱟᱱᱡᱟᱛᱤ ᱛᱮᱞᱟ ᱮᱢᱚᱜ ᱵᱩᱫᱷᱤᱭᱟᱱ ᱫᱟᱲᱮ ᱢᱚᱰᱮᱞ</p>
             <button id="clearHistoryBtn" class="clear-btn" title="Clear History">
                 <i class="fas fa-trash-alt"></i>
             </button>
@@ -54,7 +56,8 @@
                 <p id="statusText">Tap to Speak</p>
 
                 <div class="control-row">
-                    <!-- Left: Autoplay -->
+
+                    <!-- Left: Autoplay & Input Mode -->
                     <div class="control-group left">
                         <div class="setting-item">
                             <span class="setting-item-label">Model</span>
@@ -73,13 +76,26 @@
                         </div>
                     </div>
 
-                    <!-- Center: MIC -->
-                    <button id="recordBtn" class="record-btn" title="Hold to Record">
-                        <i class="fas fa-microphone"></i>
-                        <div class="pulse-ring"></div>
-                    </button>
 
-                    <!-- Right: Play Audio -->
+
+                    <!-- Center: MIC / UPLOAD TOGGLE -->
+                    <div class="control-group center">
+                        <div class="input-selector">
+                            <input type="radio" id="inputMic" name="inputMode" value="mic" checked>
+                            <label for="inputMic" title="Use Microphone"><i class="fas fa-microphone"></i></label>
+
+                            <input type="radio" id="inputFile" name="inputMode" value="file">
+                            <label for="inputFile" title="Upload Audio File"><i class="fas fa-file-upload"></i></label>
+                        </div>
+
+                        <button id="recordBtn" class="record-btn" title="Hold to Record / Click to Upload">
+                            <i id="inputIcon" class="fas fa-microphone"></i>
+                            <div class="pulse-ring"></div>
+                            <input type="file" id="fileInput" accept=".wav,.mp3,.m4a" hidden>
+                        </button>
+                    </div>
+
+
                     <div class="control-group right">
                         <div id="audio-controls" class="audio-controls" style="text-align: center;">
                             <!-- Removed 'hidden' class here, will handle visibility via CSS opacity/pointer-events -->
@@ -90,6 +106,14 @@
                             <span class="label-text" style="display:block; margin-top:4px;">Play Back</span>
                         </div>
                     </div>
+                </div>
+
+                <!-- Usage Analysis Disclaimer (Hidden but Active) -->
+                <div class="usage-disclaimer" style="display: none;">
+                    <label>
+                        <input type="checkbox" id="usageAnalysis" checked>
+                        <span>Allow the AI to be improved by usage analysis.</span>
+                    </label>
                 </div>
             </div>
         </main>

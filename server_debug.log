@@ -825,3 +825,160 @@ The river is a source of water for the villagers. [ANSWER SOURCE: GROQ]
 2026-02-18 12:01:53,072 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
 2026-02-18 12:01:53,074 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
 2026-02-18 12:02:06,027 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-18 14:38:14,870 - WebServer - INFO - --- Server Starting ---
+2026-02-18 14:38:26,374 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-18 14:38:26,375 - WebServer - INFO - TorchVision: 0.21.0+cu124
+2026-02-18 14:38:26,375 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-18 14:38:27,162 - WebServer - INFO - CUDA Available: True
+2026-02-18 14:38:27,173 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-18 14:38:27,174 - WebServer - INFO - Initializing Models...
+2026-02-18 14:38:58,149 - WebServer - INFO - Imports successful, instantiating...
+2026-02-18 14:38:58,150 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-18 14:39:17,808 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-18 14:39:17,816 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-18 14:39:17,854 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-18 14:39:34,258 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-18 14:39:46,562 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-18 14:39:46,566 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-18 14:40:02,672 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-18 14:51:07,238 - WebServer - INFO - Processing audio: clean_input_db66f333-7d58-468a-9d42-950d9c641e86.wav [Mode: auto]
+2026-02-18 14:51:07,244 - ASR_Provider - INFO - Transcribing clean_input_db66f333-7d58-468a-9d42-950d9c641e86.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 14:51:30,083 - ASR_Provider - INFO - ASR Output: ᱥᱟᱱᱛᱟᱲᱤ ᱨᱦ
+2026-02-18 14:51:30,113 - WebServer - INFO - ASR Identified: ᱥᱟᱱᱛᱟᱲᱤ ᱨᱦ
+2026-02-18 14:51:30,175 - MT_Provider - INFO - Translating: 'ᱥᱟᱱᱛᱟᱲᱤ ᱨᱦ' (sat_Olck -> eng_Latn)
+2026-02-18 14:51:39,660 - MT_Provider - INFO - Translated: Lakshadweep
+2026-02-18 14:51:39,661 - WebServer - INFO - MT (Sat->Eng): Lakshadweep
+2026-02-18 14:51:44,055 - FAQ_DB - INFO - FAQ Cached: lakshadweep
+2026-02-18 14:51:44,056 - MT_Provider - INFO - Translating: 'Lakshadweep. Lakshadweep is a group of islands. 
+It is in the Arabian Sea. 
+Many islands are coral reefs.' (eng_Latn -> sat_Olck)
+2026-02-18 14:51:58,518 - MT_Provider - INFO - Translated: ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱾ ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱫᱚ ᱢᱤᱫ ᱜᱩᱴ ᱰᱷᱤᱯ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱟᱨᱵᱚ ᱥᱟᱹᱢᱩᱫ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾ ᱟᱭᱢᱟ ᱰᱷᱤᱯ ᱫᱚ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱯᱨᱚᱵᱟᱞ ᱨᱮᱯᱷ ᱾
+2026-02-18 14:51:58,520 - WebServer - INFO - AI Response (GROQ): Lakshadweep. Lakshadweep is a group of islands. 
+It is in the Arabian Sea. 
+Many islands are coral reefs.
+2026-02-18 14:51:58,521 - WebServer - INFO - Response (Sat): ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱾ ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱫᱚ ᱢᱤᱫ ᱜᱩᱴ ᱰᱷᱤᱯ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱟᱨᱵᱚ ᱥᱟᱹᱢᱩᱫ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾ ᱟᱭᱢᱟ ᱰᱷᱤᱯ ᱫᱚ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱯᱨᱚᱵᱟᱞ ᱨᱮᱯᱷ ᱾
+2026-02-18 14:55:49,067 - TTS_Provider - INFO - Audio saved to temp_output_db66f333-7d58-468a-9d42-950d9c641e86.wav
+2026-02-18 15:18:47,521 - WebServer - INFO - --- Server Starting ---
+2026-02-18 15:18:55,977 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-18 15:18:55,978 - WebServer - INFO - TorchVision: 0.21.0+cu124
+2026-02-18 15:18:55,978 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-18 15:18:56,841 - WebServer - INFO - CUDA Available: True
+2026-02-18 15:18:56,849 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-18 15:18:56,850 - WebServer - INFO - Initializing Models...
+2026-02-18 15:19:24,168 - WebServer - INFO - Imports successful, instantiating...
+2026-02-18 15:19:24,169 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-18 15:19:37,896 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-18 15:19:37,908 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-18 15:19:37,944 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-18 15:19:58,885 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-18 15:20:11,839 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-18 15:20:11,846 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-18 15:20:25,272 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-18 15:21:47,886 - WebServer - INFO - Chat history cleared.
+2026-02-18 19:34:42,336 - WebServer - INFO - Processing audio: clean_input_59415f7a-b99c-40ae-9622-28d2dfebb3c3.wav [Mode: auto]
+2026-02-18 19:34:42,357 - ASR_Provider - INFO - Transcribing clean_input_59415f7a-b99c-40ae-9622-28d2dfebb3c3.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:35:00,811 - WebServer - INFO - Processing audio: clean_input_bb2602d3-1be3-4338-9d30-5f8f3d9a2e62.wav [Mode: auto]
+2026-02-18 19:35:00,817 - ASR_Provider - INFO - Transcribing clean_input_bb2602d3-1be3-4338-9d30-5f8f3d9a2e62.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:35:08,901 - ASR_Provider - INFO - ASR Output: 
+2026-02-18 19:35:08,902 - WebServer - INFO - ASR Identified: 
+2026-02-18 19:35:08,923 - ASR_Provider - INFO - ASR Output: ᱱᱟ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱱᱡᱚᱢ ᱢᱠᱟᱱ
+2026-02-18 19:35:08,925 - WebServer - INFO - ASR Identified: ᱱᱟ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱱᱡᱚᱢ ᱢᱠᱟᱱ
+2026-02-18 19:35:08,931 - MT_Provider - INFO - Translating: 'ᱱᱟ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱱᱡᱚᱢ ᱢᱠᱟᱱ' (sat_Olck -> eng_Latn)
+2026-02-18 19:35:12,954 - MT_Provider - INFO - Translated: Anjaam Makaan from Na Toh Sa Gemini Baraat
+2026-02-18 19:35:12,956 - WebServer - INFO - MT (Sat->Eng): Anjaam Makaan from Na Toh Sa Gemini Baraat
+2026-02-18 19:35:19,345 - FAQ_DB - INFO - FAQ Cached: anjaam makaan from na toh sa gemini baraat
+2026-02-18 19:35:19,347 - MT_Provider - INFO - Translating: 'Anjaam Makaan... Na Toh Sa Gemini Baraat... (pauses) I think you are asking about a song.
+
+This is a song from the movie Na Toh Saahi... (pauses) Gemini Baraat. It is a popular Bollywood music.' (eng_Latn -> sat_Olck)
+2026-02-18 19:35:23,791 - MT_Provider - INFO - Translated: ᱟᱱᱡᱟᱢ ᱢᱟᱠᱟᱱ... ᱱᱟ ᱛᱳ ᱥᱮ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ... (ᱵᱚᱱᱚᱫᱚᱞ) ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱟᱢ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱨᱮᱭᱟᱜ ᱠᱟᱛᱷᱟ ᱵᱟᱰᱟᱭ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ'ᱱᱟ ᱛᱳ ᱥᱟᱦᱤ'ᱼ ᱨᱮᱭᱟᱜ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾ (ᱵᱚᱱᱚᱫᱚᱞ)'ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ'ᱼ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱧᱩᱛᱩᱢᱟᱱ ᱵᱚᱞᱤᱭᱩᱰ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾
+2026-02-18 19:35:23,791 - WebServer - INFO - AI Response (GROQ): Anjaam Makaan... Na Toh Sa Gemini Baraat... (pauses) I think you are asking about a song.
+
+This is a song from the movie Na Toh Saahi... (pauses) Gemini Baraat. It is a popular Bollywood music.
+2026-02-18 19:35:23,792 - WebServer - INFO - Response (Sat): ᱟᱱᱡᱟᱢ ᱢᱟᱠᱟᱱ... ᱱᱟ ᱛᱳ ᱥᱮ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ... (ᱵᱚᱱᱚᱫᱚᱞ) ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱟᱢ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱨᱮᱭᱟᱜ ᱠᱟᱛᱷᱟ ᱵᱟᱰᱟᱭ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ'ᱱᱟ ᱛᱳ ᱥᱟᱦᱤ'ᱼ ᱨᱮᱭᱟᱜ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾ (ᱵᱚᱱᱚᱫᱚᱞ)'ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ'ᱼ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱧᱩᱛᱩᱢᱟᱱ ᱵᱚᱞᱤᱭᱩᱰ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾
+2026-02-18 19:35:56,469 - WebServer - INFO - Processing audio: clean_input_8327f257-5c1e-4bb8-86dc-e0d7aeee88c8.wav [Mode: auto]
+2026-02-18 19:35:56,470 - ASR_Provider - INFO - Transcribing clean_input_8327f257-5c1e-4bb8-86dc-e0d7aeee88c8.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:36:03,890 - ASR_Provider - INFO - ASR Output: 
+2026-02-18 19:36:03,917 - WebServer - INFO - ASR Identified: 
+2026-02-18 19:36:07,542 - WebServer - INFO - Processing audio: clean_input_f80e9fed-53c1-4cd9-bc6b-4e419430e492.wav [Mode: auto]
+2026-02-18 19:36:07,579 - ASR_Provider - INFO - Transcribing clean_input_f80e9fed-53c1-4cd9-bc6b-4e419430e492.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:36:09,651 - ASR_Provider - INFO - ASR Output: ᱨᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
+2026-02-18 19:36:09,657 - WebServer - INFO - ASR Identified: ᱨᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
+2026-02-18 19:36:09,670 - MT_Provider - INFO - Translating: 'ᱨᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ' (sat_Olck -> eng_Latn)
+2026-02-18 19:36:11,436 - MT_Provider - INFO - Translated: Listen to Jamini in raha Ke Damti.
+2026-02-18 19:36:11,437 - WebServer - INFO - MT (Sat->Eng): Listen to Jamini in raha Ke Damti.
+2026-02-18 19:36:13,346 - FAQ_DB - INFO - FAQ Cached: listen to jamini in raha ke damti
+2026-02-18 19:36:13,346 - MT_Provider - INFO - Translating: 'Jamini raha Ke Damti. A beautiful Santali song. Sung by Jamini Raha.' (eng_Latn -> sat_Olck)
+2026-02-18 19:36:15,198 - MT_Provider - INFO - Translated: ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱾ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱯᱟᱭ ᱥᱚᱱᱛᱟᱞᱤ ᱥᱮᱨᱮᱧ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱥᱮᱨᱮᱧ ᱟᱠᱟᱫᱟ ᱾
+2026-02-18 19:36:15,199 - WebServer - INFO - AI Response (GROQ): Jamini raha Ke Damti. A beautiful Santali song. Sung by Jamini Raha.
+2026-02-18 19:36:15,200 - WebServer - INFO - Response (Sat): ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱾ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱯᱟᱭ ᱥᱚᱱᱛᱟᱞᱤ ᱥᱮᱨᱮᱧ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱥᱮᱨᱮᱧ ᱟᱠᱟᱫᱟ ᱾
+2026-02-18 19:36:25,428 - WebServer - INFO - Processing audio: clean_input_d2bf22b7-9372-4525-a2b5-662abbc26bb6.wav [Mode: auto]
+2026-02-18 19:36:25,430 - ASR_Provider - INFO - Transcribing clean_input_d2bf22b7-9372-4525-a2b5-662abbc26bb6.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:36:28,152 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ ᱠᱮᱫᱢ ᱛᱤᱥ ᱦᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱱ
+2026-02-18 19:36:28,196 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ ᱠᱮᱫᱢ ᱛᱤᱥ ᱦᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱱ
+2026-02-18 19:36:28,203 - MT_Provider - INFO - Translating: 'ᱡᱚᱦᱟᱨ ᱠᱮᱫᱢ ᱛᱤᱥ ᱦᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱱ' (sat_Olck -> eng_Latn)
+2026-02-18 19:36:29,736 - MT_Provider - INFO - Translated: Jamini is also heard at times.
+2026-02-18 19:36:29,737 - WebServer - INFO - MT (Sat->Eng): Jamini is also heard at times.
+2026-02-18 19:36:30,677 - FAQ_DB - INFO - FAQ Cached: jamini is also heard at times
+2026-02-18 19:36:30,677 - MT_Provider - INFO - Translating: 'Jamini is also called Baul Sangeet. 
+It's a style of music with deep emotions. 
+In Santali culture, Jamini and Baul songs are loved.' (eng_Latn -> sat_Olck)
+2026-02-18 19:36:35,497 - MT_Provider - INFO - Translated: ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱧᱩᱛᱩᱢᱛᱮ ᱦᱚᱸ ᱩᱯᱨᱩᱢᱚᱜᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱟᱹᱰᱤ ᱜᱟᱹᱛ ᱟᱱ ᱥᱮᱨᱮᱧ ᱨᱮᱭᱟᱜ ᱦᱚᱨᱟ ᱠᱟᱱᱟ ᱾ ᱥᱚᱱᱛᱟᱞᱤ ᱞᱟᱠᱪᱟᱨ ᱨᱮ ᱡᱟᱢᱤᱱᱤ ᱟᱨ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱱᱟᱯᱟᱭ ᱠᱚ ᱢᱟᱱᱟᱣᱼᱟ ᱾
+2026-02-18 19:36:35,498 - WebServer - INFO - AI Response (GROQ): Jamini is also called Baul Sangeet. 
+It's a style of music with deep emotions. 
+In Santali culture, Jamini and Baul songs are loved.
+2026-02-18 19:36:35,498 - WebServer - INFO - Response (Sat): ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱧᱩᱛᱩᱢᱛᱮ ᱦᱚᱸ ᱩᱯᱨᱩᱢᱚᱜᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱟᱹᱰᱤ ᱜᱟᱹᱛ ᱟᱱ ᱥᱮᱨᱮᱧ ᱨᱮᱭᱟᱜ ᱦᱚᱨᱟ ᱠᱟᱱᱟ ᱾ ᱥᱚᱱᱛᱟᱞᱤ ᱞᱟᱠᱪᱟᱨ ᱨᱮ ᱡᱟᱢᱤᱱᱤ ᱟᱨ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱱᱟᱯᱟᱭ ᱠᱚ ᱢᱟᱱᱟᱣᱼᱟ ᱾
+2026-02-18 19:36:45,413 - WebServer - INFO - Processing audio: clean_input_c183e6af-c8dc-4a8b-a5b7-4191d442746b.wav [Mode: auto]
+2026-02-18 19:36:45,416 - ASR_Provider - INFO - Transcribing clean_input_c183e6af-c8dc-4a8b-a5b7-4191d442746b.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:36:50,366 - WebServer - INFO - Processing audio: clean_input_41a5dc34-c800-41a1-b915-20a12d01a4aa.wav [Mode: auto]
+2026-02-18 19:36:50,391 - ASR_Provider - INFO - Transcribing clean_input_41a5dc34-c800-41a1-b915-20a12d01a4aa.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:36:53,403 - ASR_Provider - INFO - ASR Output: 
+2026-02-18 19:36:53,419 - WebServer - INFO - ASR Identified: 
+2026-02-18 19:36:56,998 - WebServer - INFO - Processing audio: clean_input_0789983e-4f96-4304-8074-48a9db77cea0.wav [Mode: auto]
+2026-02-18 19:36:57,025 - ASR_Provider - INFO - Transcribing clean_input_0789983e-4f96-4304-8074-48a9db77cea0.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:37:00,240 - ASR_Provider - INFO - ASR Output: ᱱᱚᱢᱠᱟ
+2026-02-18 19:37:00,271 - WebServer - INFO - ASR Identified: ᱱᱚᱢᱠᱟ
+2026-02-18 19:37:00,346 - MT_Provider - INFO - Translating: 'ᱱᱚᱢᱠᱟ' (sat_Olck -> eng_Latn)
+2026-02-18 19:37:04,393 - ASR_Provider - INFO - ASR Output: ᱡ ᱠᱮ ᱠᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢ ᱢ ᱟᱠᱟᱱ
+2026-02-18 19:37:04,404 - WebServer - INFO - ASR Identified: ᱡ ᱠᱮ ᱠᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢ ᱢ ᱟᱠᱟᱱ
+2026-02-18 19:37:04,405 - MT_Provider - INFO - Translating: 'ᱡ ᱠᱮ ᱠᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢ ᱢ ᱟᱠᱟᱱ' (sat_Olck -> eng_Latn)
+2026-02-18 19:37:04,637 - MT_Provider - INFO - Translated: namka
+2026-02-18 19:37:04,655 - WebServer - INFO - MT (Sat->Eng): namka
+2026-02-18 19:37:05,721 - FAQ_DB - INFO - FAQ Cached: namka
+2026-02-18 19:37:05,722 - MT_Provider - INFO - Translating: 'Namka. Namka holo. Namka ek prakritik dharatiya jalasrot.' (eng_Latn -> sat_Olck)
+2026-02-18 19:37:06,696 - MT_Provider - INFO - Translated: JK Kamti was heard speaking to Jamini.
+2026-02-18 19:37:06,697 - WebServer - INFO - MT (Sat->Eng): JK Kamti was heard speaking to Jamini.
+2026-02-18 19:37:08,854 - FAQ_DB - INFO - FAQ Cached: jk kamti was heard speaking to jamini
+2026-02-18 19:37:08,855 - MT_Provider - INFO - Translating: 'JK Kamti is a person. 
+I do not know who Jamini is. 
+Please tell me more about this conversation.' (eng_Latn -> sat_Olck)
+2026-02-18 19:37:09,280 - MT_Provider - INFO - Translated: ᱱᱟᱢᱠᱟ ᱾ ᱱᱟᱢᱠᱟ ᱦᱳᱞᱳ ᱾ ᱱᱟᱢᱠᱟ ᱢᱤᱫ ᱯᱨᱚᱠᱤᱛᱤᱠ ᱫᱟᱨᱟᱛᱤᱭᱟ ᱡᱟᱞᱟᱥᱨᱳᱛ ᱾
+2026-02-18 19:37:09,280 - WebServer - INFO - AI Response (GROQ): Namka. Namka holo. Namka ek prakritik dharatiya jalasrot.
+2026-02-18 19:37:09,281 - WebServer - INFO - Response (Sat): ᱱᱟᱢᱠᱟ ᱾ ᱱᱟᱢᱠᱟ ᱦᱳᱞᱳ ᱾ ᱱᱟᱢᱠᱟ ᱢᱤᱫ ᱯᱨᱚᱠᱤᱛᱤᱠ ᱫᱟᱨᱟᱛᱤᱭᱟ ᱡᱟᱞᱟᱥᱨᱳᱛ ᱾
+2026-02-18 19:37:26,424 - WebServer - INFO - Processing audio: clean_input_907c0d5e-de68-4e40-9a7d-fa82e6986fa0.wav [Mode: auto]
+2026-02-18 19:37:26,429 - ASR_Provider - INFO - Transcribing clean_input_907c0d5e-de68-4e40-9a7d-fa82e6986fa0.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:37:33,455 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ ᱞᱮᱠᱷᱟᱱ ᱛᱤᱥ ᱦᱚᱸᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮᱭ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱫ
+2026-02-18 19:37:33,471 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ ᱞᱮᱠᱷᱟᱱ ᱛᱤᱥ ᱦᱚᱸᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮᱭ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱫ
+2026-02-18 19:37:33,481 - MT_Provider - INFO - Translating: 'ᱡᱚᱦᱟᱨ ᱞᱮᱠᱷᱟᱱ ᱛᱤᱥ ᱦᱚᱸᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮᱭ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱫ' (sat_Olck -> eng_Latn)
+2026-02-18 19:37:33,539 - MT_Provider - INFO - Translated: ᱡᱮᱹᱠᱮ ᱠᱟᱢᱛᱤ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱾ ᱤᱧ ᱫᱚ ᱵᱟᱝ ᱵᱟᱰᱟᱭ ᱡᱮ ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱪᱮᱫ ᱾ ᱫᱟᱭᱟ ᱠᱟᱛᱮ ᱤᱧ ᱱᱚᱣᱟ ᱠᱟᱛᱷᱟ ᱠᱟᱛᱷᱟ ᱵᱟᱨᱮᱛᱮ ᱟᱨᱦᱚᱸ ᱞᱟᱹᱭ ᱤᱧᱢᱮ ᱾
+2026-02-18 19:37:33,599 - WebServer - INFO - AI Response (GROQ): JK Kamti is a person. 
+I do not know who Jamini is. 
+Please tell me more about this conversation.
+2026-02-18 19:37:33,619 - WebServer - INFO - Response (Sat): ᱡᱮᱹᱠᱮ ᱠᱟᱢᱛᱤ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱾ ᱤᱧ ᱫᱚ ᱵᱟᱝ ᱵᱟᱰᱟᱭ ᱡᱮ ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱪᱮᱫ ᱾ ᱫᱟᱭᱟ ᱠᱟᱛᱮ ᱤᱧ ᱱᱚᱣᱟ ᱠᱟᱛᱷᱟ ᱠᱟᱛᱷᱟ ᱵᱟᱨᱮᱛᱮ ᱟᱨᱦᱚᱸ ᱞᱟᱹᱭ ᱤᱧᱢᱮ ᱾
+2026-02-18 19:39:26,447 - TTS_Provider - INFO - Audio saved to temp_output_f80e9fed-53c1-4cd9-bc6b-4e419430e492.wav
+2026-02-18 19:39:26,616 - WebServer - INFO - Processing audio: clean_input_6e5c36d1-c1bc-4355-9bce-d31c67ecc2db.wav [Mode: auto]
+2026-02-18 19:39:26,617 - ASR_Provider - INFO - Transcribing clean_input_6e5c36d1-c1bc-4355-9bce-d31c67ecc2db.wav (Lang: sat, Decoding: ctc)...
+2026-02-18 19:39:27,493 - ASR_Provider - INFO - ASR Output: ᱷᱟᱥᱟ ᱢᱚᱱᱤᱥ ᱨ ᱵᱷᱵ ᱟᱫᱟᱱ ᱯᱨᱚᱫᱟᱱ ᱨ ᱢᱟᱫᱚᱢ ᱢᱚᱱᱨ ᱠᱟᱛ ᱠᱚ ᱫᱷᱱᱤ ᱡ ᱨᱮ ᱪᱚᱲᱮᱵᱟᱨ
+2026-02-18 19:39:27,516 - WebServer - INFO - ASR Identified: ᱷᱟᱥᱟ ᱢᱚᱱᱤᱥ ᱨ ᱵᱷᱵ ᱟᱫᱟᱱ ᱯᱨᱚᱫᱟᱱ ᱨ ᱢᱟᱫᱚᱢ ᱢᱚᱱᱨ ᱠᱟᱛ ᱠᱚ ᱫᱷᱱᱤ ᱡ ᱨᱮ ᱪᱚᱲᱮᱵᱟᱨ
+2026-02-18 19:39:27,520 - MT_Provider - INFO - Translating: 'ᱷᱟᱥᱟ ᱢᱚᱱᱤᱥ ᱨ ᱵᱷᱵ ᱟᱫᱟᱱ ᱯᱨᱚᱫᱟᱱ ᱨ ᱢᱟᱫᱚᱢ ᱢᱚᱱᱨ ᱠᱟᱛ ᱠᱚ ᱫᱷᱱᱤ ᱡ ᱨᱮ ᱪᱚᱲᱮᱵᱟᱨ' (sat_Olck -> eng_Latn)
+2026-02-18 19:39:27,535 - MT_Provider - INFO - Translated: I have never heard of Gemini.
+2026-02-18 19:39:27,587 - WebServer - INFO - MT (Sat->Eng): I have never heard of Gemini.
+2026-02-18 19:39:29,014 - FAQ_DB - INFO - FAQ Cached: i have never heard of gemini
+2026-02-18 19:39:29,014 - MT_Provider - INFO - Translating: 'I think it's Jamini, not Gemini. Jamini Raha is a Santali singer. He sings our traditional songs in our language.' (eng_Latn -> sat_Olck)
+2026-02-18 19:39:33,003 - MT_Provider - INFO - Translated: Asha Manish's contribution to VB Adan Pradan's Madam Man Kata is commendable.
+2026-02-18 19:39:33,004 - WebServer - INFO - MT (Sat->Eng): Asha Manish's contribution to VB Adan Pradan's Madam Man Kata is commendable.
+2026-02-18 19:39:34,693 - FAQ_DB - INFO - FAQ Cached: asha manish's contribution to vb adan pradan's madam man kata is commendable
+2026-02-18 19:39:34,694 - MT_Provider - INFO - Translating: 'I am not sure. I do not have information about VB Adan Pradan's song Madam Man Kata.' (eng_Latn -> sat_Olck)
+2026-02-18 19:39:40,359 - MT_Provider - INFO - Translated: ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱡᱮᱹᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱝ ᱡᱮᱹᱢᱤᱱᱤ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱥᱚᱱᱛᱚᱞᱤ ᱥᱮᱨᱮᱧᱤᱭᱟᱹ ᱾ ᱩᱱᱤ ᱫᱚ ᱤᱧᱟᱹᱜ ᱯᱟᱹᱨᱥᱤ ᱛᱮ ᱤᱧᱟᱹᱜ ᱥᱮᱨᱣᱟ ᱟᱱᱟᱜ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱥᱮᱹᱨᱮᱹᱧᱼᱟ ᱾
+2026-02-18 19:39:40,361 - WebServer - INFO - AI Response (GROQ): I think it's Jamini, not Gemini. Jamini Raha is a Santali singer. He sings our traditional songs in our language.
+2026-02-18 19:39:40,361 - WebServer - INFO - Response (Sat): ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱡᱮᱹᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱝ ᱡᱮᱹᱢᱤᱱᱤ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱥᱚᱱᱛᱚᱞᱤ ᱥᱮᱨᱮᱧᱤᱭᱟᱹ ᱾ ᱩᱱᱤ ᱫᱚ ᱤᱧᱟᱹᱜ ᱯᱟᱹᱨᱥᱤ ᱛᱮ ᱤᱧᱟᱹᱜ ᱥᱮᱨᱣᱟ ᱟᱱᱟᱜ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱥᱮᱹᱨᱮᱹᱧᱼᱟ ᱾
+2026-02-18 19:40:41,385 - TTS_Provider - INFO - Audio saved to temp_output_41a5dc34-c800-41a1-b915-20a12d01a4aa.wav

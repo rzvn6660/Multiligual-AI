@@ -20,6 +20,7 @@ OLLAMA_URL = "http://127.0.0.1:11434/api/chat"
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3")
 
 # Updated System Instruction per User Request
+# Updated System Instruction per User Request
 SYSTEM_INSTRUCTION = (
     "You are a real-time Santali voice assistant designed for tribal users. "
     "Your highest priority is SPEED, ACCURACY, and SIMPLE EXPLANATION. "
@@ -76,13 +77,40 @@ def normalize_text(text):
     text = ' '.join(text.split())
     return text.lower()
 
+def check_safety_intent(text):
+    """
+    Simple keyword-based intent classification for safety.
+    Returns a safe response template if high-risk keywords are found.
+    """
+    medical_keywords = [
+        "diagnosis", "treatment", "medicine", "drug", "dosage", "prescription", 
+        "cure", "injection", "pill", "tablet", "surgery", "operation", "clinical", "medication"
+    ]
+    
+    text_lower = text.lower()
+    for kw in medical_keywords:
+         # precise word matching to avoid false positives (e.g. 'cured' in 'cured meat') implies simple 'in' check is risky
+         # but for this specific list, substring match is acceptable for safety
+        if kw in text_lower:
+             # Return a safe template without calling LLM
+             return "This query seems related to medical treatment. I am an AI and cannot provide medical advice. Please consult a doctor or health worker immediately."
+    
+    return None
+
 def get_ai_response(text, santali_text=None, conversation_history=None, mode="auto"):
     """
     Retrieves response from LLM based on mode and availability.
     Modes: 'auto', 'online', 'offline'
     """
-    # 0. ASR NORMALIZATION & FAQ CHECK
-    # PRIORITY 1: Check Santali Text directly in FAQ (Avoids MT)
+    # PRIORITY 1: SAFETY INTENT CHECK (Guardrail)
+    # We check this BEFORE looking at FAQ to ensure we don't return unsafe cached answers.
+    clean_text = normalize_text(text)
+    safety_msg = check_safety_intent(clean_text)
+    if safety_msg:
+        logger.info(f"Safety Triggered for: {clean_text}")
+        return {"text": safety_msg, "source": "SAFETY_GUARD"}
+
+    # PRIORITY 2: Check Santali Text directly in FAQ (Avoids MT)
     if santali_text:
         clean_santali = normalize_text(santali_text)
         cached_santali = faq_manager.get_answer(clean_santali)
@@ -91,11 +119,10 @@ def get_ai_response(text, santali_text=None, conversation_history=None, mode="au
             return {
                 "text": cached_santali, 
                 "source": "SQLITE_FAQ", 
-                "santali_fallback": True # This signals server.py to SKIP MT (Eng->Sat) and use this text directly
+                "santali_fallback": True 
             }
 
-    # PRIORITY 2: Check English Text in FAQ
-    clean_text = normalize_text(text)
+    # PRIORITY 3: Check English Text in FAQ
     if not clean_text:
          return {"text": FAIL_SAFE_SANTALI, "source": "EMPTY_INPUT", "santali_fallback": True}
 

@@ -169,8 +169,58 @@ function drawVisualizer() {
     }
 }
 
+
+// Input Mode Logic
+const inputMicRadio = document.getElementById('inputMic');
+const inputFileRadio = document.getElementById('inputFile');
+const fileInput = document.getElementById('fileInput');
+const inputIcon = document.getElementById('inputIcon');
+let inputMode = 'mic';
+
+
+function updateInputMode() {
+    // Safety: Stop recording if active when switching
+    if (isRecording) {
+        stopRecording();
+    }
+
+    if (inputFileRadio.checked) {
+        inputMode = 'file';
+        inputIcon.className = 'fas fa-file-upload';
+        recordBtn.title = "Click to Upload Audio";
+        statusText.innerText = "Upload Mode";
+    } else {
+        inputMode = 'mic';
+        inputIcon.className = 'fas fa-microphone';
+        recordBtn.title = "Hold/Click to Record";
+        statusText.innerText = "Tap to Speak";
+    }
+}
+
+inputMicRadio.addEventListener('change', updateInputMode);
+inputFileRadio.addEventListener('change', updateInputMode);
+
+// Initialize state
+updateInputMode();
+
+// File Upload Handling
+fileInput.addEventListener('change', async (e) => {
+    if (e.target.files.length > 0) {
+        const file = e.target.files[0];
+        statusText.innerText = "Uploading...";
+        await sendAudioToBackend(file);
+        // Reset input so same file can be selected again if needed
+        fileInput.value = '';
+    }
+});
+
 // Recording Logic
 recordBtn.addEventListener('click', async () => {
+    if (inputMode === 'file') {
+        fileInput.click();
+        return;
+    }
+
     if (!isRecording) {
         startRecording();
     } else {
@@ -223,7 +273,7 @@ function startProcessingSim() {
     statusInterval = setInterval(() => {
         i = (i + 1) % steps.length;
         statusText.innerText = steps[i];
-    }, 2500); // Update every 2.5s to simulate real work
+    }, 800); // Faster updates (0.8s) to make UI feel more responsive
 }
 
 function stopProcessingSim() {
@@ -250,7 +300,8 @@ async function sendAudioToBackend(blob) {
     }
 
     try {
-        addMessage('user', '...', 'Recorded Audio');
+        // Show temp message with spinner
+        addMessage('user', '<i class="fas fa-spinner fa-spin"></i> Processing...', null);
 
         const response = await fetch('/api/process', {
             method: 'POST',
