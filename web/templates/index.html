@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIEM AI</title>
+
+    <!-- PWA / Mobile App Support -->
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=triem2">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Noto+Sans+Ol+Chiki&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>TRIEM <span class="highlight">AI</span></h1>
+            <p class="subtitle">Tribal Responsive Intelligent Engagement Model</p>
+            <button id="clearHistoryBtn" class="clear-btn" title="Clear History">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </header>
+
+        <main>
+            <div class="visualizer-container">
+                <canvas id="visualizer"></canvas>
+            </div>
+
+
+            <div class="chat-interface">
+                <!-- Dialogue will appear here -->
+                <div id="messages" class="messages-container" tabindex="0">
+                    <div class="message system">
+                        <p>ᱥᱟᱨᱦᱟᱰᱚᱜ ᱠᱟᱱᱟ ᱾ ᱤᱧ ᱟᱢ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱮ ᱵᱮᱱᱟᱣ ᱟᱠᱟᱱᱟ ᱾</p>
+                    </div>
+                </div>
+
+                <!-- Scroll button relative to chat -->
+                <button id="scrollBtn" class="scroll-btn hidden" title="Scroll to Bottom">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+
+            <!-- New Unified Control Deck -->
+            <div class="control-deck">
+                <p id="statusText">Tap to Speak</p>
+
+                <div class="control-row">
+                    <!-- Left: Autoplay -->
+                    <div class="control-group left">
+                        <div class="setting-item">
+                            <span class="setting-item-label">Model</span>
+                            <select id="modeSelect" class="mode-select" title="Select AI Mode">
+                                <option value="auto" selected>Auto</option>
+                                <option value="online">Online</option>
+                                <option value="offline">Offline</option>
+                            </select>
+                        </div>
+                        <div class="autoplay-container">
+                            <label class="switch">
+                                <input type="checkbox" id="autoPlayToggle" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="label-text"><i class="fas fa-robot"></i> Playback</span>
+                        </div>
+                    </div>
+
+                    <!-- Center: MIC -->
+                    <button id="recordBtn" class="record-btn" title="Hold to Record">
+                        <i class="fas fa-microphone"></i>
+                        <div class="pulse-ring"></div>
+                    </button>
+
+                    <!-- Right: Play Audio -->
+                    <div class="control-group right">
+                        <div id="audio-controls" class="audio-controls" style="text-align: center;">
+                            <!-- Removed 'hidden' class here, will handle visibility via CSS opacity/pointer-events -->
+                            <button id="playResponseBtn" class="play-btn-circle" disabled title="Replay Last Response">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            <audio id="responseAudio" hidden></audio>
+                            <span class="label-text" style="display:block; margin-top:4px;">Play Back</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="status-indicators">
+                <span id="asrStatus" class="status-dot"></span> ASR
+                <span id="mtStatus" class="status-dot"></span> MT
+                <span id="ttsStatus" class="status-dot"></span> TTS
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}?v=triem2"></script>
+</body>
+
+</html>

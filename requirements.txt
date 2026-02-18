@@ -1,0 +1,8 @@
+SpeechRecognition
+pyaudio
+gTTS
+playsound==1.2.2
+google-genai
+groq
+python-dotenv
+deep-translator

@@ -1,0 +1,72 @@
+# Security
+.env
+.SECRET
+*.user
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Large files & Models
+*.exe
+*.zip
+*.pt
+*.bin
+*.ckpt
+*.model
+*.onnx
+*.pb
+*.tflite
+*.safetensors
+models/
+datasets/
+data/
+IndicTrans2/
+
+# Audio
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# FFmpeg
+ffmpeg-master-latest-win64-gpl/
+ffmpeg/
+
+# System
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
