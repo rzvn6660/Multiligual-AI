@@ -1,3 +1,12 @@
+---
+title: Multilingual Santali
+emoji: 🌍
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_file: server.py
+pinned: false
+---
 # TRIEM AI - Multilingual Tribal Intelligent Assistant
 
 TRIEM AI is an advanced, multilingual voice assistant designed specifically to bridge language barriers for tribal communities, with a primary focus on **Santali**. It leverages state-of-the-art AI models for Automatic Speech Recognition (ASR), Machine Translation (MT), and Text-to-Speech (TTS) to provide a seamless conversational interface.
