@@ -344,10 +344,8 @@ if __name__ == "__main__":
     logger.info("--- Server Starting ---")
     try:
         import torch
-        import torchvision
         import torchaudio
         logger.info(f"Torch: {torch.__version__}")
-        logger.info(f"TorchVision: {torchvision.__version__}")
         logger.info(f"TorchAudio: {torchaudio.__version__}")
         logger.info(f"CUDA Available: {torch.cuda.is_available()}")
         if torch.cuda.is_available():
