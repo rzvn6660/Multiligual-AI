@@ -19,10 +19,10 @@ ENV HOME=/home/user \
 WORKDIR $HOME/app
 
 # Copy your requirements files first to leverage Docker cache
-COPY --chown=user requirements.txt requirements_hf.txt ./
+COPY --chown=user requirements_space.txt requirements_hf.txt ./
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt && \
+RUN pip install --no-cache-dir -r requirements_space.txt && \
     pip install --no-cache-dir -r requirements_hf.txt
 
 # Copy the rest of your application code

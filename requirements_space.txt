@@ -1,0 +1,7 @@
+Flask
+flask-cors
+soundfile
+google-genai
+groq
+python-dotenv
+deep-translator
