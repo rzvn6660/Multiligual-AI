@@ -1,0 +1,13 @@
+transformers
+scipy
+nemo_toolkit[asr]
+git+https://github.com/huggingface/parler-tts.git
+protobuf
+sentencepiece
+accelerate
+bitsandbytes
+onnx
+onnxruntime
+onnxruntime-gpu
+torchaudio==2.2.0
+torchvision==0.17.0
