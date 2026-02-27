@@ -168,6 +168,7 @@ def process_audio():
     
     audio_file = request.files['audio']
     mode = request.form.get('mode', 'auto')  # Get User Mode (auto, online, offline)
+    mt_mode = request.form.get('mt_mode', 'indictrans2') # Get Translation Mode (indictrans2, google)
     
     session_id = str(uuid.uuid4())
     input_filename = f"temp_input_{session_id}.wav"
@@ -215,60 +216,86 @@ def process_audio():
         # 2. MT (Sat -> Eng)
         # Strict Pipeline: Audio(Sat) -> Text(Sat) -> Text(Eng)
         # User confirmed input is strictly Santali.
-        english_query = mt_model.translate(santali_query, src_lang='sat', tgt_lang='eng')
+        english_query = mt_model.translate(santali_query, src_lang='sat', tgt_lang='eng', model_type=mt_mode)
         logger.info(f"MT (Sat->Eng): {english_query}")
         
-        # 3. Brain (Gemini/Groq/Ollama)
-        # Build context from history
-        history_context = []
-        try:
-            full_history = load_history()
-            recent_history = full_history[-5:] if len(full_history) > 5 else full_history
-            for item in recent_history:
-                history_context.append({"role": "user", "content": item.get("query_english", "")})
-                # Strip previous tags if present for context purity
-                prev_resp = item.get("response_english", "")
-                if "[LLM USED:" in prev_resp:
-                    prev_resp = prev_resp.split("[LLM USED:")[0].strip()
-                history_context.append({"role": "model", "content": prev_resp})
-        except Exception as e:
-            logger.warning(f"History error: {e}")
-
-        # Call Brain with Mode (Pass Santali Query for direct FAQ lookup)
-        brain_out = get_ai_response(
-            text=english_query, 
-            santali_text=santali_query, # <--- NEW ARGUMENT
-            conversation_history=history_context, 
-            mode=mode
-        )
+        # 3. Cache Match Layer
+        from src.cache import check_cache, save_to_cache
+        from datetime import datetime
         
-        if isinstance(brain_out, dict):
-            raw_english_response = brain_out.get("text", "")
-            source = brain_out.get("source", "UNKNOWN")
-            is_fallback = brain_out.get("santali_fallback", False)
+        # Check cache early
+        cached_santali, similarity, matched_q, original_backend = check_cache(english_query)
+        
+        # Logging standard details requested
+        logger.info(f"Checking cache for English question: '{english_query}' at {datetime.now().isoformat()}")
+        
+        if cached_santali:
+            # CACHE HIT
+            logger.info("CACHE_HIT")
+            logger.info(f"Similarity Score: {similarity:.2f}")
+            logger.info(f"Matched Question: {matched_q}")
+            logger.info(f"Backend Originally Used: {original_backend}")
+            logger.info("ASR confidence: N/A")
+            
+            # Use cached Santali answer directly without LLM
+            santali_response = cached_santali
+            
+            # Generic English response for UI
+            raw_english_response = f"Cached Answer (Original question matched: {matched_q})"
+            english_response_tagged = f"{raw_english_response} [CACHE HIT: {original_backend} | Sim: {similarity:.2f}]"
+            source = f"CACHE ({original_backend})"
         else:
-             # Fallback for legacy returns (just in case)
-             raw_english_response = str(brain_out)
-             source = "UNKNOWN"
-             is_fallback = False
+            # CACHE MISS - Call LLM
+            logger.info("CACHE_MISS")
+            logger.info(f"Similarity Score: {similarity:.2f}")
+            logger.info("Backend Originally Used: N/A")
+            logger.info("ASR confidence: N/A")
+            
+            # Build context from history
+            history_context = []
+            try:
+                full_history = load_history()
+                recent_history = full_history[-5:] if len(full_history) > 5 else full_history
+                for item in recent_history:
+                    history_context.append({"role": "user", "content": item.get("query_english", "")})
+                    prev_resp = item.get("response_english", "")
+                    if "[LLM USED:" in prev_resp:
+                        prev_resp = prev_resp.split("[LLM USED:")[0].strip()
+                    history_context.append({"role": "model", "content": prev_resp})
+            except Exception as e:
+                logger.warning(f"History error: {e}")
 
-        if is_fallback:
-             # Case 1: Active Error (Network/AI Fail) -> Use Safety Message
-             if source == "FAIL" or source == "EMPTY_INPUT":
+            # Call Brain
+            brain_out = get_ai_response(
+                text=english_query, 
+                santali_text=santali_query,
+                conversation_history=history_context, 
+                mode=mode
+            )
+            
+            if isinstance(brain_out, dict):
+                raw_english_response = brain_out.get("text", "")
+                source = brain_out.get("source", "UNKNOWN")
+                is_fallback = brain_out.get("santali_fallback", False)
+            else:
+                 raw_english_response = str(brain_out)
+                 source = "UNKNOWN"
+                 is_fallback = False
+
+            if is_fallback and source in ["FAIL", "EMPTY_INPUT"]:
                 santali_response = FAIL_SAFE_SANTALI
                 english_response_tagged = f"System Failure. [ANSWER SOURCE: {source}]" 
-             # Case 2: Direct Santali FAQ Hit -> Use DB Text Directly
-             elif source == "SQLITE_FAQ":
-                santali_response = raw_english_response # Brain returns Santali text in 'text' field for this case
-                english_response_tagged = f"[Cached Santali Response] {raw_english_response[:50]}..."
-             else:
-                # Unknown fallback case
+            elif source == "SAFETY_GUARD":
                 santali_response = FAIL_SAFE_SANTALI
-                english_response_tagged = "Unknown Error."
-        else:
-            # Normal MT (Eng -> Sat) using clean text
-            santali_response = mt_model.translate(raw_english_response, src_lang='eng', tgt_lang='sat')
-            english_response_tagged = f"{raw_english_response} [ANSWER SOURCE: {source}]"
+                english_response_tagged = f"{raw_english_response} [SAFETY_GUARD]"
+            else:
+                # Normal AI Response (Eng) -> Needs MT (Eng -> Sat)
+                santali_response = mt_model.translate(raw_english_response, src_lang='eng', tgt_lang='sat', model_type=mt_mode)
+                english_response_tagged = f"{raw_english_response} [ANSWER SOURCE: {source}]"
+                
+                # Save to Cache
+                # similarity_score is 0 for new
+                save_to_cache(english_query, santali_response, source, 0.0)
         
         logger.info(f"AI Response ({source}): {raw_english_response}")
         
@@ -329,5 +356,7 @@ if __name__ == "__main__":
         logger.error(f"Environment Error: {e}")
         
     init_models()
+    # Read PORT from environment (Hugging Face Spaces uses 7860, local uses 5000)
+    port = int(os.environ.get('PORT', 5000))
     # Run on 0.0.0.0 to be accessible
-    app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=False)
+    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)

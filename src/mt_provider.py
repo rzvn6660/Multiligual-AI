@@ -52,13 +52,42 @@ class SantaliTranslator:
             logger.error(f"Failed to load MT models: {e}")
             return False
 
-    def translate(self, text, src_lang, tgt_lang):
+
+    def translate(self, text, src_lang, tgt_lang, model_type="indictrans2"):
         """
-        Translates text using IndicTransToolkit + Hugging Face.
+        Translates text using either IndicTrans2 or Google Translate.
+        model_type: 'indictrans2' (Offline/Local) or 'google' (Online)
         """
         if not text or not text.strip():
             return ""
 
+        if model_type == "google":
+             from src.translation import translate_text
+             
+             # STRICT PIPELINE ENFORCEMENT FOR GOOGLE TRANSLATE
+             # 1. Santali -> English (for Brain Input)
+             # 2. English -> Santali (for TTS Output)
+             
+             def map_google_code(lang):
+                 if lang == 'sat': return 'santali'
+                 if lang == 'eng': return 'en'
+                 # Fallback for others (though not used in this specific pipeline)
+                 return lang
+
+             s_lang = map_google_code(src_lang)
+             t_lang = map_google_code(tgt_lang)
+             
+             # Validation: Ensure we are only doing Sat<->En
+             valid_pair = (s_lang == 'santali' and t_lang == 'en') or (s_lang == 'en' and t_lang == 'santali')
+             
+             if not valid_pair:
+                 logger.warning(f"Google Translate requested for non-standard pair: {s_lang} -> {t_lang}. Proceeding, but this is outside the primary Santali pipeline.")
+
+             logger.info(f"Google MT Pipeline: '{text[:20]}...' [{s_lang.upper()} -> {t_lang.upper()}]")
+             return translate_text(text, source_lang=s_lang, target_lang=t_lang)
+
+        # --- IndicTrans2 (Default) ---
+        
         # Map simple codes to IndicTrans2 ISO codes
         # Santali Latin/OlChiki handling: usually TTS/ASR uses one, MT might expect specific script.
         # IndicTrans2 expects 'sat_Olck' for Santali.
@@ -88,7 +117,7 @@ class SantaliTranslator:
                 return text
 
             # logging
-            logger.info(f"Translating: '{text}' ({src_iso} -> {tgt_iso})")
+            logger.info(f"Translating via IndicTrans2: '{text}' ({src_iso} -> {tgt_iso})")
 
             # 1. Preprocess Batch
             batch = self.ip.preprocess_batch(

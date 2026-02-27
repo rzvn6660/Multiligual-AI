@@ -982,3 +982,158 @@ Please tell me more about this conversation.
 2026-02-18 19:39:40,361 - WebServer - INFO - AI Response (GROQ): I think it's Jamini, not Gemini. Jamini Raha is a Santali singer. He sings our traditional songs in our language.
 2026-02-18 19:39:40,361 - WebServer - INFO - Response (Sat): ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱡᱮᱹᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱝ ᱡᱮᱹᱢᱤᱱᱤ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱥᱚᱱᱛᱚᱞᱤ ᱥᱮᱨᱮᱧᱤᱭᱟᱹ ᱾ ᱩᱱᱤ ᱫᱚ ᱤᱧᱟᱹᱜ ᱯᱟᱹᱨᱥᱤ ᱛᱮ ᱤᱧᱟᱹᱜ ᱥᱮᱨᱣᱟ ᱟᱱᱟᱜ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱥᱮᱹᱨᱮᱹᱧᱼᱟ ᱾
 2026-02-18 19:40:41,385 - TTS_Provider - INFO - Audio saved to temp_output_41a5dc34-c800-41a1-b915-20a12d01a4aa.wav
+2026-02-20 00:31:38,096 - Translation - INFO - Translated 'ᱡᱚᱦᱟᱨ' (santali) -> 'Hello' (en)
+2026-02-20 00:31:39,311 - Translation - INFO - Translated 'My name is Assistant' (en) -> 'ᱤᱧᱟᱜ ᱧᱩᱛᱩᱢ ᱫᱚ ᱟᱥᱤᱥᱴᱮᱱᱴ' (santali)
+2026-02-20 00:42:28,864 - WebServer - INFO - --- Server Starting ---
+2026-02-20 00:42:37,216 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-20 00:42:37,216 - WebServer - INFO - TorchVision: 0.21.0+cu124
+2026-02-20 00:42:37,217 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-20 00:42:38,956 - WebServer - INFO - CUDA Available: True
+2026-02-20 00:42:38,961 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-20 00:42:38,961 - WebServer - INFO - Initializing Models...
+2026-02-20 00:42:58,662 - WebServer - INFO - Imports successful, instantiating...
+2026-02-20 00:42:58,662 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-20 00:43:12,019 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-20 00:43:12,182 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-20 00:43:13,289 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-20 00:43:29,066 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-20 00:43:36,655 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-20 00:43:36,658 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-20 00:43:49,618 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-20 00:44:38,851 - WebServer - INFO - Chat history cleared.
+2026-02-20 00:44:54,374 - WebServer - INFO - Processing audio: clean_input_9ceadee7-39ed-41d0-82ef-30b1cbc3def1.wav [Mode: auto]
+2026-02-20 00:44:54,375 - ASR_Provider - INFO - Transcribing clean_input_9ceadee7-39ed-41d0-82ef-30b1cbc3def1.wav (Lang: sat, Decoding: ctc)...
+2026-02-20 00:45:04,034 - WebServer - INFO - Processing audio: clean_input_0375e886-2ff2-4ee8-8d3d-dd3f8cd2c23e.wav [Mode: auto]
+2026-02-20 00:45:04,042 - ASR_Provider - INFO - Transcribing clean_input_0375e886-2ff2-4ee8-8d3d-dd3f8cd2c23e.wav (Lang: sat, Decoding: ctc)...
+2026-02-20 00:45:05,653 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ
+2026-02-20 00:45:05,700 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ
+2026-02-20 00:45:09,007 - MT_Provider - INFO - Translating via Google: 'ᱡᱚᱦᱟᱨ' (santali -> eng)
+2026-02-20 00:45:09,028 - Translation - ERROR - Translation error: eng --> No support for the provided language.
+Please select on of the supported languages:
+{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
+2026-02-20 00:45:09,052 - WebServer - INFO - MT (Sat->Eng): ᱡᱚᱦᱟᱨ
+2026-02-20 00:45:12,328 - WebServer - INFO - Processing audio: clean_input_42a9baf4-7f2e-4911-9c73-64ffdd398d04.wav [Mode: auto]
+2026-02-20 00:45:12,333 - ASR_Provider - INFO - Transcribing clean_input_42a9baf4-7f2e-4911-9c73-64ffdd398d04.wav (Lang: sat, Decoding: ctc)...
+2026-02-20 00:45:14,584 - ASR_Provider - INFO - ASR Output: 
+2026-02-20 00:45:14,601 - WebServer - INFO - ASR Identified: 
+2026-02-20 00:45:15,101 - ASR_Provider - INFO - ASR Output: ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
+2026-02-20 00:45:15,128 - WebServer - INFO - ASR Identified: ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
+2026-02-20 00:45:15,167 - MT_Provider - INFO - Translating via Google: 'ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ' (santali -> eng)
+2026-02-20 00:45:15,202 - Translation - ERROR - Translation error: eng --> No support for the provided language.
+Please select on of the supported languages:
+{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
+2026-02-20 00:45:15,234 - WebServer - INFO - MT (Sat->Eng): ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
+2026-02-20 00:45:15,487 - FAQ_DB - INFO - FAQ Cached: ᱡᱚᱦᱟᱨ
+2026-02-20 00:45:15,496 - MT_Provider - INFO - Translating via Google: 'ᱡᱚᱦᱟᱨ ᱵᱟᱝ ᱮᱠᱷᱟᱱᱛᱟᱜ.' (eng -> santali)
+2026-02-20 00:45:15,499 - Translation - ERROR - Translation error: eng --> No support for the provided language.
+Please select on of the supported languages:
+{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
+2026-02-20 00:45:15,502 - WebServer - INFO - AI Response (GROQ): ᱡᱚᱦᱟᱨ ᱵᱟᱝ ᱮᱠᱷᱟᱱᱛᱟᱜ.
+2026-02-20 00:45:15,508 - WebServer - INFO - Response (Sat): ᱡᱚᱦᱟᱨ ᱵᱟᱝ ᱮᱠᱷᱟᱱᱛᱟᱜ.
+2026-02-20 00:45:16,731 - FAQ_DB - INFO - FAQ Cached: ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
+2026-02-20 00:45:16,732 - MT_Provider - INFO - Translating via Google: 'ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+
+ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ' (eng -> santali)
+2026-02-20 00:45:16,732 - Translation - ERROR - Translation error: eng --> No support for the provided language.
+Please select on of the supported languages:
+{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
+2026-02-20 00:45:16,732 - WebServer - INFO - AI Response (GROQ): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+
+ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
+2026-02-20 00:45:16,733 - WebServer - INFO - Response (Sat): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+
+ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
+2026-02-20 00:45:26,137 - TTS_Provider - INFO - Audio saved to temp_output_9ceadee7-39ed-41d0-82ef-30b1cbc3def1.wav
+2026-02-20 00:45:44,613 - TTS_Provider - INFO - Audio saved to temp_output_42a9baf4-7f2e-4911-9c73-64ffdd398d04.wav
+2026-02-20 00:52:24,300 - WebServer - INFO - --- Server Starting ---
+2026-02-20 00:52:42,694 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-20 00:52:42,695 - WebServer - INFO - TorchVision: 0.21.0+cu124
+2026-02-20 00:52:42,696 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-20 00:52:44,635 - WebServer - INFO - CUDA Available: True
+2026-02-20 00:52:44,660 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-20 00:52:44,661 - WebServer - INFO - Initializing Models...
+2026-02-20 00:53:12,732 - WebServer - INFO - Imports successful, instantiating...
+2026-02-20 00:53:12,732 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-20 00:53:25,545 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-20 00:53:25,564 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-20 00:53:25,645 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-20 00:53:40,762 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-20 00:53:50,723 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-20 00:53:50,725 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-20 00:54:01,745 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-20 00:54:58,775 - WebServer - INFO - Chat history cleared.
+2026-02-20 00:55:21,282 - WebServer - INFO - Processing audio: clean_input_0f726de8-17ed-4e22-86b0-18e10effae63.wav [Mode: auto]
+2026-02-20 00:55:21,284 - ASR_Provider - INFO - Transcribing clean_input_0f726de8-17ed-4e22-86b0-18e10effae63.wav (Lang: sat, Decoding: ctc)...
+2026-02-20 00:55:30,507 - ASR_Provider - INFO - ASR Output: ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ
+2026-02-20 00:55:30,508 - WebServer - INFO - ASR Identified: ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ
+2026-02-20 00:55:30,718 - MT_Provider - INFO - Google MT Pipeline: 'ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵ...' [SANTALI -> EN]
+2026-02-20 00:55:32,425 - Translation - INFO - Translated 'ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ' (santali) -> 'j k kan t so listen about Jaemin' (en)
+2026-02-20 00:55:32,426 - WebServer - INFO - MT (Sat->Eng): j k kan t so listen about Jaemin
+2026-02-20 00:55:32,447 - FAQ_DB - INFO - FAQ Fuzzy Hit: 'ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ' ~= 'ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ'
+2026-02-20 00:55:32,448 - WebServer - INFO - AI Response (SQLITE_FAQ): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+
+ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
+2026-02-20 00:55:32,449 - WebServer - INFO - Response (Sat): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+
+ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
+2026-02-20 00:55:56,496 - TTS_Provider - INFO - Audio saved to temp_output_0f726de8-17ed-4e22-86b0-18e10effae63.wav
+2026-02-20 01:01:42,642 - WebServer - INFO - Chat history cleared.
+2026-02-27 10:27:22,937 - SmartCache - INFO - Manual cache reset triggered.
+2026-02-27 10:27:22,939 - SmartCache - INFO - Cache DB does not exist, initializing fresh.
+2026-02-27 10:27:39,198 - Brain - WARNING - Gemini failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-02-27 10:28:15,174 - Brain - ERROR - Ollama Connection Failed: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=10)
+2026-02-27 10:28:15,174 - Brain - ERROR - All providers failed. Tried: ["Ollama(HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=10))"]
+2026-02-27 10:35:25,224 - SmartCache - INFO - Manual cache reset triggered.
+2026-02-27 10:35:25,257 - SmartCache - INFO - Cache reset successful. Table 'faq_cache' recreated.
+2026-02-27 10:35:33,029 - Brain - ERROR - Ollama Connection Failed: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002789C85B8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2026-02-27 10:35:33,029 - Brain - ERROR - All providers failed. Tried: ["Ollama(HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002789C85B8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))"]
+2026-02-27 10:38:13,838 - WebServer - INFO - --- Server Starting ---
+2026-02-27 10:39:20,169 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-27 10:39:20,169 - WebServer - INFO - TorchVision: 0.21.0+cu124
+2026-02-27 10:39:20,169 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-27 10:39:22,119 - WebServer - INFO - CUDA Available: True
+2026-02-27 10:39:22,126 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-27 10:39:22,126 - WebServer - INFO - Initializing Models...
+2026-02-27 10:41:24,819 - WebServer - INFO - Imports successful, instantiating...
+2026-02-27 10:41:24,819 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-27 10:42:34,386 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-27 10:42:34,386 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-27 10:42:34,464 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-27 10:42:56,513 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-27 10:43:07,252 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-27 10:43:07,270 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-27 10:43:24,019 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-27 10:48:05,871 - WebServer - INFO - --- Server Starting ---
+2026-02-27 10:52:07,877 - WebServer - INFO - --- Server Starting ---
+2026-02-27 11:01:05,330 - WebServer - INFO - --- Server Starting ---
+2026-02-27 11:01:25,814 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-27 11:01:25,815 - WebServer - INFO - TorchVision: 0.21.0+cu124
+2026-02-27 11:01:25,817 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-27 11:01:26,797 - WebServer - INFO - CUDA Available: True
+2026-02-27 11:01:26,875 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-27 11:01:26,885 - WebServer - INFO - Initializing Models...
+2026-02-27 11:02:15,706 - WebServer - INFO - Imports successful, instantiating...
+2026-02-27 11:02:15,707 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-27 11:02:35,301 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-27 11:02:35,413 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-27 11:02:35,577 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-27 11:02:56,745 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-27 11:03:18,194 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-27 11:03:18,204 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-27 11:04:02,744 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-27 11:09:53,182 - WebServer - INFO - --- Server Starting ---
+2026-02-27 11:10:05,607 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-27 11:10:05,608 - WebServer - INFO - TorchVision: 0.21.0+cu124
+2026-02-27 11:10:05,608 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-27 11:10:06,482 - WebServer - INFO - CUDA Available: True
+2026-02-27 11:10:06,490 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-27 11:10:06,490 - WebServer - INFO - Initializing Models...
+2026-02-27 11:10:39,378 - WebServer - INFO - Imports successful, instantiating...
+2026-02-27 11:10:39,378 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-27 11:11:00,013 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-27 11:11:00,014 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-27 11:11:00,028 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-27 11:11:27,363 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-27 11:11:51,733 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-27 11:11:51,801 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-27 11:12:23,113 - TTS_Provider - INFO - TTS Model loaded successfully.

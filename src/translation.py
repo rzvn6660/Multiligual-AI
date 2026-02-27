@@ -1,5 +1,10 @@
+
 from deep_translator import GoogleTranslator
+from deep_translator.constants import GOOGLE_LANGUAGES_TO_CODES
 from src.utils import setup_logger
+
+# Patch deep_translator to support Santali
+GOOGLE_LANGUAGES_TO_CODES['santali'] = 'sat'
 
 logger = setup_logger("Translation")
 

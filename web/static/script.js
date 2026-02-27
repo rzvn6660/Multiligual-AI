@@ -294,9 +294,16 @@ async function sendAudioToBackend(blob) {
     const formData = new FormData();
     formData.append('audio', blob, 'input.wav');
 
+
     const modeSelect = document.getElementById('modeSelect');
     if (modeSelect) {
         formData.append('mode', modeSelect.value);
+    }
+
+    // Send selected MT Mode
+    const mtModeSelect = document.getElementById('mtModeSelect');
+    if (mtModeSelect) {
+        formData.append('mt_mode', mtModeSelect.value);
     }
 
     try {
@@ -381,11 +388,11 @@ function addMessage(type, primaryText, debugInfo = null) {
         content += `
             <div class="debug-grid">
                 <div class="debug-item">
-                    <span class="debug-label">1. ASR (Input)</span>
+                    <span class="debug-label">1. Input (Sat)</span>
                     ${debugInfo.asr_text || '-'}
                 </div>
                 <div class="debug-item">
-                    <span class="debug-label">2. MT (To Eng)</span>
+                    <span class="debug-label">2. MT (Eng)</span>
                     ${debugInfo.english_in || '-'}
                 </div>
                 <div class="debug-item">
@@ -393,7 +400,7 @@ function addMessage(type, primaryText, debugInfo = null) {
                     ${debugInfo.english_out || '-'}
                 </div>
                 <div class="debug-item">
-                    <span class="debug-label">4. MT (Reply)</span>
+                    <span class="debug-label">4. MT Reply (Sat)</span>
                     ${debugInfo.santali_out || '-'}
                 </div>
             </div>
