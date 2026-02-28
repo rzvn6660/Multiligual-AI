@@ -13,7 +13,8 @@ RUN useradd -m -u 1000 user
 # Set up the environment
 ENV HOME=/home/user \
     PATH=/home/user/.local/bin:$PATH \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    PORT=7860
 
 # Set the working directory
 WORKDIR $HOME/app
