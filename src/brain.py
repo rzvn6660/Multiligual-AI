@@ -117,26 +117,11 @@ def get_ai_response(text, santali_text=None, conversation_history=None, mode="au
     sources_tried = []
     
     # LOGIC:
-    # 1. PRIMARY: Gemini
-    # 2. FALLBACK: Groq
+    # 1. PRIMARY: Groq
+    # 2. FALLBACK: Gemini
     # 3. FINAL FALLBACK: Ollama
     
-    # 1. PRIMARY (Gemini)
-    if mode in ["auto", "online"] and api_key_gemini:
-         try:
-            client = genai.Client(api_key=api_key_gemini)
-            response = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=f"{SYSTEM_INSTRUCTION}\n\nUSER: {text}"
-            )
-            if response.text:
-                ans = response.text.strip()
-                return {"text": ans, "source": "GEMINI"}
-         except Exception as e:
-             logger.warning(f"Gemini failed: {e}")
-             sources_tried.append(f"Gemini({e})")
-
-    # 2. FALLBACK (Groq)
+    # 1. PRIMARY (Groq)
     use_groq = mode in ["auto", "online"] and api_key_groq and "gsk_" in api_key_groq
     
     if use_groq:
@@ -160,6 +145,21 @@ def get_ai_response(text, santali_text=None, conversation_history=None, mode="au
         except Exception as e:
              logger.error(f"Groq Client Init failed: {e}")
              sources_tried.append(f"Groq({e})")
+
+    # 2. FALLBACK (Gemini)
+    if mode in ["auto", "online"] and api_key_gemini:
+         try:
+            client = genai.Client(api_key=api_key_gemini)
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=f"{SYSTEM_INSTRUCTION}\n\nUSER: {text}"
+            )
+            if response.text:
+                ans = response.text.strip()
+                return {"text": ans, "source": "GEMINI"}
+         except Exception as e:
+             logger.warning(f"Gemini failed: {e}")
+             sources_tried.append(f"Gemini({e})")
 
     # 3. FINAL FALLBACK (Ollama)
     if mode in ["auto", "offline"]:
