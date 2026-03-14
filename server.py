@@ -333,8 +333,12 @@ def process_audio():
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
     finally:
-        if os.path.exists(input_filename): os.remove(input_filename)
-        if 'clean_input_filename' in locals() and os.path.exists(clean_input_filename): os.remove(clean_input_filename)
+        for f in [input_filename, clean_input_filename if 'clean_input_filename' in locals() else None]:
+            if f and os.path.exists(f):
+                try:
+                    os.remove(f)
+                except Exception as e:
+                    logger.warning(f"Could not remove temp file {f}: {e}")
 
 @app.route('/api/audio/<filename>')
 def get_audio(filename):

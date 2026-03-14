@@ -96,9 +96,17 @@ def main():
             
             if not english_query: continue
                 
-            # 3. Ask Gemini
-            english_response = get_gemini_response(english_query)
-            print(f"-- Gemini: {english_response}")
+            # 3. Ask AI (Groq -> Gemini -> Ollama)
+            brain_out = get_ai_response(text=english_query, santali_text=santali_text, mode="auto")
+            
+            if isinstance(brain_out, dict):
+                english_response = brain_out.get("text", "")
+                source = brain_out.get("source", "UNKNOWN")
+            else:
+                 english_response = str(brain_out)
+                 source = "UNKNOWN"
+            
+            print(f"-- AI ({source}): {english_response}")
             
             if not english_response: continue
                 

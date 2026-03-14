@@ -1137,3 +1137,70 @@ Please select on of the supported languages:
 2026-02-27 11:11:51,733 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
 2026-02-27 11:11:51,801 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
 2026-02-27 11:12:23,113 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-27 22:23:10,284 - WebServer - INFO - --- Server Starting ---
+2026-02-27 22:23:18,522 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-27 22:23:18,523 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-27 22:23:20,185 - WebServer - INFO - CUDA Available: True
+2026-02-27 22:23:20,190 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-27 22:23:20,190 - WebServer - INFO - Initializing Models...
+2026-02-27 22:23:54,149 - WebServer - INFO - Imports successful, instantiating...
+2026-02-27 22:23:54,150 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-27 22:24:08,301 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-27 22:24:08,390 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-27 22:24:08,693 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-27 22:24:21,168 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-27 22:24:30,009 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-27 22:24:30,015 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-27 22:24:40,634 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-28 20:10:34,339 - WebServer - INFO - --- Server Starting ---
+2026-02-28 20:10:38,489 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-02-28 20:10:38,489 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-02-28 20:10:40,133 - WebServer - INFO - CUDA Available: True
+2026-02-28 20:10:40,140 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-28 20:10:40,140 - WebServer - INFO - Initializing Models...
+2026-02-28 20:10:54,360 - WebServer - INFO - Imports successful, instantiating...
+2026-02-28 20:10:54,360 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-02-28 20:11:03,369 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-02-28 20:11:03,370 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-02-28 20:11:03,525 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-02-28 20:11:14,096 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-02-28 20:11:20,941 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-02-28 20:11:20,943 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-02-28 20:11:28,547 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-02-28 20:12:13,666 - WebServer - INFO - Processing audio: clean_input_7035c274-5ac4-41a2-b195-5ee02efc81fa.wav [Mode: auto]
+2026-02-28 20:12:13,666 - ASR_Provider - INFO - Transcribing clean_input_7035c274-5ac4-41a2-b195-5ee02efc81fa.wav (Lang: sat, Decoding: ctc)...
+2026-02-28 20:12:18,112 - ASR_Provider - INFO - ASR Output: ᱡ ᱪ
+2026-02-28 20:12:18,130 - WebServer - INFO - ASR Identified: ᱡ ᱪ
+2026-02-28 20:12:18,131 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱡ ᱪ' (sat_Olck -> eng_Latn)
+2026-02-28 20:12:19,517 - MT_Provider - INFO - Translated: J.C.
+2026-02-28 20:12:19,518 - WebServer - INFO - MT (Sat->Eng): J.C.
+2026-02-28 20:12:19,536 - WebServer - INFO - Checking cache for English question: 'J.C.' at 2026-02-28T20:12:19.536321
+2026-02-28 20:12:19,536 - WebServer - INFO - CACHE_MISS
+2026-02-28 20:12:19,536 - WebServer - INFO - Similarity Score: 0.00
+2026-02-28 20:12:19,537 - WebServer - INFO - Backend Originally Used: N/A
+2026-02-28 20:12:19,537 - WebServer - INFO - ASR confidence: N/A
+2026-02-28 20:12:27,924 - MT_Provider - INFO - Translating via IndicTrans2: 'J.C. do bang bujhawa.
+Onare mone do chet kana?
+Arho sapha-sapha le katha me.' (eng_Latn -> sat_Olck)
+2026-02-28 20:12:29,318 - MT_Provider - INFO - Translated: ᱡᱮᱹᱥᱤ ᱵᱳᱭᱝ ᱵᱳᱭᱡᱟᱣᱟ ᱢᱮ ᱾ ᱳᱱᱟᱹᱨᱮ ᱢᱳᱭ ᱰᱳᱴ ᱪᱮᱴ ᱠᱟᱱᱟ? ᱟᱨᱦᱳ ᱥᱟᱯᱷᱟᱼᱥᱟᱯᱷᱟ ᱞᱮ ᱠᱟᱛᱷᱟ ᱢᱮ ᱾
+2026-02-28 20:12:29,324 - WebServer - INFO - AI Response (GEMINI): J.C. do bang bujhawa.
+Onare mone do chet kana?
+Arho sapha-sapha le katha me.
+2026-02-28 20:12:29,324 - WebServer - INFO - Response (Sat): ᱡᱮᱹᱥᱤ ᱵᱳᱭᱝ ᱵᱳᱭᱡᱟᱣᱟ ᱢᱮ ᱾ ᱳᱱᱟᱹᱨᱮ ᱢᱳᱭ ᱰᱳᱴ ᱪᱮᱴ ᱠᱟᱱᱟ? ᱟᱨᱦᱳ ᱥᱟᱯᱷᱟᱼᱥᱟᱯᱷᱟ ᱞᱮ ᱠᱟᱛᱷᱟ ᱢᱮ ᱾
+2026-02-28 20:12:47,453 - TTS_Provider - INFO - Audio saved to temp_output_7035c274-5ac4-41a2-b195-5ee02efc81fa.wav
+2026-03-14 23:05:12,873 - WebServer - INFO - --- Server Starting ---
+2026-03-14 23:06:15,306 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-03-14 23:06:15,306 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-03-14 23:06:15,329 - WebServer - INFO - CUDA Available: True
+2026-03-14 23:06:15,333 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-14 23:06:15,333 - WebServer - INFO - Initializing Models...
+2026-03-14 23:07:07,751 - WebServer - INFO - Imports successful, instantiating...
+2026-03-14 23:07:07,751 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-03-14 23:07:18,061 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-03-14 23:07:18,086 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-03-14 23:07:18,191 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-03-14 23:07:30,220 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-03-14 23:07:37,488 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-03-14 23:07:37,494 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-03-14 23:07:45,097 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-03-14 23:08:01,356 - WebServer - INFO - Chat history cleared.
