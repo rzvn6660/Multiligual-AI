@@ -2,7 +2,7 @@ import torch
 import torchaudio
 from transformers import AutoModel
 from src.utils import setup_logger
-from src.config_hf import Config
+from src.config import Config
 
 logger = setup_logger("ASR_Provider")
 

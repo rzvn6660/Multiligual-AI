@@ -11,11 +11,6 @@ from datetime import datetime
 # Optimizations for 8GB VRAM
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
-# Import our AI providers
-# We lazy import them in init_models to ensure server starts even if deps are broken
-# from src.asr_provider import SantaliASR
-# from src.mt_provider import SantaliTranslator
-# from src.tts_provider import SantaliTTS
 from src.brain import get_ai_response, FAIL_SAFE_SANTALI
 
 try:

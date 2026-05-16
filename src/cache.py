@@ -1,9 +1,7 @@
 import sqlite3
 import os
 import datetime
-from src.utils import setup_logger
-from src.normalizer import normalize_text
-from src.similarity import find_best_match
+from src.utils import setup_logger, normalize_text, find_best_match
 
 logger = setup_logger("SmartCache")
 

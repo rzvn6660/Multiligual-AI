@@ -4,9 +4,8 @@ import requests
 import json
 import re
 from dotenv import load_dotenv
-from src.utils import setup_logger
+from src.utils import setup_logger, normalize_text
 from groq import Groq
-from src.normalizer import normalize_text
 
 logger = setup_logger("Brain")
 
@@ -24,19 +23,19 @@ SYSTEM_INSTRUCTION = (
     "You are a real-time Santali voice assistant designed for tribal users. "
     "Your highest priority is SPEED, ACCURACY, and SIMPLE EXPLANATION. "
     "\n\n"
-    "TTS OPTIMIZATION (MANDATORY): "
-    "- Responses are spoken aloud. "
-    "- Keep them clear and slow. "
-    "- Use short sentences (Max 3-4 sentences total). "
-    "- Each sentence MUST comprise fewer than 12 words. "
-    "- Use full stops (.) instead of commas (,) to force pauses. "
-    "- Do not create long flowing paragraphs. "
-    "- Prioritize clarity over detail. "
+    "TTS OPTIMIZATION (MANDATORY):\n"
+    "- Act as a Text-to-Speech optimization assistant.\n"
+    "- Convert all responses into a highly speech-friendly format.\n"
+    "- Break long sentences into short, clear sentences (max 10-12 words).\n"
+    "- Add natural pauses using commas (,) and full stops (.).\n"
+    "- Avoid complex words; use simple and clear language.\n"
+    "- Add line breaks between sentences for better speech clarity.\n"
+    "- Avoid very long paragraphs — strict rule to split into small chunks.\n"
     "\n\n"
-    "VOICE FORMATTING: "
-    "- Speak like explaining to a child. "
-    "- Keep rhythm slow and natural. "
-    "- Avoid long lists or compound sentences. "
+    "VOICE FORMATTING:\n"
+    "- Speak like explaining to a beginner.\n"
+    "- Keep rhythm slow and natural.\n"
+    "- Avoid long lists or compound sentences.\n"
     "\n\n"
     "TRUTH VERIFICATION (CRITICAL): "
     "- Do NOT automatically agree with the user. "
@@ -163,26 +162,28 @@ def get_ai_response(text, santali_text=None, conversation_history=None, mode="au
 
     # 3. FINAL FALLBACK (Ollama)
     if mode in ["auto", "offline"]:
-        try:
-            payload = {
-                "model": OLLAMA_MODEL,
-                "messages": messages,
-                "stream": False,
-                "options": {
-                    "num_predict": 256
+        for model_name in ["llama3", "phi3"]:
+            try:
+                payload = {
+                    "model": model_name,
+                    "messages": messages,
+                    "stream": False,
+                    "options": {
+                        "num_predict": 256
+                    }
                 }
-            }
-            res = requests.post(OLLAMA_URL, json=payload, timeout=10)
-            if res.status_code == 200:
-                data = res.json()
-                ans = data.get("message", {}).get("content", "").strip()
-                if ans:
-                     return {"text": ans, "source": "OLLAMA"}
-            else:
-                 sources_tried.append(f"Ollama(Status {res.status_code})")
-        except Exception as e:
-            logger.error(f"Ollama Connection Failed: {e}")
-            sources_tried.append(f"Ollama({e})")
+                res = requests.post(OLLAMA_URL, json=payload, timeout=120)
+                if res.status_code == 200:
+                    data = res.json()
+                    ans = data.get("message", {}).get("content", "").strip()
+                    if ans:
+                         return {"text": ans, "source": "OLLAMA"}
+                else:
+                     logger.warning(f"Ollama {model_name} failed with status {res.status_code}")
+                     sources_tried.append(f"Ollama({model_name}: Status {res.status_code})")
+            except Exception as e:
+                logger.error(f"Ollama {model_name} Connection Failed: {e}")
+                sources_tried.append(f"Ollama({model_name}: {e})")
 
     # FAILURE
     logger.error(f"All providers failed. Tried: {sources_tried}")

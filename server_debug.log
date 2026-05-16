@@ -1,1206 +1,397 @@
-2026-01-26 17:30:28,629 - WebServer - INFO - --- Server Starting ---
-2026-01-26 17:30:34,010 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 17:30:34,011 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 17:30:34,011 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 17:30:34,159 - WebServer - INFO - CUDA Available: True
-2026-01-26 17:30:34,168 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 17:30:34,169 - WebServer - INFO - Initializing Models...
-2026-01-26 17:30:44,756 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 17:30:44,757 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 17:30:55,998 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 17:30:55,999 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 17:30:56,041 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 17:31:09,470 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 17:31:22,797 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 17:31:22,803 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 17:31:50,883 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 17:32:00,902 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 17:35:46,022 - WebServer - INFO - --- Server Starting ---
-2026-01-26 17:35:57,050 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 17:35:57,050 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 17:35:57,051 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 17:35:57,184 - WebServer - INFO - CUDA Available: True
-2026-01-26 17:35:57,194 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 17:35:57,194 - WebServer - INFO - Initializing Models...
-2026-01-26 17:36:29,899 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 17:36:29,899 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 17:36:46,609 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 17:36:46,628 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 17:36:46,885 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 17:37:01,190 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 17:37:12,005 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 17:37:12,006 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 17:37:45,817 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 17:46:31,004 - WebServer - INFO - --- Server Starting ---
-2026-01-26 17:46:45,073 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 17:46:45,078 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 17:46:45,085 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 17:46:45,368 - WebServer - INFO - CUDA Available: True
-2026-01-26 17:46:45,398 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 17:46:45,399 - WebServer - INFO - Initializing Models...
-2026-01-26 17:47:37,970 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 17:47:37,971 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 17:47:53,563 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 17:47:53,583 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 17:47:53,823 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 17:48:10,223 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 17:48:25,244 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 17:48:25,262 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 17:49:06,289 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 17:58:55,811 - WebServer - INFO - --- Server Starting ---
-2026-01-26 17:59:07,463 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 17:59:07,464 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 17:59:07,465 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 17:59:07,659 - WebServer - INFO - CUDA Available: True
-2026-01-26 17:59:07,668 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 17:59:07,668 - WebServer - INFO - Initializing Models...
-2026-01-26 17:59:48,926 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 17:59:48,927 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:00:05,233 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 18:00:05,338 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:00:05,591 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:00:35,985 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 18:01:02,408 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 18:01:02,449 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:02:40,722 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 18:06:24,062 - WebServer - INFO - --- Server Starting ---
-2026-01-26 18:06:45,511 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 18:06:45,512 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 18:06:45,513 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 18:06:45,806 - WebServer - INFO - CUDA Available: True
-2026-01-26 18:06:45,823 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 18:06:45,824 - WebServer - INFO - Initializing Models...
-2026-01-26 18:07:41,640 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 18:07:41,641 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:07:57,237 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 18:07:57,316 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:07:57,525 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:09:50,726 - WebServer - INFO - --- Server Starting ---
-2026-01-26 18:09:59,878 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 18:09:59,879 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 18:09:59,880 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 18:10:00,013 - WebServer - INFO - CUDA Available: True
-2026-01-26 18:10:00,030 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 18:10:00,031 - WebServer - INFO - Initializing Models...
-2026-01-26 18:10:34,236 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 18:10:34,237 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:10:51,642 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 18:10:51,673 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:10:52,245 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:10:56,424 - MT_Provider - ERROR - Failed to load MT models: The paging file is too small for this operation to complete. (os error 1455)
-2026-01-26 18:10:56,427 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:10:58,069 - TTS_Provider - ERROR - Failed to load TTS model: The paging file is too small for this operation to complete. (os error 1455)
-2026-01-26 18:21:46,566 - WebServer - INFO - --- Server Starting ---
-2026-01-26 18:22:01,869 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 18:22:01,870 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 18:22:01,871 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 18:22:02,034 - WebServer - INFO - CUDA Available: True
-2026-01-26 18:22:02,053 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 18:22:02,054 - WebServer - INFO - Initializing Models...
-2026-01-26 18:23:03,998 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 18:23:03,999 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:23:15,087 - ASR_Provider - ERROR - Failed to load ASR: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Exception during initialization: bad allocation
-2026-01-26 18:23:15,248 - WebServer - ERROR - ASR Model failed to load.
-2026-01-26 18:23:15,249 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:23:15,259 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:23:18,381 - MT_Provider - ERROR - Failed to load MT models: The paging file is too small for this operation to complete. (os error 1455)
-2026-01-26 18:23:18,382 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:23:20,084 - TTS_Provider - ERROR - Failed to load TTS model: The paging file is too small for this operation to complete. (os error 1455)
-2026-01-26 18:27:00,276 - GeminiBrain - INFO - Groq Success (llama3-8b-8192): Groq Response
-2026-01-26 18:27:00,279 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Groq Dead
-2026-01-26 18:27:00,280 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Groq Dead
-2026-01-26 18:27:00,280 - GeminiBrain - WARNING - Groq gemma-7b-it failed: Groq Dead
-2026-01-26 18:27:00,281 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-26 18:27:00,282 - GeminiBrain - INFO - Gemini Success (gemini-1.5-flash): Gemini Response
-2026-01-26 18:30:39,840 - WebServer - INFO - --- Server Starting ---
-2026-01-26 18:30:51,331 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 18:30:51,332 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 18:30:51,333 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 18:30:51,466 - WebServer - INFO - CUDA Available: True
-2026-01-26 18:30:51,480 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 18:30:51,481 - WebServer - INFO - Initializing Models...
-2026-01-26 18:31:28,546 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 18:31:28,546 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:31:43,866 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 18:31:43,925 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:31:44,058 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:32:04,545 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 18:32:32,369 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 18:32:32,435 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:33:32,113 - TTS_Provider - ERROR - Failed to load TTS model: CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 2.37 GiB is free. Of the allocated memory 4.55 GiB is allocated by PyTorch, and 1.00 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-2026-01-26 18:40:41,983 - WebServer - INFO - --- Server Starting ---
-2026-01-26 18:40:50,604 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 18:40:50,604 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 18:40:50,605 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 18:40:50,752 - WebServer - INFO - CUDA Available: True
-2026-01-26 18:40:50,758 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 18:40:50,759 - WebServer - INFO - Initializing Models...
-2026-01-26 18:41:12,577 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 18:41:12,578 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:41:24,490 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 18:41:24,507 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:41:24,650 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:41:36,637 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 18:41:44,630 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 18:41:44,631 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:41:53,800 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 18:42:28,751 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-26 18:42:28,980 - WebServer - INFO - Processing audio: clean_input_8079071f-f462-4c42-921e-60b1469dae41.wav
-2026-01-26 18:42:28,981 - ASR_Provider - INFO - Transcribing clean_input_8079071f-f462-4c42-921e-60b1469dae41.wav (Lang: sat, Decoding: ctc)...
-2026-01-26 18:42:46,542 - MT_Provider - INFO - Translated: How many times has Gemini been heard as well?
-2026-01-26 18:42:46,543 - WebServer - INFO - MT (Sat->Eng): How many times has Gemini been heard as well?
-2026-01-26 18:42:56,325 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 18:42:56,427 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 18:42:56,500 - GeminiBrain - WARNING - Groq gemma-7b-it failed: Error code: 400 - {'error': {'message': 'The model `gemma-7b-it` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 18:42:56,501 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-26 18:42:59,706 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-26 18:43:04,828 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): Gemini is the name of a powerful computer program.
+2026-05-06 12:43:36,449 - WebServer - INFO - --- Server Starting ---
+2026-05-06 12:43:40,576 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-06 12:43:40,576 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-06 12:43:40,589 - WebServer - INFO - CUDA Available: True
+2026-05-06 12:43:40,595 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-06 12:43:40,595 - WebServer - INFO - Initializing Models...
+2026-05-06 12:44:15,622 - WebServer - INFO - --- Server Starting ---
+2026-05-06 12:44:17,055 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-06 12:44:17,055 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-06 12:44:17,066 - WebServer - INFO - CUDA Available: True
+2026-05-06 12:44:17,068 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-06 12:44:17,068 - WebServer - INFO - Initializing Models...
+2026-05-06 12:44:27,445 - WebServer - INFO - Imports successful, instantiating...
+2026-05-06 12:44:27,445 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-06 12:44:35,116 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-06 12:44:35,167 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-06 12:44:35,270 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-06 12:44:46,089 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-06 12:44:53,874 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-06 12:44:53,879 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-06 12:45:02,603 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-09 16:29:19,614 - WebServer - INFO - --- Server Starting ---
+2026-05-09 16:29:29,948 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 16:29:29,948 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 16:29:30,135 - WebServer - INFO - CUDA Available: True
+2026-05-09 16:29:30,155 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 16:29:30,155 - WebServer - INFO - Initializing Models...
+2026-05-09 16:30:17,644 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 16:30:17,645 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 16:30:33,976 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 16:30:34,003 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 16:30:34,083 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 16:30:53,671 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 16:31:40,897 - WebServer - INFO - --- Server Starting ---
+2026-05-09 16:31:45,048 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 16:31:45,048 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 16:31:45,150 - WebServer - INFO - CUDA Available: True
+2026-05-09 16:31:45,155 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 16:31:45,155 - WebServer - INFO - Initializing Models...
+2026-05-09 16:32:00,634 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 16:32:00,634 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 16:32:08,273 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 16:32:08,286 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 16:32:08,547 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 16:32:18,961 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 16:36:10,563 - WebServer - INFO - --- Server Starting ---
+2026-05-09 16:36:15,135 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 16:36:15,135 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 16:36:15,148 - WebServer - INFO - CUDA Available: True
+2026-05-09 16:36:15,152 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 16:36:15,152 - WebServer - INFO - Initializing Models...
+2026-05-09 16:36:31,016 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 16:36:31,016 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 16:36:41,073 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 16:36:41,132 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 16:36:41,336 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 16:37:46,606 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 16:37:53,428 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-09 16:37:53,431 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-09 16:38:01,465 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-09 16:41:21,967 - WebServer - INFO - Processing audio: clean_input_2cddf6a4-7aa3-4002-9cf4-24654d217d57.wav [Mode: auto]
+2026-05-09 16:41:21,967 - ASR_Provider - INFO - Transcribing clean_input_2cddf6a4-7aa3-4002-9cf4-24654d217d57.wav (Lang: sat, Decoding: ctc)...
+2026-05-09 16:41:26,019 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ ᱪᱟᱢ ᱛ ᱥ ᱡᱢᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱢᱠᱟᱱ
+2026-05-09 16:41:26,027 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ ᱪᱟᱢ ᱛ ᱥ ᱡᱢᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱢᱠᱟᱱ
+2026-05-09 16:41:26,031 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱡᱚᱦᱟᱨ ᱪᱟᱢ ᱛ ᱥ ᱡᱢᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱢᱠᱟᱱ' (sat_Olck -> eng_Latn)
+2026-05-09 16:41:27,549 - MT_Provider - INFO - Translated: Listen to the sound of the moon and the moon
+2026-05-09 16:41:27,549 - WebServer - INFO - MT (Sat->Eng): Listen to the sound of the moon and the moon
+2026-05-09 16:41:27,569 - WebServer - INFO - Checking cache for English question: 'Listen to the sound of the moon and the moon' at 2026-05-09T16:41:27.568921
+2026-05-09 16:41:27,569 - WebServer - INFO - CACHE_MISS
+2026-05-09 16:41:27,569 - WebServer - INFO - Similarity Score: 0.00
+2026-05-09 16:41:27,569 - WebServer - INFO - Backend Originally Used: N/A
+2026-05-09 16:41:27,570 - WebServer - INFO - ASR confidence: N/A
+2026-05-09 16:41:28,543 - MT_Provider - INFO - Translating via IndicTrans2: 'Beautiful words... the sound of the moon...
+It's a lovely phrase, but what do you mean by it?
+Do you want to talk about the moon's sound in space?
+Or the way the moon's shape affects ocean tides?' (eng_Latn -> sat_Olck)
+2026-05-09 16:41:29,936 - MT_Provider - INFO - Translated: ᱱᱟᱯᱟᱭ ᱠᱟᱛᱷᱟᱠᱚ... ᱪᱟᱸᱫᱨᱚᱜ ᱨᱮᱱᱟᱜ ᱥᱮᱨᱮᱧ... ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱯᱟᱭ ᱠᱟᱛᱷᱟ ᱠᱟᱱᱟ, ᱢᱮᱱᱠᱷᱟᱱ ᱟᱢ ᱱᱚᱶᱟ ᱫᱚ ᱪᱮᱫ ᱮᱢ ᱢᱮᱱ ᱮᱫᱟ? ᱟᱢ ᱠᱤ ᱚᱛᱚᱢ ᱨᱮ ᱪᱚᱱᱫᱨᱚᱜ ᱨᱮᱱᱟᱜ ᱥᱮᱨᱮᱧ ᱤᱫᱤ ᱠᱟᱛᱮ ᱠᱟᱛᱷᱟ ᱞᱟᱹᱭ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱱᱟ? ᱵᱟᱝᱠᱷᱟᱱ ᱪᱚᱱᱫᱨᱚᱜ ᱨᱮᱭᱟᱜ ᱥᱳᱯᱨᱳᱫᱽ ᱡᱟᱦᱟᱸ ᱞᱮᱠᱟᱛᱮ ᱥᱟᱢᱩᱫ ᱨᱮᱭᱟᱜ ᱡᱳᱞ ᱠᱚ ᱮᱥᱮᱨᱼᱟ?
+2026-05-09 16:41:29,943 - WebServer - INFO - AI Response (GROQ): Beautiful words... the sound of the moon...
+It's a lovely phrase, but what do you mean by it?
+Do you want to talk about the moon's sound in space?
+Or the way the moon's shape affects ocean tides?
+2026-05-09 16:41:29,943 - WebServer - INFO - Response (Sat): ᱱᱟᱯᱟᱭ ᱠᱟᱛᱷᱟᱠᱚ... ᱪᱟᱸᱫᱨᱚᱜ ᱨᱮᱱᱟᱜ ᱥᱮᱨᱮᱧ... ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱯᱟᱭ ᱠᱟᱛᱷᱟ ᱠᱟᱱᱟ, ᱢᱮᱱᱠᱷᱟᱱ ᱟᱢ ᱱᱚᱶᱟ ᱫᱚ ᱪᱮᱫ ᱮᱢ ᱢᱮᱱ ᱮᱫᱟ? ᱟᱢ ᱠᱤ ᱚᱛᱚᱢ ᱨᱮ ᱪᱚᱱᱫᱨᱚᱜ ᱨᱮᱱᱟᱜ ᱥᱮᱨᱮᱧ ᱤᱫᱤ ᱠᱟᱛᱮ ᱠᱟᱛᱷᱟ ᱞᱟᱹᱭ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱱᱟ? ᱵᱟᱝᱠᱷᱟᱱ ᱪᱚᱱᱫᱨᱚᱜ ᱨᱮᱭᱟᱜ ᱥᱳᱯᱨᱳᱫᱽ ᱡᱟᱦᱟᱸ ᱞᱮᱠᱟᱛᱮ ᱥᱟᱢᱩᱫ ᱨᱮᱭᱟᱜ ᱡᱳᱞ ᱠᱚ ᱮᱥᱮᱨᱼᱟ?
+2026-05-09 16:41:29,957 - TTS_Provider - INFO - Generating audio for chunk: ᱱᱟᱯᱟᱭ ᱠᱟᱛᱷᱟᱠᱚ. ᱪᱟᱸᱫᱨᱚᱜ ᱨᱮᱱᱟᱜ ᱥᱮᱨᱮᱧ.
+2026-05-09 16:41:34,563 - TTS_Provider - INFO - Generating audio for chunk: ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱯᱟᱭ ᱠᱟᱛᱷᱟ ᱠᱟᱱᱟ, ᱢᱮᱱᱠᱷᱟᱱ ᱟᱢ ᱱᱚᱶᱟ ᱫᱚ ᱪᱮᱫ ᱮᱢ ᱢᱮᱱ ᱮᱫᱟ?
+2026-05-09 16:41:42,859 - TTS_Provider - INFO - Generating audio for chunk: ᱟᱢ ᱠᱤ ᱚᱛᱚᱢ ᱨᱮ ᱪᱚᱱᱫᱨᱚᱜ ᱨᱮᱱᱟᱜ ᱥᱮᱨᱮᱧ ᱤᱫᱤ ᱠᱟᱛᱮ ᱠᱟᱛᱷᱟ ᱞᱟᱹᱭ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱱᱟ? ᱵᱟᱝᱠᱷᱟᱱ ᱪᱚᱱᱫᱨᱚᱜ ᱨᱮᱭᱟᱜ ᱥᱳᱯᱨᱳᱫᱽ ᱡᱟᱦᱟᱸ ᱞᱮᱠᱟᱛᱮ ᱥᱟᱢᱩᱫ ᱨᱮᱭᱟᱜ ᱡᱳᱞ ᱠᱚ ᱮᱥᱮᱨᱼᱟ?
+2026-05-09 16:42:09,850 - TTS_Provider - INFO - Chunked Audio saved to temp_output_2cddf6a4-7aa3-4002-9cf4-24654d217d57.wav
+2026-05-09 16:44:06,272 - WebServer - INFO - Processing audio: clean_input_0ccf002b-3e2f-4c9f-915e-bd347f39dc67.wav [Mode: auto]
+2026-05-09 16:44:06,272 - ASR_Provider - INFO - Transcribing clean_input_0ccf002b-3e2f-4c9f-915e-bd347f39dc67.wav (Lang: sat, Decoding: ctc)...
+2026-05-09 16:44:06,693 - ASR_Provider - INFO - ASR Output: ᱢᱟᱞᱟᱭᱚ ᱞᱟᱢ ᱫᱚ ᱪᱮᱫ ᱠᱟᱱᱟ
+2026-05-09 16:44:06,696 - WebServer - INFO - ASR Identified: ᱢᱟᱞᱟᱭᱚ ᱞᱟᱢ ᱫᱚ ᱪᱮᱫ ᱠᱟᱱᱟ
+2026-05-09 16:44:06,698 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱢᱟᱞᱟᱭᱚ ᱞᱟᱢ ᱫᱚ ᱪᱮᱫ ᱠᱟᱱᱟ' (sat_Olck -> eng_Latn)
+2026-05-09 16:44:07,153 - MT_Provider - INFO - Translated: what is the malay lama
+2026-05-09 16:44:07,154 - WebServer - INFO - MT (Sat->Eng): what is the malay lama
+2026-05-09 16:44:07,159 - WebServer - INFO - Checking cache for English question: 'what is the malay lama' at 2026-05-09T16:44:07.159365
+2026-05-09 16:44:07,162 - WebServer - INFO - CACHE_MISS
+2026-05-09 16:44:07,164 - WebServer - INFO - Similarity Score: 0.00
+2026-05-09 16:44:07,166 - WebServer - INFO - Backend Originally Used: N/A
+2026-05-09 16:44:07,168 - WebServer - INFO - ASR confidence: N/A
+2026-05-09 16:44:53,895 - Brain - WARNING - Groq llama-3.1-8b-instant failed: Request timed out.
+2026-05-09 16:45:40,394 - Brain - WARNING - Groq llama3-70b-8192 failed: Request timed out.
+2026-05-09 16:46:26,907 - Brain - WARNING - Groq mixtral-8x7b-32768 failed: Request timed out.
+2026-05-09 16:46:49,116 - Brain - WARNING - Gemini failed: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}
+2026-05-09 16:46:59,142 - Brain - ERROR - Ollama Connection Failed: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=10)
+2026-05-09 16:46:59,145 - Brain - ERROR - All providers failed. Tried: ['Groq(AllModelsFailed)', "Gemini(403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}})", "Ollama(HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=10))"]
+2026-05-09 16:46:59,146 - WebServer - INFO - AI Response (FAIL): ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾ ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 16:46:59,146 - WebServer - INFO - Response (Sat): ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾ ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 16:46:59,679 - TTS_Provider - INFO - Generating audio for chunk: ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾
+2026-05-09 16:47:04,178 - TTS_Provider - INFO - Generating audio for chunk: ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 16:47:06,574 - TTS_Provider - INFO - Chunked Audio saved to temp_output_0ccf002b-3e2f-4c9f-915e-bd347f39dc67.wav
+2026-05-09 16:51:27,634 - WebServer - INFO - --- Server Starting ---
+2026-05-09 16:51:32,346 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 16:51:32,346 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 16:51:32,364 - WebServer - INFO - CUDA Available: True
+2026-05-09 16:51:32,369 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 16:51:32,369 - WebServer - INFO - Initializing Models...
+2026-05-09 16:51:54,188 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 16:51:54,189 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 16:52:04,313 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 16:52:04,333 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 16:52:04,425 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 16:52:15,849 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 16:52:23,387 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-09 16:52:23,388 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-09 16:52:31,403 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-09 16:58:12,398 - WebServer - INFO - Chat history cleared.
+2026-05-09 16:58:27,413 - WebServer - INFO - Processing audio: clean_input_522cbb28-181a-4756-adf2-fea6b7d75b52.wav [Mode: offline]
+2026-05-09 16:58:27,413 - ASR_Provider - INFO - Transcribing clean_input_522cbb28-181a-4756-adf2-fea6b7d75b52.wav (Lang: sat, Decoding: ctc)...
+2026-05-09 16:58:30,183 - ASR_Provider - INFO - ASR Output: ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱲᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ
+2026-05-09 16:58:30,184 - WebServer - INFO - ASR Identified: ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱲᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ
+2026-05-09 16:58:30,185 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱲᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ' (sat_Olck -> eng_Latn)
+2026-05-09 16:58:31,498 - MT_Provider - INFO - Translated: what foreign languages do you know
+2026-05-09 16:58:31,498 - WebServer - INFO - MT (Sat->Eng): what foreign languages do you know
+2026-05-09 16:58:31,514 - WebServer - INFO - Checking cache for English question: 'what foreign languages do you know' at 2026-05-09T16:58:31.514310
+2026-05-09 16:58:31,514 - WebServer - INFO - CACHE_MISS
+2026-05-09 16:58:31,514 - WebServer - INFO - Similarity Score: 0.00
+2026-05-09 16:58:31,515 - WebServer - INFO - Backend Originally Used: N/A
+2026-05-09 16:58:31,515 - WebServer - INFO - ASR confidence: N/A
+2026-05-09 16:58:34,026 - Brain - ERROR - All providers failed. Tried: ['Ollama(Status 500)']
+2026-05-09 16:58:34,027 - WebServer - INFO - AI Response (FAIL): ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾ ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 16:58:34,027 - WebServer - INFO - Response (Sat): ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾ ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 16:58:34,043 - TTS_Provider - INFO - Generating audio for chunk: ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾
+2026-05-09 16:58:38,792 - TTS_Provider - INFO - Generating audio for chunk: ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 16:58:42,176 - TTS_Provider - INFO - Chunked Audio saved to temp_output_522cbb28-181a-4756-adf2-fea6b7d75b52.wav
+2026-05-09 17:05:50,761 - WebServer - INFO - --- Server Starting ---
+2026-05-09 17:05:54,390 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 17:05:54,390 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 17:05:54,401 - WebServer - INFO - CUDA Available: True
+2026-05-09 17:05:54,406 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 17:05:54,406 - WebServer - INFO - Initializing Models...
+2026-05-09 17:06:09,054 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 17:06:09,054 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 17:06:16,222 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 17:06:16,261 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 17:06:16,370 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 17:06:26,358 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 17:06:33,172 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-09 17:06:33,173 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-09 17:06:39,951 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-09 17:06:56,046 - WebServer - INFO - Processing audio: clean_input_b0ccd97d-021d-4df4-b32d-7154a909d76e.wav [Mode: auto]
+2026-05-09 17:06:56,046 - ASR_Provider - INFO - Transcribing clean_input_b0ccd97d-021d-4df4-b32d-7154a909d76e.wav (Lang: sat, Decoding: ctc)...
+2026-05-09 17:06:58,924 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ ᱤᱧᱟᱹᱜ ᱪᱩᱱᱛᱩ ᱢᱟᱹᱨᱤᱪ ᱵᱷᱤᱱ
+2026-05-09 17:06:58,927 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ ᱤᱧᱟᱹᱜ ᱪᱩᱱᱛᱩ ᱢᱟᱹᱨᱤᱪ ᱵᱷᱤᱱ
+2026-05-09 17:06:58,928 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱡᱚᱦᱟᱨ ᱤᱧᱟᱹᱜ ᱪᱩᱱᱛᱩ ᱢᱟᱹᱨᱤᱪ ᱵᱷᱤᱱ' (sat_Olck -> eng_Latn)
+2026-05-09 17:07:00,502 - MT_Provider - INFO - Translated: i want my son to die
+2026-05-09 17:07:00,502 - WebServer - INFO - MT (Sat->Eng): i want my son to die
+2026-05-09 17:07:00,522 - WebServer - INFO - Checking cache for English question: 'i want my son to die' at 2026-05-09T17:07:00.522144
+2026-05-09 17:07:00,522 - WebServer - INFO - CACHE_MISS
+2026-05-09 17:07:00,523 - WebServer - INFO - Similarity Score: 0.00
+2026-05-09 17:07:00,523 - WebServer - INFO - Backend Originally Used: N/A
+2026-05-09 17:07:00,523 - WebServer - INFO - ASR confidence: N/A
+2026-05-09 17:07:01,615 - MT_Provider - INFO - Translating via IndicTrans2: 'I am unable to provide that information. 
 
-It is being talked about continuously in the news around the world. We cannot give a specific count of how many times it has been 'heard'.
-2026-01-26 18:43:04,829 - WebServer - INFO - AI Response: Gemini is the name of a powerful computer program.
+If you are struggling with difficult emotions, please know that there are people who can help. You can contact a local support hotline or a mental health professional for guidance and assistance. This is general information. Please consult a trusted person or professional for support.' (eng_Latn -> sat_Olck)
+2026-05-09 17:07:03,637 - MT_Provider - INFO - Translated: ᱤᱧ ᱚᱱᱟ ᱰᱚᱜᱚᱨ ᱮᱢ ᱞᱟᱹᱜᱤᱫ ᱛᱮ ᱵᱟᱝ ᱫᱟᱲᱮᱹᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱡᱩᱫᱤ ᱟᱹᱰᱤ ᱟᱱᱟᱴ ᱥᱟᱞᱟᱜ ᱠᱚ ᱞᱟᱹᱲᱦᱟᱹᱭ ᱮᱫᱟ, ᱮᱱᱠᱷᱟᱱ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱵᱟᱰᱟᱭ ᱢᱮ ᱡᱮ ᱮᱢᱚᱱ ᱦᱚᱲᱠᱚ ᱢᱮᱱᱟᱜ ᱠᱚᱣᱟ ᱡᱟᱦᱟᱸᱭ ᱠᱚ ᱜᱚᱲᱚ ᱫᱟᱲᱮᱹᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱩᱯᱟᱹᱭ ᱟᱨ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫᱴᱟᱝ ᱛᱷᱟᱭᱤ ᱮᱥᱯᱳᱨᱯᱴ ᱦᱳᱞᱟᱭᱤᱱ ᱥᱮ ᱢᱤᱫᱴᱟᱝ ᱢᱮᱱᱴᱮᱞ ᱦᱚᱞᱛᱷ ᱯᱮᱥᱱᱮᱞ ᱥᱟᱞᱟᱜ ᱡᱳᱜᱟᱡᱳᱜ ᱠᱚᱨᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ ᱵᱤᱥᱛᱟᱣᱟᱱ ᱦᱚᱲ ᱥᱮ ᱯᱮᱥᱱᱮᱞ ᱥᱟᱞᱟᱜ ᱡᱳᱜᱟᱡᱳᱜ ᱢᱮ ᱾
+2026-05-09 17:07:03,642 - WebServer - INFO - AI Response (GROQ): I am unable to provide that information. 
 
-It is being talked about continuously in the news around the world. We cannot give a specific count of how many times it has been 'heard'.
-2026-01-26 18:43:04,829 - MT_Provider - INFO - Translating: 'Gemini is the name of a powerful computer program.
+If you are struggling with difficult emotions, please know that there are people who can help. You can contact a local support hotline or a mental health professional for guidance and assistance. This is general information. Please consult a trusted person or professional for support.
+2026-05-09 17:07:03,642 - WebServer - INFO - Response (Sat): ᱤᱧ ᱚᱱᱟ ᱰᱚᱜᱚᱨ ᱮᱢ ᱞᱟᱹᱜᱤᱫ ᱛᱮ ᱵᱟᱝ ᱫᱟᱲᱮᱹᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱡᱩᱫᱤ ᱟᱹᱰᱤ ᱟᱱᱟᱴ ᱥᱟᱞᱟᱜ ᱠᱚ ᱞᱟᱹᱲᱦᱟᱹᱭ ᱮᱫᱟ, ᱮᱱᱠᱷᱟᱱ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱵᱟᱰᱟᱭ ᱢᱮ ᱡᱮ ᱮᱢᱚᱱ ᱦᱚᱲᱠᱚ ᱢᱮᱱᱟᱜ ᱠᱚᱣᱟ ᱡᱟᱦᱟᱸᱭ ᱠᱚ ᱜᱚᱲᱚ ᱫᱟᱲᱮᱹᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱩᱯᱟᱹᱭ ᱟᱨ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫᱴᱟᱝ ᱛᱷᱟᱭᱤ ᱮᱥᱯᱳᱨᱯᱴ ᱦᱳᱞᱟᱭᱤᱱ ᱥᱮ ᱢᱤᱫᱴᱟᱝ ᱢᱮᱱᱴᱮᱞ ᱦᱚᱞᱛᱷ ᱯᱮᱥᱱᱮᱞ ᱥᱟᱞᱟᱜ ᱡᱳᱜᱟᱡᱳᱜ ᱠᱚᱨᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ ᱵᱤᱥᱛᱟᱣᱟᱱ ᱦᱚᱲ ᱥᱮ ᱯᱮᱥᱱᱮᱞ ᱥᱟᱞᱟᱜ ᱡᱳᱜᱟᱡᱳᱜ ᱢᱮ ᱾
+2026-05-09 17:07:03,689 - TTS_Provider - INFO - Generating audio for chunk: ᱤᱧ ᱚᱱᱟ ᱰᱚᱜᱚᱨ ᱮᱢ ᱞᱟᱹᱜᱤᱫ ᱛᱮ ᱵᱟᱝ ᱫᱟᱲᱮᱹᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱡᱩᱫᱤ ᱟᱹᱰᱤ ᱟᱱᱟᱴ ᱥᱟᱞᱟᱜ ᱠᱚ ᱞᱟᱹᱲᱦᱟᱹᱭ ᱮᱫᱟ,
+2026-05-09 17:07:14,823 - TTS_Provider - INFO - Generating audio for chunk: ᱮᱱᱠᱷᱟᱱ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱵᱟᱰᱟᱭ ᱢᱮ ᱡᱮ ᱮᱢᱚᱱ ᱦᱚᱲᱠᱚ ᱢᱮᱱᱟᱜ ᱠᱚᱣᱟ ᱡᱟᱦᱟᱸᱭ ᱠᱚ ᱜᱚᱲᱚ ᱫᱟᱲᱮᱹᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱩᱯᱟᱹᱭ ᱟᱨ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫᱴᱟᱝ ᱛᱷᱟᱭᱤ ᱮᱥᱯᱳᱨᱯᱴ ᱦᱳᱞᱟᱭᱤᱱ ᱥᱮ ᱢᱤᱫᱴᱟᱝ ᱢᱮᱱᱴᱮᱞ ᱦᱚᱞᱛᱷ ᱯᱮᱥᱱᱮᱞ ᱥᱟᱞᱟᱜ ᱡᱳᱜᱟᱡᱳᱜ ᱠᱚᱨᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾
+2026-05-09 17:07:56,751 - TTS_Provider - INFO - Generating audio for chunk: ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ ᱵᱤᱥᱛᱟᱣᱟᱱ ᱦᱚᱲ ᱥᱮ ᱯᱮᱥᱱᱮᱞ ᱥᱟᱞᱟᱜ ᱡᱳᱜᱟᱡᱳᱜ ᱢᱮ ᱾
+2026-05-09 17:08:12,450 - TTS_Provider - INFO - Chunked Audio saved to temp_output_b0ccd97d-021d-4df4-b32d-7154a909d76e.wav
+2026-05-09 17:09:10,258 - WebServer - INFO - Processing audio: clean_input_aaf568ad-2275-4214-ac53-3f4aa150157e.wav [Mode: offline]
+2026-05-09 17:09:10,258 - ASR_Provider - INFO - Transcribing clean_input_aaf568ad-2275-4214-ac53-3f4aa150157e.wav (Lang: sat, Decoding: ctc)...
+2026-05-09 17:09:10,727 - ASR_Provider - INFO - ASR Output: ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱲᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ
+2026-05-09 17:09:10,728 - WebServer - INFO - ASR Identified: ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱲᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ
+2026-05-09 17:09:10,729 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱲᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ' (sat_Olck -> eng_Latn)
+2026-05-09 17:09:11,227 - MT_Provider - INFO - Translated: what foreign languages do you know
+2026-05-09 17:09:11,228 - WebServer - INFO - MT (Sat->Eng): what foreign languages do you know
+2026-05-09 17:09:11,229 - WebServer - INFO - Checking cache for English question: 'what foreign languages do you know' at 2026-05-09T17:09:11.229950
+2026-05-09 17:09:11,230 - WebServer - INFO - CACHE_MISS
+2026-05-09 17:09:11,230 - WebServer - INFO - Similarity Score: 0.00
+2026-05-09 17:09:11,230 - WebServer - INFO - Backend Originally Used: N/A
+2026-05-09 17:09:11,230 - WebServer - INFO - ASR confidence: N/A
+2026-05-09 17:09:12,969 - Brain - ERROR - All providers failed. Tried: ['Ollama(Status 500)']
+2026-05-09 17:09:12,969 - WebServer - INFO - AI Response (FAIL): ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾ ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 17:09:12,969 - WebServer - INFO - Response (Sat): ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾ ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 17:09:12,970 - TTS_Provider - INFO - Generating audio for chunk: ᱥᱟᱨᱡᱤᱢᱮ, ᱤᱧ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱥᱟᱹᱜᱟᱲ ᱠᱟᱱᱟ᱾
+2026-05-09 17:09:16,691 - TTS_Provider - INFO - Generating audio for chunk: ᱟᱲᱟᱜ ᱫᱚ ᱫᱚᱦᱚᱲ ᱢᱮᱱᱟᱜᱼᱟᱭᱟ᱾
+2026-05-09 17:09:21,092 - TTS_Provider - INFO - Chunked Audio saved to temp_output_aaf568ad-2275-4214-ac53-3f4aa150157e.wav
+2026-05-09 17:23:47,400 - SmartCache - INFO - Manual cache reset triggered.
+2026-05-09 17:23:47,410 - SmartCache - INFO - Cache reset successful. Table 'faq_cache' recreated.
+2026-05-09 17:34:13,912 - WebServer - INFO - --- Server Starting ---
+2026-05-09 17:34:17,609 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 17:34:17,609 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 17:34:17,622 - WebServer - INFO - CUDA Available: True
+2026-05-09 17:34:17,627 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 17:34:17,627 - WebServer - INFO - Initializing Models...
+2026-05-09 17:34:32,502 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 17:34:32,502 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 17:34:41,897 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 17:34:41,897 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 17:34:41,925 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 17:48:52,179 - WebServer - INFO - --- Server Starting ---
+2026-05-09 17:48:56,136 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 17:48:56,136 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 17:48:56,160 - WebServer - INFO - CUDA Available: True
+2026-05-09 17:48:56,165 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 17:48:56,165 - WebServer - INFO - Initializing Models...
+2026-05-09 17:49:09,894 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 17:49:09,894 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 17:49:18,242 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 17:49:18,243 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 17:49:18,304 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 17:49:29,510 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 17:49:43,992 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-09 17:49:43,998 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-09 17:49:56,608 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-09 17:51:46,087 - WebServer - INFO - --- Server Starting ---
+2026-05-09 17:51:50,162 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 17:51:50,163 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 17:51:50,174 - WebServer - INFO - CUDA Available: True
+2026-05-09 17:51:50,178 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 17:51:50,178 - WebServer - INFO - Initializing Models...
+2026-05-09 17:52:05,070 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 17:52:05,070 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 17:52:13,145 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 17:52:13,251 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 17:52:13,469 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 17:52:23,251 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 17:52:29,907 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-09 17:52:29,908 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-09 17:52:36,876 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-09 17:52:44,915 - WebServer - INFO - Chat history cleared.
+2026-05-09 18:37:34,984 - WebServer - INFO - --- Server Starting ---
+2026-05-09 18:37:39,158 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-09 18:37:39,159 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-09 18:37:39,252 - WebServer - INFO - CUDA Available: True
+2026-05-09 18:37:39,255 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-09 18:37:39,255 - WebServer - INFO - Initializing Models...
+2026-05-09 18:37:55,133 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 18:37:55,133 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 18:38:04,643 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-09 18:38:04,790 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 18:38:05,360 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 18:38:23,654 - WebServer - INFO - --- Server Starting ---
+2026-05-09 18:38:30,593 - WebServer - INFO - Torch: 2.2.0+cpu
+2026-05-09 18:38:30,593 - WebServer - INFO - TorchAudio: 2.2.0+cpu
+2026-05-09 18:38:30,593 - WebServer - INFO - CUDA Available: False
+2026-05-09 18:38:30,593 - WebServer - INFO - Initializing Models...
+2026-05-09 18:38:47,995 - WebServer - INFO - Imports successful, instantiating...
+2026-05-09 18:38:47,995 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-09 18:38:49,816 - ASR_Provider - ERROR - Failed to load ASR: [ONNXRuntimeError] : 1 : FAIL : External data path validation failed for initializer: pre_encode.conv.0.weight. Error: tensorprotoutils.cc:347 onnxruntime::utils::ValidateExternalDataPath External data path: "pre_encode.conv.0.weight" escapes model directory: "C:\\Users\\rizvi\\.cache\\huggingface\\hub\\models--ai4bharat--indic-conformer-600m-multilingual\\snapshots\\e9b71b369c048e2c6b634d4c131061c34e441179\\assets"
+2026-05-09 18:38:49,827 - WebServer - ERROR - ASR Model failed to load.
+2026-05-09 18:38:49,828 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-09 18:38:49,831 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-09 18:38:51,808 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-09 18:38:53,939 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-09 18:38:53,940 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cpu...
+2026-05-09 18:38:56,202 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-11 13:15:56,011 - WebServer - INFO - --- Server Starting ---
+2026-05-11 13:17:45,907 - WebServer - INFO - --- Server Starting ---
+2026-05-11 13:17:55,263 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-11 13:17:55,263 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-11 13:17:55,305 - WebServer - INFO - CUDA Available: True
+2026-05-11 13:17:55,315 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-11 13:17:55,315 - WebServer - INFO - Initializing Models...
+2026-05-11 13:19:04,126 - WebServer - INFO - Imports successful, instantiating...
+2026-05-11 13:19:04,126 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-11 13:19:19,824 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-11 13:19:19,850 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-11 13:19:19,967 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-11 13:19:36,856 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-11 13:19:46,688 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-11 13:19:46,693 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-11 13:20:05,055 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-11 13:31:00,213 - WebServer - INFO - --- Server Starting ---
+2026-05-11 13:31:08,964 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-11 13:31:08,965 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-11 13:31:09,127 - WebServer - INFO - CUDA Available: True
+2026-05-11 13:31:09,136 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-11 13:31:09,137 - WebServer - INFO - Initializing Models...
+2026-05-11 13:31:50,229 - WebServer - INFO - Imports successful, instantiating...
+2026-05-11 13:31:50,230 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-11 13:32:06,444 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-11 13:32:06,532 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-11 13:32:06,952 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-11 13:32:23,437 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-11 13:32:35,725 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-11 13:32:35,736 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-11 13:32:49,756 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-11 19:53:52,698 - WebServer - INFO - --- Server Starting ---
+2026-05-11 19:53:56,401 - WebServer - INFO - Torch: 2.6.0+cu124
+2026-05-11 19:53:56,401 - WebServer - INFO - TorchAudio: 2.6.0+cu124
+2026-05-11 19:53:56,489 - WebServer - INFO - CUDA Available: True
+2026-05-11 19:53:56,494 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-05-11 19:53:56,494 - WebServer - INFO - Initializing Models...
+2026-05-11 19:54:11,497 - WebServer - INFO - Imports successful, instantiating...
+2026-05-11 19:54:11,497 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
+2026-05-11 19:54:19,573 - ASR_Provider - INFO - ASR Model loaded successfully.
+2026-05-11 19:54:19,593 - MT_Provider - INFO - Initializing IndicTrans2 System...
+2026-05-11 19:54:19,599 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
+2026-05-11 19:54:30,103 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
+2026-05-11 19:54:37,449 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
+2026-05-11 19:54:37,452 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
+2026-05-11 19:54:45,192 - TTS_Provider - INFO - TTS Model loaded successfully.
+2026-05-11 19:55:15,261 - WebServer - INFO - Processing audio: clean_input_8073a686-4ba5-45e2-ae4e-0f8de164e5d1.wav [Mode: auto]
+2026-05-11 19:55:15,262 - ASR_Provider - INFO - Transcribing clean_input_8073a686-4ba5-45e2-ae4e-0f8de164e5d1.wav (Lang: sat, Decoding: ctc)...
+2026-05-11 19:55:19,294 - ASR_Provider - INFO - ASR Output: ᱥᱟᱯᱷᱟ ᱫᱟᱜ ᱧᱩ ᱪᱮᱫᱟᱜ ᱞᱟᱹᱠᱛ
+2026-05-11 19:55:19,298 - WebServer - INFO - ASR Identified: ᱥᱟᱯᱷᱟ ᱫᱟᱜ ᱧᱩ ᱪᱮᱫᱟᱜ ᱞᱟᱹᱠᱛ
+2026-05-11 19:55:19,302 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱥᱟᱯᱷᱟ ᱫᱟᱜ ᱧᱩ ᱪᱮᱫᱟᱜ ᱞᱟᱹᱠᱛ' (sat_Olck -> eng_Latn)
+2026-05-11 19:55:20,689 - MT_Provider - INFO - Translated: Why is it important to drink clean water?
+2026-05-11 19:55:20,689 - WebServer - INFO - MT (Sat->Eng): Why is it important to drink clean water?
+2026-05-11 19:55:20,706 - WebServer - INFO - Checking cache for English question: 'Why is it important to drink clean water?' at 2026-05-11T19:55:20.706298
+2026-05-11 19:55:20,706 - WebServer - INFO - CACHE_MISS
+2026-05-11 19:55:20,707 - WebServer - INFO - Similarity Score: 0.00
+2026-05-11 19:55:20,707 - WebServer - INFO - Backend Originally Used: N/A
+2026-05-11 19:55:20,707 - WebServer - INFO - ASR confidence: N/A
+2026-05-11 19:55:21,802 - MT_Provider - INFO - Translating via IndicTrans2: 'Drinking clean water is vital for our bodies.
 
-It is being talked about continuously in the news around the world. We cannot give a specific count of how many times it has been 'heard'.' (eng_Latn -> sat_Olck)
-2026-01-26 18:45:46,445 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 18:45:46,448 - WebServer - ERROR - TTS Generation Failed or File Not Found
-2026-01-26 18:48:12,433 - WebServer - INFO - --- Server Starting ---
-2026-01-26 18:48:19,723 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 18:48:19,724 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 18:48:19,724 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 18:48:19,828 - WebServer - INFO - CUDA Available: True
-2026-01-26 18:48:19,839 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 18:48:19,839 - WebServer - INFO - Initializing Models...
-2026-01-26 18:48:41,509 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 18:48:41,509 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:48:51,534 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 18:48:51,552 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:48:51,622 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:49:03,461 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 18:49:12,413 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 18:49:12,415 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:49:21,741 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 18:49:24,099 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:49:31,844 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 18:49:37,927 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 18:52:29,296 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:52:47,293 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 18:53:27,375 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 18:55:54,473 - WebServer - INFO - --- Server Starting ---
-2026-01-26 18:56:07,487 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 18:56:07,487 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 18:56:07,488 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 18:56:07,680 - WebServer - INFO - CUDA Available: True
-2026-01-26 18:56:07,689 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 18:56:07,690 - WebServer - INFO - Initializing Models...
-2026-01-26 18:56:46,542 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 18:56:46,543 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 18:56:56,776 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 18:56:56,778 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 18:56:56,847 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 18:57:08,972 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 18:57:17,327 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 18:57:17,329 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 18:57:27,137 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 18:58:15,438 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-26 18:58:15,632 - WebServer - INFO - Processing audio: clean_input_652fd94d-09a9-421f-b910-87b17c4599cf.wav
-2026-01-26 18:58:15,634 - ASR_Provider - INFO - Transcribing clean_input_652fd94d-09a9-421f-b910-87b17c4599cf.wav (Lang: sat, Decoding: ctc)...
-2026-01-26 18:58:34,508 - MT_Provider - INFO - Translated: Have you ever heard of Gemini?
-2026-01-26 18:58:34,509 - WebServer - INFO - MT (Sat->Eng): Have you ever heard of Gemini?
-2026-01-26 18:58:45,244 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 18:58:45,347 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 18:58:45,447 - GeminiBrain - WARNING - Groq gemma-7b-it failed: Error code: 400 - {'error': {'message': 'The model `gemma-7b-it` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 18:58:45,454 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-26 18:58:49,051 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-26 18:58:51,663 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): Yes, I know Gemini. It is a big, smart computer helper, just like me.
-2026-01-26 18:58:51,668 - WebServer - INFO - AI Response: Yes, I know Gemini. It is a big, smart computer helper, just like me.
-2026-01-26 18:58:51,671 - MT_Provider - INFO - Translating: 'Yes, I know Gemini. It is a big, smart computer helper, just like me.' (eng_Latn -> sat_Olck)
-2026-01-26 19:00:16,519 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 19:00:16,523 - WebServer - ERROR - TTS Generation Failed or File Not Found
-2026-01-26 19:02:38,825 - WebServer - INFO - --- Server Starting ---
-2026-01-26 19:02:45,836 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 19:02:45,836 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 19:02:45,837 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 19:02:45,934 - WebServer - INFO - CUDA Available: True
-2026-01-26 19:02:45,939 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 19:02:45,939 - WebServer - INFO - Initializing Models...
-2026-01-26 19:03:13,693 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 19:03:13,694 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 19:03:24,352 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 19:03:24,365 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 19:03:24,386 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 19:03:40,997 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 19:03:52,998 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 19:03:53,008 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 19:04:06,458 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 19:05:39,744 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-26 19:05:40,043 - WebServer - INFO - Processing audio: clean_input_f6eeda0a-3f7a-4c55-9e23-e3a9840ed1ba.wav
-2026-01-26 19:05:40,050 - ASR_Provider - INFO - Transcribing clean_input_f6eeda0a-3f7a-4c55-9e23-e3a9840ed1ba.wav (Lang: sat, Decoding: ctc)...
-2026-01-26 19:06:09,804 - MT_Provider - INFO - Translated: Jamini Barat is also known as Ajam Makan.
-2026-01-26 19:06:09,806 - WebServer - INFO - MT (Sat->Eng): Jamini Barat is also known as Ajam Makan.
-2026-01-26 19:06:11,304 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-26 19:06:11,562 - WebServer - INFO - Processing audio: clean_input_7912f31a-e320-45a9-b147-2459a26aabba.wav
-2026-01-26 19:06:11,566 - ASR_Provider - INFO - Transcribing clean_input_7912f31a-e320-45a9-b147-2459a26aabba.wav (Lang: sat, Decoding: ctc)...
-2026-01-26 19:06:11,631 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:06:11,701 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:06:11,787 - GeminiBrain - WARNING - Groq gemma-7b-it failed: Error code: 400 - {'error': {'message': 'The model `gemma-7b-it` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:06:11,796 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-26 19:06:23,193 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-26 19:06:24,386 - MT_Provider - INFO - Translated: You can also hear the sound of Gemini in the sky.
-2026-01-26 19:06:24,387 - WebServer - INFO - MT (Sat->Eng): You can also hear the sound of Gemini in the sky.
-2026-01-26 19:06:25,511 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:06:25,630 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:06:25,711 - GeminiBrain - WARNING - Groq gemma-7b-it failed: Error code: 400 - {'error': {'message': 'The model `gemma-7b-it` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:06:25,715 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-26 19:06:26,939 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): Yes, that is right. Jamini Barat is lovingly known as Ajam Makan, a special name from our community.
-2026-01-26 19:06:26,940 - WebServer - INFO - AI Response: Yes, that is right. Jamini Barat is lovingly known as Ajam Makan, a special name from our community.
-2026-01-26 19:06:26,941 - MT_Provider - INFO - Translating: 'Yes, that is right. Jamini Barat is lovingly known as Ajam Makan, a special name from our community.' (eng_Latn -> sat_Olck)
-2026-01-26 19:06:29,331 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-26 19:06:31,868 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): Gemini is just bright stars. They are too far away for us to hear any sound from them.
-2026-01-26 19:06:31,869 - WebServer - INFO - AI Response: Gemini is just bright stars. They are too far away for us to hear any sound from them.
-2026-01-26 19:06:31,870 - MT_Provider - INFO - Translating: 'Gemini is just bright stars. They are too far away for us to hear any sound from them.' (eng_Latn -> sat_Olck)
-2026-01-26 19:13:00,800 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 19:13:00,814 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 19:13:00,825 - WebServer - ERROR - TTS Generation Failed or File Not Found
-2026-01-26 19:13:00,826 - WebServer - ERROR - TTS Generation Failed or File Not Found
-2026-01-26 19:16:33,559 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 19:16:46,583 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 19:16:51,726 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 19:18:09,005 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 19:18:18,857 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 19:19:33,895 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 19:19:42,734 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 19:19:50,009 - TTS_Provider - ERROR - TTS Generation error: dtype must be one of ['float32', 'float64', 'int16', 'int32'] and not 'float16'
-2026-01-26 19:23:37,637 - WebServer - INFO - --- Server Starting ---
-2026-01-26 19:23:43,217 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 19:23:43,218 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 19:23:43,218 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 19:23:43,250 - WebServer - INFO - CUDA Available: True
-2026-01-26 19:23:43,256 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 19:23:43,256 - WebServer - INFO - Initializing Models...
-2026-01-26 19:24:04,206 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 19:24:04,206 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 19:24:09,824 - WebServer - INFO - --- Server Starting ---
-2026-01-26 19:24:13,745 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-26 19:24:13,746 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-26 19:24:13,746 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-26 19:24:13,765 - WebServer - INFO - CUDA Available: True
-2026-01-26 19:24:13,768 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-26 19:24:13,769 - WebServer - INFO - Initializing Models...
-2026-01-26 19:24:15,242 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 19:24:15,312 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 19:24:15,404 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 19:24:27,939 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 19:24:36,364 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 19:24:36,366 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 19:24:42,220 - WebServer - INFO - Imports successful, instantiating...
-2026-01-26 19:24:42,221 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-26 19:24:46,071 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 19:24:53,609 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-26 19:24:53,692 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-26 19:24:53,979 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-26 19:25:07,233 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-26 19:25:20,186 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-26 19:25:20,198 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 19:25:34,090 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 19:26:46,414 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-26 19:26:46,701 - WebServer - INFO - Processing audio: clean_input_ffdd69c7-2722-49b9-9ecd-3083c57bfaff.wav
-2026-01-26 19:26:46,726 - ASR_Provider - INFO - Transcribing clean_input_ffdd69c7-2722-49b9-9ecd-3083c57bfaff.wav (Lang: sat, Decoding: ctc)...
-2026-01-26 19:27:12,635 - MT_Provider - INFO - Translated: Listening to Jamini in Ghanta Ke Kanti
-2026-01-26 19:27:12,639 - WebServer - INFO - MT (Sat->Eng): Listening to Jamini in Ghanta Ke Kanti
-2026-01-26 19:27:28,507 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:27:28,596 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:27:28,695 - GeminiBrain - WARNING - Groq gemma-7b-it failed: Error code: 400 - {'error': {'message': 'The model `gemma-7b-it` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-26 19:27:28,696 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-26 19:27:32,520 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-26 19:27:35,278 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): That is nice. You are enjoying important Santali music and stories from our home.
-2026-01-26 19:27:35,280 - WebServer - INFO - AI Response: That is nice. You are enjoying important Santali music and stories from our home.
-2026-01-26 19:27:35,284 - MT_Provider - INFO - Translating: 'That is nice. You are enjoying important Santali music and stories from our home.' (eng_Latn -> sat_Olck)
-2026-01-26 19:29:26,380 - TTS_Provider - INFO - Audio saved to temp_output_ffdd69c7-2722-49b9-9ecd-3083c57bfaff.wav
-2026-01-26 19:29:26,386 - WebServer - INFO - TTS Generated: temp_output_ffdd69c7-2722-49b9-9ecd-3083c57bfaff.wav (878636 bytes)
-2026-01-26 19:30:34,821 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-26 19:30:45,285 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-26 19:30:50,244 - TTS_Provider - INFO - Audio saved to test_olchiki.wav
-2026-01-28 20:20:57,297 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:20:57,351 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:20:57,669 - GeminiBrain - WARNING - Groq gemma-7b-it failed: Error code: 400 - {'error': {'message': 'The model `gemma-7b-it` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:20:57,670 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-28 20:20:59,497 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-28 20:21:00,435 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): You said hello to me.
-2026-01-28 20:23:38,032 - WebServer - INFO - --- Server Starting ---
-2026-01-28 20:23:54,287 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-28 20:23:54,287 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-28 20:23:54,288 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-28 20:23:55,326 - WebServer - INFO - CUDA Available: False
-2026-01-28 20:23:55,326 - WebServer - INFO - Initializing Models...
-2026-01-28 20:24:22,941 - WebServer - INFO - Imports successful, instantiating...
-2026-01-28 20:24:22,941 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-28 20:24:50,064 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-28 20:24:50,064 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-28 20:24:50,075 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-28 20:24:56,054 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-28 20:24:58,362 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-28 20:24:58,362 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cpu...
-2026-01-28 20:25:01,663 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-28 20:27:18,691 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-28 20:27:19,301 - WebServer - INFO - Processing audio: clean_input_8482a3e2-42ee-477e-bccb-221bb0b607b6.wav
-2026-01-28 20:27:19,302 - ASR_Provider - INFO - Transcribing clean_input_8482a3e2-42ee-477e-bccb-221bb0b607b6.wav (Lang: sat, Decoding: ctc)...
-2026-01-28 20:27:38,340 - MT_Provider - INFO - Translated: Jamini is also heard in Ghanta Ki Gham.
-2026-01-28 20:27:38,340 - WebServer - INFO - MT (Sat->Eng): Jamini is also heard in Ghanta Ki Gham.
-2026-01-28 20:27:48,903 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:27:48,955 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:27:48,956 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-28 20:27:52,140 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-28 20:27:54,825 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): Thank you for telling me this. That sounds good.
-2026-01-28 20:27:54,825 - WebServer - INFO - AI Response: Thank you for telling me this. That sounds good.
-2026-01-28 20:27:54,825 - MT_Provider - INFO - Translating: 'Thank you for telling me this. That sounds good.' (eng_Latn -> sat_Olck)
-2026-01-28 20:33:07,256 - TTS_Provider - INFO - Audio saved to temp_output_8482a3e2-42ee-477e-bccb-221bb0b607b6.wav
-2026-01-28 20:33:07,262 - WebServer - INFO - TTS Generated: temp_output_8482a3e2-42ee-477e-bccb-221bb0b607b6.wav (738348 bytes)
-2026-01-28 20:34:29,109 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-28 20:34:29,286 - WebServer - INFO - Processing audio: clean_input_bf1acc9c-af3c-4273-9a7a-5b4e21ef5132.wav
-2026-01-28 20:34:29,294 - ASR_Provider - INFO - Transcribing clean_input_bf1acc9c-af3c-4273-9a7a-5b4e21ef5132.wav (Lang: sat, Decoding: ctc)...
-2026-01-28 20:34:49,613 - MT_Provider - INFO - Translated: Jamini is also heard in some villages.
-2026-01-28 20:34:49,614 - WebServer - INFO - MT (Sat->Eng): Jamini is also heard in some villages.
-2026-01-28 20:34:50,180 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:34:50,246 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:34:50,246 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-28 20:34:51,763 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-28 20:34:53,830 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): Thank you. That is very good news for us.
-2026-01-28 20:34:53,830 - WebServer - INFO - AI Response: Thank you. That is very good news for us.
-2026-01-28 20:34:53,831 - MT_Provider - INFO - Translating: 'Thank you. That is very good news for us.' (eng_Latn -> sat_Olck)
-2026-01-28 20:43:21,915 - TTS_Provider - INFO - Audio saved to temp_output_bf1acc9c-af3c-4273-9a7a-5b4e21ef5132.wav
-2026-01-28 20:43:21,918 - WebServer - INFO - TTS Generated: temp_output_bf1acc9c-af3c-4273-9a7a-5b4e21ef5132.wav (1726508 bytes)
-2026-01-28 20:46:28,391 - WebServer - INFO - Converting audio using ffmpeg.exe...
-2026-01-28 20:46:28,591 - WebServer - INFO - Processing audio: clean_input_c70b3af0-05d2-42d1-9f31-5946deb8eccb.wav
-2026-01-28 20:46:28,594 - ASR_Provider - INFO - Transcribing clean_input_c70b3af0-05d2-42d1-9f31-5946deb8eccb.wav (Lang: sat, Decoding: ctc)...
-2026-01-28 20:46:53,185 - MT_Provider - INFO - Translated: You can also listen to Jamini whenever you want.
-2026-01-28 20:46:53,186 - WebServer - INFO - MT (Sat->Eng): You can also listen to Jamini whenever you want.
-2026-01-28 20:46:54,574 - GeminiBrain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:46:54,938 - GeminiBrain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-01-28 20:46:54,938 - GeminiBrain - WARNING - Groq failed or skipped, attempting Gemini fallback...
-2026-01-28 20:46:58,440 - GeminiBrain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-01-28 20:47:01,701 - GeminiBrain - INFO - Gemini Success (gemini-flash-latest): That is good news. Thank you for this advice.
-2026-01-28 20:47:01,701 - WebServer - INFO - AI Response: That is good news. Thank you for this advice.
-2026-01-28 20:47:01,702 - MT_Provider - INFO - Translating: 'That is good news. Thank you for this advice.' (eng_Latn -> sat_Olck)
-2026-01-28 20:51:05,178 - TTS_Provider - INFO - Audio saved to temp_output_c70b3af0-05d2-42d1-9f31-5946deb8eccb.wav
-2026-01-28 20:51:05,190 - WebServer - INFO - TTS Generated: temp_output_c70b3af0-05d2-42d1-9f31-5946deb8eccb.wav (683052 bytes)
-2026-01-28 20:58:38,533 - WebServer - INFO - --- Server Starting ---
-2026-01-28 20:58:45,944 - WebServer - INFO - --- Server Starting ---
-2026-01-28 20:58:48,594 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-28 20:58:48,594 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-28 20:58:48,595 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-28 20:58:48,797 - WebServer - INFO - CUDA Available: True
-2026-01-28 20:58:48,817 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-28 20:58:48,818 - WebServer - INFO - Initializing Models...
-2026-01-28 20:58:51,332 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-28 20:58:51,332 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-28 20:58:51,333 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-28 20:58:51,377 - WebServer - INFO - CUDA Available: True
-2026-01-28 20:58:51,386 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-28 20:58:51,387 - WebServer - INFO - Initializing Models...
-2026-01-28 20:59:43,924 - WebServer - INFO - Imports successful, instantiating...
-2026-01-28 20:59:43,924 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-28 20:59:43,924 - WebServer - INFO - Imports successful, instantiating...
-2026-01-28 20:59:43,924 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-28 21:00:08,314 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-28 21:00:08,326 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-28 21:00:08,700 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-28 21:00:08,893 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-28 21:00:08,897 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-28 21:00:09,019 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-28 21:00:52,258 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-28 21:00:52,375 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-28 21:01:00,644 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-28 21:01:00,649 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-28 21:01:02,221 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-28 21:01:02,227 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-28 21:01:28,517 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-28 21:01:33,799 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-28 21:04:40,566 - WebServer - INFO - --- Server Starting ---
-2026-01-28 21:04:57,094 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-01-28 21:04:57,095 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-01-28 21:04:57,095 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-01-28 21:04:57,285 - WebServer - INFO - CUDA Available: True
-2026-01-28 21:04:57,296 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-01-28 21:04:57,297 - WebServer - INFO - Initializing Models...
-2026-01-28 21:05:45,823 - WebServer - INFO - Imports successful, instantiating...
-2026-01-28 21:05:45,823 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-01-28 21:06:12,772 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-01-28 21:06:12,773 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-01-28 21:06:13,078 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-01-28 21:06:58,764 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-01-28 21:07:10,685 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-01-28 21:07:10,700 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-01-28 21:07:29,708 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-01-28 21:11:56,392 - WebServer - INFO - Chat history cleared.
-2026-02-01 20:21:39,237 - WebServer - INFO - --- Server Starting ---
-2026-02-01 20:21:57,437 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-01 20:21:57,437 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-01 20:21:57,438 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-01 20:21:57,547 - WebServer - INFO - CUDA Available: True
-2026-02-01 20:21:57,554 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-01 20:21:57,555 - WebServer - INFO - Initializing Models...
-2026-02-01 20:22:39,344 - WebServer - INFO - Imports successful, instantiating...
-2026-02-01 20:22:39,344 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-01 20:22:49,632 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-01 20:22:49,639 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-01 20:22:49,654 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-01 20:23:02,825 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-01 20:23:11,480 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-01 20:23:11,487 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-01 20:23:22,894 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-01 20:28:42,046 - WebServer - INFO - --- Server Starting ---
-2026-02-01 20:28:49,984 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-01 20:28:49,985 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-01 20:28:49,985 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-01 20:28:50,110 - WebServer - INFO - CUDA Available: True
-2026-02-01 20:28:50,122 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-01 20:28:50,123 - WebServer - INFO - Initializing Models...
-2026-02-01 20:29:16,731 - WebServer - INFO - Imports successful, instantiating...
-2026-02-01 20:29:16,731 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-01 20:29:32,216 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-01 20:29:32,260 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-01 20:29:32,714 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-01 20:29:45,793 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-01 20:29:53,986 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-01 20:29:53,994 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-01 20:30:07,466 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-01 20:38:07,141 - WebServer - INFO - --- Server Starting ---
-2026-02-01 20:38:15,916 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-01 20:38:15,916 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-01 20:38:15,917 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-01 20:38:16,043 - WebServer - INFO - CUDA Available: True
-2026-02-01 20:38:16,051 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-01 20:38:16,052 - WebServer - INFO - Initializing Models...
-2026-02-01 20:38:39,088 - WebServer - INFO - Imports successful, instantiating...
-2026-02-01 20:38:39,088 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-01 20:38:48,975 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-01 20:38:48,979 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-01 20:38:49,108 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-01 20:39:01,554 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-01 20:39:10,065 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-01 20:39:10,067 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-01 20:39:19,917 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-02 08:17:48,802 - WebServer - INFO - --- Server Starting ---
-2026-02-02 08:18:04,417 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-02 08:18:04,420 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-02 08:18:04,421 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-02 08:18:04,478 - WebServer - INFO - CUDA Available: True
-2026-02-02 08:18:04,504 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-02 08:18:04,505 - WebServer - INFO - Initializing Models...
-2026-02-02 08:18:54,567 - WebServer - INFO - Imports successful, instantiating...
-2026-02-02 08:18:54,568 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-02 08:19:16,272 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-02 08:19:16,979 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-02 08:19:17,148 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-02 08:19:34,544 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-02 08:19:46,014 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-02 08:19:46,026 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-02 08:20:14,045 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-06 10:17:11,791 - WebServer - INFO - --- Server Starting ---
-2026-02-06 10:18:00,609 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-06 10:18:00,610 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-06 10:18:00,610 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-06 10:18:00,755 - WebServer - INFO - CUDA Available: True
-2026-02-06 10:18:00,768 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-06 10:18:00,768 - WebServer - INFO - Initializing Models...
-2026-02-06 10:19:04,856 - WebServer - INFO - Imports successful, instantiating...
-2026-02-06 10:19:04,857 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-06 10:19:21,520 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-06 10:19:21,524 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-06 10:19:21,574 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-06 10:19:38,621 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-06 10:20:03,421 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-06 10:20:03,449 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-06 10:20:29,417 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-06 10:30:03,921 - WebServer - INFO - --- Server Starting ---
-2026-02-06 10:30:28,179 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-06 10:30:28,180 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-06 10:30:28,181 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-06 10:30:29,160 - WebServer - INFO - CUDA Available: True
-2026-02-06 10:30:29,181 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-06 10:30:29,182 - WebServer - INFO - Initializing Models...
-2026-02-06 10:31:39,725 - WebServer - INFO - Imports successful, instantiating...
-2026-02-06 10:31:39,726 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-06 10:31:57,001 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-06 10:31:57,005 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-06 10:31:57,079 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-06 10:32:11,902 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-06 10:32:22,327 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-06 10:32:22,340 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-06 10:32:34,592 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-06 10:34:20,508 - WebServer - INFO - Processing audio: clean_input_8d35388a-6234-4564-8ac5-fdf01461dd19.wav [Mode: auto]
-2026-02-06 10:34:20,509 - ASR_Provider - INFO - Transcribing clean_input_8d35388a-6234-4564-8ac5-fdf01461dd19.wav (Lang: sat, Decoding: ctc)...
-2026-02-06 10:34:51,999 - MT_Provider - INFO - Translated: JKT is also heard in tea.
-2026-02-06 10:34:51,999 - WebServer - INFO - MT (Sat->Eng): JKT is also heard in tea.
-2026-02-06 10:34:55,067 - Brain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-02-06 10:34:55,157 - Brain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-02-06 10:34:58,776 - Brain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 10:34:58,911 - Brain - WARNING - Gemini gemini-pro failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 10:35:28,951 - Brain - ERROR - Ollama Connection Failed: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=30)
-2026-02-06 10:35:28,954 - Brain - ERROR - All providers failed. Tried: ["Ollama(HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=30))"]
-2026-02-06 10:35:28,954 - WebServer - INFO - AI Response (FAIL): Network/AI Error. Switching to safety message.
-2026-02-06 10:36:33,268 - TTS_Provider - INFO - Audio saved to temp_output_8d35388a-6234-4564-8ac5-fdf01461dd19.wav
-2026-02-06 10:37:14,973 - WebServer - INFO - Processing audio: clean_input_209b32d7-1ebe-4339-8d59-0c7d0c5ff6a6.wav [Mode: offline]
-2026-02-06 10:37:14,975 - ASR_Provider - INFO - Transcribing clean_input_209b32d7-1ebe-4339-8d59-0c7d0c5ff6a6.wav (Lang: sat, Decoding: ctc)...
-2026-02-06 10:37:30,717 - MT_Provider - INFO - Translated: J. Mukthi married Sushmini Baratte.
-2026-02-06 10:37:30,718 - WebServer - INFO - MT (Sat->Eng): J. Mukthi married Sushmini Baratte.
-2026-02-06 10:37:42,356 - FAQ_DB - INFO - FAQ Cached: j. mukthi married sushmini baratte.
-2026-02-06 10:37:42,358 - MT_Provider - INFO - Translating: 'That's interesting! J. Mukthi and Sushmini Baratte are a well-known Santali couple. They have worked together for the betterment of their community, especially in promoting Santali culture and language.' (eng_Latn -> sat_Olck)
-2026-02-06 10:37:47,599 - WebServer - INFO - AI Response (OLLAMA): That's interesting! J. Mukthi and Sushmini Baratte are a well-known Santali couple. They have worked together for the betterment of their community, especially in promoting Santali culture and language.
-2026-02-06 10:42:39,769 - WebServer - INFO - --- Server Starting ---
-2026-02-06 10:43:05,601 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-06 10:43:05,603 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-06 10:43:05,603 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-06 10:43:06,581 - WebServer - INFO - CUDA Available: True
-2026-02-06 10:43:06,605 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-06 10:43:06,606 - WebServer - INFO - Initializing Models...
-2026-02-06 10:44:32,847 - WebServer - INFO - Imports successful, instantiating...
-2026-02-06 10:44:32,847 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-06 10:45:06,634 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-06 10:45:06,634 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-06 10:45:06,675 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-06 10:45:22,456 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-06 10:45:41,195 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-06 10:45:41,208 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-06 10:45:57,192 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-06 10:49:18,459 - WebServer - INFO - --- Server Starting ---
-2026-02-06 10:49:43,281 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-06 10:49:43,281 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-06 10:49:43,282 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-06 10:49:44,196 - WebServer - INFO - CUDA Available: True
-2026-02-06 10:49:44,203 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-06 10:49:44,203 - WebServer - INFO - Initializing Models...
-2026-02-06 10:50:29,876 - WebServer - INFO - Imports successful, instantiating...
-2026-02-06 10:50:29,876 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-06 10:50:59,863 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-06 10:50:59,864 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-06 10:50:59,904 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-06 10:51:17,018 - WebServer - INFO - --- Server Starting ---
-2026-02-06 10:51:35,556 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-06 10:51:35,559 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-06 10:51:35,562 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-06 10:51:36,066 - WebServer - INFO - CUDA Available: True
-2026-02-06 10:51:36,117 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-06 10:51:36,146 - WebServer - INFO - Initializing Models...
-2026-02-06 10:51:36,348 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-06 10:51:40,097 - WebServer - INFO - --- Server Starting ---
-2026-02-06 10:52:15,735 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-06 10:52:15,750 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-06 10:52:28,483 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-06 10:52:28,484 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-06 10:52:28,486 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-06 10:52:29,377 - WebServer - INFO - CUDA Available: True
-2026-02-06 10:52:29,469 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-06 10:52:29,477 - WebServer - INFO - Initializing Models...
-2026-02-06 10:53:09,572 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-06 10:53:38,674 - WebServer - INFO - Imports successful, instantiating...
-2026-02-06 10:53:38,680 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-06 10:53:47,718 - WebServer - INFO - Imports successful, instantiating...
-2026-02-06 10:53:47,719 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-06 10:54:06,956 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-06 10:54:06,963 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-06 10:54:07,008 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-06 10:54:07,008 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-06 10:54:07,021 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-06 10:54:07,058 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-06 10:54:46,730 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-06 10:54:47,051 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-06 10:55:25,734 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-06 10:55:25,819 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-06 10:55:26,387 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-06 10:55:26,445 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-06 10:56:32,235 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-06 10:56:32,653 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-06 10:57:35,035 - WebServer - INFO - Chat history cleared.
-2026-02-06 10:58:15,905 - WebServer - INFO - Processing audio: clean_input_178d8065-788b-43a3-b51d-08212f75b149.wav [Mode: auto]
-2026-02-06 10:58:15,911 - ASR_Provider - INFO - Transcribing clean_input_178d8065-788b-43a3-b51d-08212f75b149.wav (Lang: sat, Decoding: ctc)...
-2026-02-06 10:59:16,869 - WebServer - INFO - Detected Santali (Ol Chiki/Indic) input, executing Sat->Eng Translation.
-2026-02-06 10:59:32,599 - MT_Provider - INFO - Translated: Rukmini Sahmin is self-employed in India.
-2026-02-06 10:59:32,604 - WebServer - INFO - MT (Sat->Eng): Rukmini Sahmin is self-employed in India.
-2026-02-06 10:59:40,522 - Brain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-02-06 10:59:40,709 - Brain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-02-06 10:59:48,231 - Brain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 10:59:48,392 - Brain - WARNING - Gemini gemini-pro failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 11:00:18,708 - Brain - ERROR - Ollama Connection Failed: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=30)
-2026-02-06 11:00:35,045 - Brain - ERROR - All providers failed. Tried: ["Ollama(HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=30))"]
-2026-02-06 11:00:35,444 - WebServer - INFO - AI Response (FAIL): Network/AI Error. Switching to safety message.
-2026-02-06 11:02:07,538 - TTS_Provider - INFO - Audio saved to temp_output_178d8065-788b-43a3-b51d-08212f75b149.wav
-2026-02-13 09:44:30,206 - WebServer - INFO - --- Server Starting ---
-2026-02-13 09:44:51,196 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-13 09:44:51,197 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-13 09:44:51,197 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-13 09:44:51,968 - WebServer - INFO - CUDA Available: True
-2026-02-13 09:44:51,978 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-13 09:44:51,979 - WebServer - INFO - Initializing Models...
-2026-02-13 09:45:42,712 - WebServer - INFO - Imports successful, instantiating...
-2026-02-13 09:45:42,713 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-13 09:46:18,229 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-13 09:46:18,251 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-13 09:46:18,346 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-13 09:46:33,605 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-13 09:46:43,835 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-13 09:46:43,846 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-13 09:46:57,600 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-13 09:47:28,652 - WebServer - INFO - Chat history cleared.
-2026-02-13 09:52:39,011 - WebServer - INFO - Processing audio: clean_input_09c4165a-36e4-4a76-b663-e74cfc27f933.wav [Mode: auto]
-2026-02-13 09:52:39,012 - ASR_Provider - INFO - Transcribing clean_input_09c4165a-36e4-4a76-b663-e74cfc27f933.wav (Lang: sat, Decoding: ctc)...
-2026-02-13 09:53:04,106 - MT_Provider - INFO - Translated: and the use of official intelligence.
-2026-02-13 09:53:04,107 - WebServer - INFO - MT (Sat->Eng): and the use of official intelligence.
-2026-02-13 09:53:06,846 - Brain - WARNING - Groq llama3-8b-8192 failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-02-13 09:53:06,952 - Brain - WARNING - Groq mixtral-8x7b-32768 failed: Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
-2026-02-13 09:53:11,896 - Brain - WARNING - Gemini gemini-1.5-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-13 09:53:12,083 - Brain - WARNING - Gemini gemini-pro failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-13 09:53:39,151 - FAQ_DB - INFO - FAQ Cached: and the use of official intelligence.
-2026-02-13 09:53:39,156 - MT_Provider - INFO - Translating: 'I cannot assist with using official intelligence. Can I help you with something else?' (eng_Latn -> sat_Olck)
-2026-02-13 09:53:53,879 - WebServer - INFO - AI Response (OLLAMA): I cannot assist with using official intelligence. Can I help you with something else?
-2026-02-13 09:59:08,986 - TTS_Provider - INFO - Audio saved to temp_output_09c4165a-36e4-4a76-b663-e74cfc27f933.wav
-2026-02-13 10:07:11,971 - TestLogger - INFO - Logging Santali: ᱟᱨ ᱤᱯᱷᱤᱥᱤᱥᱮᱞ  TEST
-2026-02-13 10:19:39,487 - WebServer - INFO - --- Server Starting ---
-2026-02-13 10:37:00,206 - FAQ_DB - INFO - FAQ Cached: ᱟᱢ ᱡᱟᱦᱟᱸᱭ ᱠᱟᱱᱟ ?
-2026-02-13 10:37:00,215 - FAQ_DB - INFO - FAQ Cached: ᱟᱢ ᱠᱤ ᱥᱚᱱᱛᱟᱞᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ?
-2026-02-13 10:37:00,222 - FAQ_DB - INFO - FAQ Cached: ᱟᱢ ᱢᱮᱫ ᱠᱟᱱ?
-2026-02-13 10:41:37,026 - WebServer - INFO - --- Server Starting ---
-2026-02-13 10:42:08,638 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-13 10:42:08,639 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-13 10:42:08,639 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-13 10:42:10,537 - WebServer - INFO - CUDA Available: True
-2026-02-13 10:42:10,561 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-13 10:42:10,562 - WebServer - INFO - Initializing Models...
-2026-02-13 10:43:29,714 - WebServer - INFO - Imports successful, instantiating...
-2026-02-13 10:43:29,715 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-13 10:43:54,701 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-13 10:43:54,736 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-13 10:43:54,786 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-13 10:44:18,449 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-13 10:44:37,636 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-13 10:44:37,653 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-13 10:45:04,538 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-13 10:46:37,352 - WebServer - INFO - Chat history cleared.
-2026-02-13 10:47:17,906 - WebServer - INFO - Processing audio: clean_input_8eebce42-eca1-4fe5-b154-3a00abce1b2a.wav [Mode: auto]
-2026-02-13 10:47:17,908 - ASR_Provider - INFO - Transcribing clean_input_8eebce42-eca1-4fe5-b154-3a00abce1b2a.wav (Lang: sat, Decoding: ctc)...
-2026-02-13 10:47:24,993 - ASR_Provider - INFO - ASR Output: ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱞᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ
-2026-02-13 10:47:25,002 - WebServer - INFO - ASR Identified: ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱞᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ
-2026-02-13 10:47:25,015 - MT_Provider - INFO - Translating: 'ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱞᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ' (sat_Olck -> eng_Latn)
-2026-02-13 10:47:27,250 - MT_Provider - INFO - Translated: can you tell me what language is japanese
-2026-02-13 10:47:27,251 - WebServer - INFO - MT (Sat->Eng): can you tell me what language is japanese
-2026-02-13 10:47:27,275 - FAQ_DB - INFO - FAQ Fuzzy Hit: 'ᱟᱢ ᱪᱮᱫ ᱥᱟᱱᱛᱟᱞᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ' ~= 'ᱟᱢ ᱠᱤ ᱥᱚᱱᱛᱟᱞᱤ ᱯᱟᱹᱨᱥᱤᱢ ᱵᱟᱰᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ?'
-2026-02-13 10:47:27,275 - WebServer - INFO - AI Response (SQLITE_FAQ): ᱦᱚᱭ, ᱤᱧ ᱥᱚᱱᱛᱚᱞᱤᱢ ᱵᱟᱰᱟᱭᱧᱟᱢᱚᱜᱼᱟ᱾ ᱤᱧ ᱟᱢ ᱥᱚᱱᱛᱚᱞᱤ ᱨᱮ ᱡᱟᱹᱦᱟᱨ ᱠᱚ ᱡᱟᱱᱟᱜ ᱟᱨ ᱩᱛᱟᱹᱨ ᱫᱮᱭᱟᱜᱼᱟ᱾
-2026-02-13 10:47:27,276 - WebServer - INFO - Response (Sat): ᱦᱚᱭ, ᱤᱧ ᱥᱚᱱᱛᱚᱞᱤᱢ ᱵᱟᱰᱟᱭᱧᱟᱢᱚᱜᱼᱟ᱾ ᱤᱧ ᱟᱢ ᱥᱚᱱᱛᱚᱞᱤ ᱨᱮ ᱡᱟᱹᱦᱟᱨ ᱠᱚ ᱡᱟᱱᱟᱜ ᱟᱨ ᱩᱛᱟᱹᱨ ᱫᱮᱭᱟᱜᱼᱟ᱾
-2026-02-13 10:48:00,784 - TTS_Provider - INFO - Audio saved to temp_output_8eebce42-eca1-4fe5-b154-3a00abce1b2a.wav
-2026-02-13 11:23:08,312 - WebServer - INFO - --- Server Starting ---
-2026-02-13 11:23:19,056 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-13 11:23:19,057 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-13 11:23:19,057 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-13 11:23:20,811 - WebServer - INFO - CUDA Available: True
-2026-02-13 11:23:20,817 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-13 11:23:20,818 - WebServer - INFO - Initializing Models...
-2026-02-13 11:23:52,750 - WebServer - INFO - Imports successful, instantiating...
-2026-02-13 11:23:52,751 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-13 11:24:06,721 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-13 11:24:06,811 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-13 11:24:07,104 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-13 11:24:21,171 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-13 11:24:31,186 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-13 11:24:31,196 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-13 11:24:45,112 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-13 11:25:09,564 - WebServer - INFO - Chat history cleared.
-2026-02-13 11:26:06,755 - WebServer - INFO - Processing audio: clean_input_ce9db297-c592-46cc-b565-c921030d27b6.wav [Mode: auto]
-2026-02-13 11:26:06,757 - ASR_Provider - INFO - Transcribing clean_input_ce9db297-c592-46cc-b565-c921030d27b6.wav (Lang: sat, Decoding: ctc)...
-2026-02-13 11:26:14,848 - ASR_Provider - INFO - ASR Output: ᱡᱮᱛ ᱨᱮ ᱥᱟᱡᱤᱥᱟᱱ ᱞᱛᱤ
-2026-02-13 11:26:14,875 - WebServer - INFO - ASR Identified: ᱡᱮᱛ ᱨᱮ ᱥᱟᱡᱤᱥᱟᱱ ᱞᱛᱤ
-2026-02-13 11:26:14,880 - MT_Provider - INFO - Translating: 'ᱡᱮᱛ ᱨᱮ ᱥᱟᱡᱤᱥᱟᱱ ᱞᱛᱤ' (sat_Olck -> eng_Latn)
-2026-02-13 11:26:17,031 - MT_Provider - INFO - Translated: Disciplined lathis in jathas
-2026-02-13 11:26:17,032 - WebServer - INFO - MT (Sat->Eng): Disciplined lathis in jathas
-2026-02-13 11:26:18,554 - FAQ_DB - INFO - FAQ Cached: disciplined lathis in jathas
-2026-02-13 11:26:18,555 - MT_Provider - INFO - Translating: 'Lathi is a traditional tribal stick. 
-Jatha is a group of people. 
-Carrying a lathi in a jatha is an old tradition. 
-People use it to walk, work, and play together.' (eng_Latn -> sat_Olck)
-2026-02-13 11:26:21,186 - MT_Provider - INFO - Translated: ᱞᱚᱛᱤ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱨᱣᱟ ᱟᱱᱟᱜ ᱩᱯᱚᱡᱟᱛᱤ ᱞᱚᱛᱤ ᱾ ᱡᱚᱛᱟ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫ ᱜᱟᱫᱮᱞ ᱦᱚᱲᱠᱚ ᱾ ᱡᱛᱟ ᱨᱮ ᱞᱚᱛᱤ ᱤᱫᱤ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫᱴᱟᱝ ᱢᱟᱨᱮᱱ ᱥᱮᱨᱣᱟ ᱾ ᱦᱚᱲᱠᱚ ᱢᱤᱫ ᱥᱟᱶᱛᱮ ᱪᱟᱞ, ᱠᱟᱹᱢᱤ ᱟᱨ ᱠᱷᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱱᱚᱶᱟ ᱠᱚ ᱵᱮᱣᱦᱟᱨᱼᱟ ᱾
-2026-02-13 11:26:21,187 - WebServer - INFO - AI Response (GROQ): Lathi is a traditional tribal stick. 
-Jatha is a group of people. 
-Carrying a lathi in a jatha is an old tradition. 
-People use it to walk, work, and play together.
-2026-02-13 11:26:21,187 - WebServer - INFO - Response (Sat): ᱞᱚᱛᱤ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱨᱣᱟ ᱟᱱᱟᱜ ᱩᱯᱚᱡᱟᱛᱤ ᱞᱚᱛᱤ ᱾ ᱡᱚᱛᱟ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫ ᱜᱟᱫᱮᱞ ᱦᱚᱲᱠᱚ ᱾ ᱡᱛᱟ ᱨᱮ ᱞᱚᱛᱤ ᱤᱫᱤ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫᱴᱟᱝ ᱢᱟᱨᱮᱱ ᱥᱮᱨᱣᱟ ᱾ ᱦᱚᱲᱠᱚ ᱢᱤᱫ ᱥᱟᱶᱛᱮ ᱪᱟᱞ, ᱠᱟᱹᱢᱤ ᱟᱨ ᱠᱷᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱱᱚᱶᱟ ᱠᱚ ᱵᱮᱣᱦᱟᱨᱼᱟ ᱾
-2026-02-13 11:27:15,931 - TTS_Provider - INFO - Audio saved to temp_output_ce9db297-c592-46cc-b565-c921030d27b6.wav
-2026-02-13 11:28:09,986 - WebServer - INFO - Processing audio: clean_input_4801b1c0-ae10-4886-9c63-d40c4af57ee8.wav [Mode: auto]
-2026-02-13 11:28:09,987 - ASR_Provider - INFO - Transcribing clean_input_4801b1c0-ae10-4886-9c63-d40c4af57ee8.wav (Lang: sat, Decoding: ctc)...
-2026-02-13 11:28:20,405 - ASR_Provider - INFO - ASR Output: ᱪᱮᱫ ᱞᱟᱹᱜᱤᱫ ᱥᱩᱫᱟᱹ
-2026-02-13 11:28:20,444 - WebServer - INFO - ASR Identified: ᱪᱮᱫ ᱞᱟᱹᱜᱤᱫ ᱥᱩᱫᱟᱹ
-2026-02-13 11:28:20,495 - MT_Provider - INFO - Translating: 'ᱪᱮᱫ ᱞᱟᱹᱜᱤᱫ ᱥᱩᱫᱟᱹ' (sat_Olck -> eng_Latn)
-2026-02-13 11:28:24,114 - MT_Provider - INFO - Translated: why sunday
-2026-02-13 11:28:24,115 - WebServer - INFO - MT (Sat->Eng): why sunday
-2026-02-13 11:28:24,953 - FAQ_DB - INFO - FAQ Cached: why sunday
-2026-02-13 11:28:24,954 - MT_Provider - INFO - Translating: 'Sunday is the day of rest in many cultures. 
-It is after Saturday, and before Monday. 
-People often go to church, sleep, or relax on Sunday. 
-This day is for calm and quiet activities.' (eng_Latn -> sat_Olck)
-2026-02-13 11:28:26,954 - MT_Provider - INFO - Translated: ᱟᱭᱢᱟ ᱞᱟᱠᱪᱟᱨ ᱨᱮ ᱨᱤᱦᱤᱴ ᱢᱟᱦᱟ ᱫᱚ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱨᱤᱦᱤᱴ ᱫᱤᱱ ᱛᱟᱭᱚᱢ ᱟᱨ ᱪᱟᱸᱫᱳ ᱢᱟᱲᱟᱝ ᱫᱤᱱ ᱾ ᱦᱚᱲᱠᱚ ᱡᱟᱣᱜᱮ ᱜᱤᱨᱡᱟᱨᱮ ᱠᱚ ᱥᱮᱱᱚᱜᱼᱟ, ᱥᱩᱧᱟᱢᱚᱜᱼᱟ ᱥᱮ ᱨᱤᱦᱤᱴ ᱠᱟᱹᱢᱤ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱱᱚᱶᱟ ᱢᱟᱦᱟ ᱫᱚ ᱾
-2026-02-13 11:28:26,955 - WebServer - INFO - AI Response (GROQ): Sunday is the day of rest in many cultures. 
-It is after Saturday, and before Monday. 
-People often go to church, sleep, or relax on Sunday. 
-This day is for calm and quiet activities.
-2026-02-13 11:28:26,955 - WebServer - INFO - Response (Sat): ᱟᱭᱢᱟ ᱞᱟᱠᱪᱟᱨ ᱨᱮ ᱨᱤᱦᱤᱴ ᱢᱟᱦᱟ ᱫᱚ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱨᱤᱦᱤᱴ ᱫᱤᱱ ᱛᱟᱭᱚᱢ ᱟᱨ ᱪᱟᱸᱫᱳ ᱢᱟᱲᱟᱝ ᱫᱤᱱ ᱾ ᱦᱚᱲᱠᱚ ᱡᱟᱣᱜᱮ ᱜᱤᱨᱡᱟᱨᱮ ᱠᱚ ᱥᱮᱱᱚᱜᱼᱟ, ᱥᱩᱧᱟᱢᱚᱜᱼᱟ ᱥᱮ ᱨᱤᱦᱤᱴ ᱠᱟᱹᱢᱤ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱱᱚᱶᱟ ᱢᱟᱦᱟ ᱫᱚ ᱾
-2026-02-13 11:29:14,702 - TTS_Provider - INFO - Audio saved to temp_output_4801b1c0-ae10-4886-9c63-d40c4af57ee8.wav
-2026-02-13 11:31:06,253 - WebServer - INFO - Processing audio: clean_input_577187db-6c89-4bd3-8ee6-90292682e3b3.wav [Mode: auto]
-2026-02-13 11:31:06,256 - ASR_Provider - INFO - Transcribing clean_input_577187db-6c89-4bd3-8ee6-90292682e3b3.wav (Lang: sat, Decoding: ctc)...
-2026-02-13 11:31:10,903 - ASR_Provider - INFO - ASR Output: ᱡᱟᱦᱟᱸᱟᱦᱟ ᱠᱮ ᱠᱟᱱᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-13 11:31:10,924 - WebServer - INFO - ASR Identified: ᱡᱟᱦᱟᱸᱟᱦᱟ ᱠᱮ ᱠᱟᱱᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-13 11:31:10,947 - MT_Provider - INFO - Translating: 'ᱡᱟᱦᱟᱸᱟᱦᱟ ᱠᱮ ᱠᱟᱱᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ' (sat_Olck -> eng_Latn)
-2026-02-13 11:31:12,007 - MT_Provider - INFO - Translated: Whenever Kanti is heard in Jamini,
-2026-02-13 11:31:12,007 - WebServer - INFO - MT (Sat->Eng): Whenever Kanti is heard in Jamini,
-2026-02-13 11:31:12,921 - FAQ_DB - INFO - FAQ Cached: whenever kanti is heard in jamini
-2026-02-13 11:31:12,922 - MT_Provider - INFO - Translating: 'Kanti is a name of a river. 
-It is in the Purulia district of West Bengal. 
-Jamini is a nearby village, known for its river Kanti. 
-The river is a source of water for the villagers. [ANSWER SOURCE: GROQ]' (eng_Latn -> sat_Olck)
-2026-02-13 11:31:15,428 - MT_Provider - INFO - Translated: ᱠᱟᱱᱛᱤ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱹᱭ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱯᱚᱪᱷᱤᱢ ᱵᱟᱝᱞᱟ ᱨᱮᱭᱟᱜ ᱯᱩᱨᱩᱞᱤᱭᱟ ᱦᱚᱱᱚᱛ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾ ᱡᱟᱢᱤᱱᱤ ᱥᱳᱨᱥᱳᱯᱳᱨ ᱢᱤᱫᱴᱟᱝ ᱟᱛᱳ, ᱡᱟᱦᱟᱸ ᱠᱟᱱᱛᱤ ᱱᱟᱹᱭ ᱞᱟᱹᱜᱤᱫ ᱩᱯᱨᱩᱢᱟ ᱾ ᱱᱟᱹᱭ ᱫᱚ ᱟᱛᱳ ᱨᱮᱱ ᱦᱚᱲ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱫᱟᱜ ᱨᱮᱭᱟᱜ ᱢᱤᱫᱴᱟᱝ ᱯᱷᱮᱰᱟᱛ ᱾
-2026-02-13 11:31:15,428 - WebServer - INFO - AI Response (GROQ): Kanti is a name of a river. 
-It is in the Purulia district of West Bengal. 
-Jamini is a nearby village, known for its river Kanti. 
-The river is a source of water for the villagers. [ANSWER SOURCE: GROQ]
-2026-02-13 11:31:15,429 - WebServer - INFO - Response (Sat): ᱠᱟᱱᱛᱤ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱹᱭ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱯᱚᱪᱷᱤᱢ ᱵᱟᱝᱞᱟ ᱨᱮᱭᱟᱜ ᱯᱩᱨᱩᱞᱤᱭᱟ ᱦᱚᱱᱚᱛ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾ ᱡᱟᱢᱤᱱᱤ ᱥᱳᱨᱥᱳᱯᱳᱨ ᱢᱤᱫᱴᱟᱝ ᱟᱛᱳ, ᱡᱟᱦᱟᱸ ᱠᱟᱱᱛᱤ ᱱᱟᱹᱭ ᱞᱟᱹᱜᱤᱫ ᱩᱯᱨᱩᱢᱟ ᱾ ᱱᱟᱹᱭ ᱫᱚ ᱟᱛᱳ ᱨᱮᱱ ᱦᱚᱲ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱫᱟᱜ ᱨᱮᱭᱟᱜ ᱢᱤᱫᱴᱟᱝ ᱯᱷᱮᱰᱟᱛ ᱾
-2026-02-13 11:32:32,850 - TTS_Provider - INFO - Audio saved to temp_output_577187db-6c89-4bd3-8ee6-90292682e3b3.wav
-2026-02-18 11:45:25,623 - WebServer - INFO - --- Server Starting ---
-2026-02-18 11:46:18,688 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-18 11:46:18,688 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-18 11:46:18,689 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-18 11:46:18,725 - WebServer - INFO - CUDA Available: True
-2026-02-18 11:46:18,740 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-18 11:46:18,741 - WebServer - INFO - Initializing Models...
-2026-02-18 11:46:48,800 - WebServer - INFO - Imports successful, instantiating...
-2026-02-18 11:46:48,800 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-18 11:47:02,757 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-18 11:47:02,798 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-18 11:47:02,985 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-18 11:47:17,135 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-18 11:47:28,165 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-18 11:47:28,168 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-18 11:47:39,361 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-18 11:51:28,104 - WebServer - INFO - --- Server Starting ---
-2026-02-18 11:51:36,676 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-18 11:51:36,676 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-18 11:51:36,676 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-18 11:51:37,518 - WebServer - INFO - CUDA Available: True
-2026-02-18 11:51:37,524 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-18 11:51:37,525 - WebServer - INFO - Initializing Models...
-2026-02-18 11:52:03,767 - WebServer - INFO - Imports successful, instantiating...
-2026-02-18 11:52:03,768 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-18 11:52:17,018 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-18 11:52:17,085 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-18 11:52:17,251 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-18 11:52:32,787 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-18 11:52:45,070 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-18 11:52:45,072 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-18 11:52:55,654 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-18 11:57:44,318 - WebServer - INFO - --- Server Starting ---
-2026-02-18 11:57:53,728 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-18 11:57:53,728 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-18 11:57:53,729 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-18 11:57:54,601 - WebServer - INFO - CUDA Available: True
-2026-02-18 11:57:54,608 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-18 11:57:54,608 - WebServer - INFO - Initializing Models...
-2026-02-18 11:58:00,422 - WebServer - ERROR - CRITICAL: Failed to initialize AI models due to dependency error: cannot import name 'runtime_version' from 'google.protobuf' (C:\Users\rizvi\anaconda3\Lib\site-packages\google\protobuf\__init__.py)
-2026-02-18 11:58:00,423 - WebServer - WARNING - Server will run in text-only/simulation mode if possible.
-2026-02-18 11:58:07,539 - WebServer - INFO - Chat history cleared.
-2026-02-18 12:00:18,165 - WebServer - INFO - --- Server Starting ---
-2026-02-18 12:00:26,766 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-18 12:00:26,766 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-18 12:00:26,766 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-18 12:00:51,936 - WebServer - INFO - --- Server Starting ---
-2026-02-18 12:00:56,488 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-18 12:00:56,488 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-18 12:00:56,489 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-18 12:00:56,913 - WebServer - INFO - CUDA Available: True
-2026-02-18 12:00:56,917 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-18 12:00:56,918 - WebServer - INFO - Initializing Models...
-2026-02-18 12:01:17,031 - WebServer - INFO - Imports successful, instantiating...
-2026-02-18 12:01:17,032 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-18 12:01:29,541 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-18 12:01:29,575 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-18 12:01:29,803 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-18 12:01:42,840 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-18 12:01:53,072 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-18 12:01:53,074 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-18 12:02:06,027 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-18 14:38:14,870 - WebServer - INFO - --- Server Starting ---
-2026-02-18 14:38:26,374 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-18 14:38:26,375 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-18 14:38:26,375 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-18 14:38:27,162 - WebServer - INFO - CUDA Available: True
-2026-02-18 14:38:27,173 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-18 14:38:27,174 - WebServer - INFO - Initializing Models...
-2026-02-18 14:38:58,149 - WebServer - INFO - Imports successful, instantiating...
-2026-02-18 14:38:58,150 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-18 14:39:17,808 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-18 14:39:17,816 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-18 14:39:17,854 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-18 14:39:34,258 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-18 14:39:46,562 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-18 14:39:46,566 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-18 14:40:02,672 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-18 14:51:07,238 - WebServer - INFO - Processing audio: clean_input_db66f333-7d58-468a-9d42-950d9c641e86.wav [Mode: auto]
-2026-02-18 14:51:07,244 - ASR_Provider - INFO - Transcribing clean_input_db66f333-7d58-468a-9d42-950d9c641e86.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 14:51:30,083 - ASR_Provider - INFO - ASR Output: ᱥᱟᱱᱛᱟᱲᱤ ᱨᱦ
-2026-02-18 14:51:30,113 - WebServer - INFO - ASR Identified: ᱥᱟᱱᱛᱟᱲᱤ ᱨᱦ
-2026-02-18 14:51:30,175 - MT_Provider - INFO - Translating: 'ᱥᱟᱱᱛᱟᱲᱤ ᱨᱦ' (sat_Olck -> eng_Latn)
-2026-02-18 14:51:39,660 - MT_Provider - INFO - Translated: Lakshadweep
-2026-02-18 14:51:39,661 - WebServer - INFO - MT (Sat->Eng): Lakshadweep
-2026-02-18 14:51:44,055 - FAQ_DB - INFO - FAQ Cached: lakshadweep
-2026-02-18 14:51:44,056 - MT_Provider - INFO - Translating: 'Lakshadweep. Lakshadweep is a group of islands. 
-It is in the Arabian Sea. 
-Many islands are coral reefs.' (eng_Latn -> sat_Olck)
-2026-02-18 14:51:58,518 - MT_Provider - INFO - Translated: ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱾ ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱫᱚ ᱢᱤᱫ ᱜᱩᱴ ᱰᱷᱤᱯ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱟᱨᱵᱚ ᱥᱟᱹᱢᱩᱫ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾ ᱟᱭᱢᱟ ᱰᱷᱤᱯ ᱫᱚ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱯᱨᱚᱵᱟᱞ ᱨᱮᱯᱷ ᱾
-2026-02-18 14:51:58,520 - WebServer - INFO - AI Response (GROQ): Lakshadweep. Lakshadweep is a group of islands. 
-It is in the Arabian Sea. 
-Many islands are coral reefs.
-2026-02-18 14:51:58,521 - WebServer - INFO - Response (Sat): ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱾ ᱞᱚᱠᱠᱷᱟᱫᱤᱯ ᱫᱚ ᱢᱤᱫ ᱜᱩᱴ ᱰᱷᱤᱯ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱟᱨᱵᱚ ᱥᱟᱹᱢᱩᱫ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾ ᱟᱭᱢᱟ ᱰᱷᱤᱯ ᱫᱚ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱯᱨᱚᱵᱟᱞ ᱨᱮᱯᱷ ᱾
-2026-02-18 14:55:49,067 - TTS_Provider - INFO - Audio saved to temp_output_db66f333-7d58-468a-9d42-950d9c641e86.wav
-2026-02-18 15:18:47,521 - WebServer - INFO - --- Server Starting ---
-2026-02-18 15:18:55,977 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-18 15:18:55,978 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-18 15:18:55,978 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-18 15:18:56,841 - WebServer - INFO - CUDA Available: True
-2026-02-18 15:18:56,849 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-18 15:18:56,850 - WebServer - INFO - Initializing Models...
-2026-02-18 15:19:24,168 - WebServer - INFO - Imports successful, instantiating...
-2026-02-18 15:19:24,169 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-18 15:19:37,896 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-18 15:19:37,908 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-18 15:19:37,944 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-18 15:19:58,885 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-18 15:20:11,839 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-18 15:20:11,846 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-18 15:20:25,272 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-18 15:21:47,886 - WebServer - INFO - Chat history cleared.
-2026-02-18 19:34:42,336 - WebServer - INFO - Processing audio: clean_input_59415f7a-b99c-40ae-9622-28d2dfebb3c3.wav [Mode: auto]
-2026-02-18 19:34:42,357 - ASR_Provider - INFO - Transcribing clean_input_59415f7a-b99c-40ae-9622-28d2dfebb3c3.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:35:00,811 - WebServer - INFO - Processing audio: clean_input_bb2602d3-1be3-4338-9d30-5f8f3d9a2e62.wav [Mode: auto]
-2026-02-18 19:35:00,817 - ASR_Provider - INFO - Transcribing clean_input_bb2602d3-1be3-4338-9d30-5f8f3d9a2e62.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:35:08,901 - ASR_Provider - INFO - ASR Output: 
-2026-02-18 19:35:08,902 - WebServer - INFO - ASR Identified: 
-2026-02-18 19:35:08,923 - ASR_Provider - INFO - ASR Output: ᱱᱟ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱱᱡᱚᱢ ᱢᱠᱟᱱ
-2026-02-18 19:35:08,925 - WebServer - INFO - ASR Identified: ᱱᱟ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱱᱡᱚᱢ ᱢᱠᱟᱱ
-2026-02-18 19:35:08,931 - MT_Provider - INFO - Translating: 'ᱱᱟ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱱᱡᱚᱢ ᱢᱠᱟᱱ' (sat_Olck -> eng_Latn)
-2026-02-18 19:35:12,954 - MT_Provider - INFO - Translated: Anjaam Makaan from Na Toh Sa Gemini Baraat
-2026-02-18 19:35:12,956 - WebServer - INFO - MT (Sat->Eng): Anjaam Makaan from Na Toh Sa Gemini Baraat
-2026-02-18 19:35:19,345 - FAQ_DB - INFO - FAQ Cached: anjaam makaan from na toh sa gemini baraat
-2026-02-18 19:35:19,347 - MT_Provider - INFO - Translating: 'Anjaam Makaan... Na Toh Sa Gemini Baraat... (pauses) I think you are asking about a song.
+It helps keep our organs working correctly.
+Clean water removes harmful germs and dirt.
+This helps prevent diseases like diarrhea and typhoid.
 
-This is a song from the movie Na Toh Saahi... (pauses) Gemini Baraat. It is a popular Bollywood music.' (eng_Latn -> sat_Olck)
-2026-02-18 19:35:23,791 - MT_Provider - INFO - Translated: ᱟᱱᱡᱟᱢ ᱢᱟᱠᱟᱱ... ᱱᱟ ᱛᱳ ᱥᱮ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ... (ᱵᱚᱱᱚᱫᱚᱞ) ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱟᱢ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱨᱮᱭᱟᱜ ᱠᱟᱛᱷᱟ ᱵᱟᱰᱟᱭ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ'ᱱᱟ ᱛᱳ ᱥᱟᱦᱤ'ᱼ ᱨᱮᱭᱟᱜ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾ (ᱵᱚᱱᱚᱫᱚᱞ)'ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ'ᱼ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱧᱩᱛᱩᱢᱟᱱ ᱵᱚᱞᱤᱭᱩᱰ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾
-2026-02-18 19:35:23,791 - WebServer - INFO - AI Response (GROQ): Anjaam Makaan... Na Toh Sa Gemini Baraat... (pauses) I think you are asking about a song.
+Drinking clean water also keeps our skin and hair healthy.
+It helps us focus and feel energetic throughout the day.
 
-This is a song from the movie Na Toh Saahi... (pauses) Gemini Baraat. It is a popular Bollywood music.
-2026-02-18 19:35:23,792 - WebServer - INFO - Response (Sat): ᱟᱱᱡᱟᱢ ᱢᱟᱠᱟᱱ... ᱱᱟ ᱛᱳ ᱥᱮ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ... (ᱵᱚᱱᱚᱫᱚᱞ) ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱟᱢ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱨᱮᱭᱟᱜ ᱠᱟᱛᱷᱟ ᱵᱟᱰᱟᱭ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ'ᱱᱟ ᱛᱳ ᱥᱟᱦᱤ'ᱼ ᱨᱮᱭᱟᱜ ᱢᱤᱫᱴᱟᱝ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾ (ᱵᱚᱱᱚᱫᱚᱞ)'ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱟᱴ'ᱼ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱧᱩᱛᱩᱢᱟᱱ ᱵᱚᱞᱤᱭᱩᱰ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱟᱱᱟ ᱾
-2026-02-18 19:35:56,469 - WebServer - INFO - Processing audio: clean_input_8327f257-5c1e-4bb8-86dc-e0d7aeee88c8.wav [Mode: auto]
-2026-02-18 19:35:56,470 - ASR_Provider - INFO - Transcribing clean_input_8327f257-5c1e-4bb8-86dc-e0d7aeee88c8.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:36:03,890 - ASR_Provider - INFO - ASR Output: 
-2026-02-18 19:36:03,917 - WebServer - INFO - ASR Identified: 
-2026-02-18 19:36:07,542 - WebServer - INFO - Processing audio: clean_input_f80e9fed-53c1-4cd9-bc6b-4e419430e492.wav [Mode: auto]
-2026-02-18 19:36:07,579 - ASR_Provider - INFO - Transcribing clean_input_f80e9fed-53c1-4cd9-bc6b-4e419430e492.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:36:09,651 - ASR_Provider - INFO - ASR Output: ᱨᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-18 19:36:09,657 - WebServer - INFO - ASR Identified: ᱨᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-18 19:36:09,670 - MT_Provider - INFO - Translating: 'ᱨᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ' (sat_Olck -> eng_Latn)
-2026-02-18 19:36:11,436 - MT_Provider - INFO - Translated: Listen to Jamini in raha Ke Damti.
-2026-02-18 19:36:11,437 - WebServer - INFO - MT (Sat->Eng): Listen to Jamini in raha Ke Damti.
-2026-02-18 19:36:13,346 - FAQ_DB - INFO - FAQ Cached: listen to jamini in raha ke damti
-2026-02-18 19:36:13,346 - MT_Provider - INFO - Translating: 'Jamini raha Ke Damti. A beautiful Santali song. Sung by Jamini Raha.' (eng_Latn -> sat_Olck)
-2026-02-18 19:36:15,198 - MT_Provider - INFO - Translated: ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱾ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱯᱟᱭ ᱥᱚᱱᱛᱟᱞᱤ ᱥᱮᱨᱮᱧ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱥᱮᱨᱮᱧ ᱟᱠᱟᱫᱟ ᱾
-2026-02-18 19:36:15,199 - WebServer - INFO - AI Response (GROQ): Jamini raha Ke Damti. A beautiful Santali song. Sung by Jamini Raha.
-2026-02-18 19:36:15,200 - WebServer - INFO - Response (Sat): ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱠᱮ ᱫᱟᱢᱛᱤ ᱾ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱯᱟᱭ ᱥᱚᱱᱛᱟᱞᱤ ᱥᱮᱨᱮᱧ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱥᱮᱨᱮᱧ ᱟᱠᱟᱫᱟ ᱾
-2026-02-18 19:36:25,428 - WebServer - INFO - Processing audio: clean_input_d2bf22b7-9372-4525-a2b5-662abbc26bb6.wav [Mode: auto]
-2026-02-18 19:36:25,430 - ASR_Provider - INFO - Transcribing clean_input_d2bf22b7-9372-4525-a2b5-662abbc26bb6.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:36:28,152 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ ᱠᱮᱫᱢ ᱛᱤᱥ ᱦᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱱ
-2026-02-18 19:36:28,196 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ ᱠᱮᱫᱢ ᱛᱤᱥ ᱦᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱱ
-2026-02-18 19:36:28,203 - MT_Provider - INFO - Translating: 'ᱡᱚᱦᱟᱨ ᱠᱮᱫᱢ ᱛᱤᱥ ᱦᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱱ' (sat_Olck -> eng_Latn)
-2026-02-18 19:36:29,736 - MT_Provider - INFO - Translated: Jamini is also heard at times.
-2026-02-18 19:36:29,737 - WebServer - INFO - MT (Sat->Eng): Jamini is also heard at times.
-2026-02-18 19:36:30,677 - FAQ_DB - INFO - FAQ Cached: jamini is also heard at times
-2026-02-18 19:36:30,677 - MT_Provider - INFO - Translating: 'Jamini is also called Baul Sangeet. 
-It's a style of music with deep emotions. 
-In Santali culture, Jamini and Baul songs are loved.' (eng_Latn -> sat_Olck)
-2026-02-18 19:36:35,497 - MT_Provider - INFO - Translated: ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱧᱩᱛᱩᱢᱛᱮ ᱦᱚᱸ ᱩᱯᱨᱩᱢᱚᱜᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱟᱹᱰᱤ ᱜᱟᱹᱛ ᱟᱱ ᱥᱮᱨᱮᱧ ᱨᱮᱭᱟᱜ ᱦᱚᱨᱟ ᱠᱟᱱᱟ ᱾ ᱥᱚᱱᱛᱟᱞᱤ ᱞᱟᱠᱪᱟᱨ ᱨᱮ ᱡᱟᱢᱤᱱᱤ ᱟᱨ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱱᱟᱯᱟᱭ ᱠᱚ ᱢᱟᱱᱟᱣᱼᱟ ᱾
-2026-02-18 19:36:35,498 - WebServer - INFO - AI Response (GROQ): Jamini is also called Baul Sangeet. 
-It's a style of music with deep emotions. 
-In Santali culture, Jamini and Baul songs are loved.
-2026-02-18 19:36:35,498 - WebServer - INFO - Response (Sat): ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱧᱩᱛᱩᱢᱛᱮ ᱦᱚᱸ ᱩᱯᱨᱩᱢᱚᱜᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱟᱹᱰᱤ ᱜᱟᱹᱛ ᱟᱱ ᱥᱮᱨᱮᱧ ᱨᱮᱭᱟᱜ ᱦᱚᱨᱟ ᱠᱟᱱᱟ ᱾ ᱥᱚᱱᱛᱟᱞᱤ ᱞᱟᱠᱪᱟᱨ ᱨᱮ ᱡᱟᱢᱤᱱᱤ ᱟᱨ ᱵᱳᱞ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱱᱟᱯᱟᱭ ᱠᱚ ᱢᱟᱱᱟᱣᱼᱟ ᱾
-2026-02-18 19:36:45,413 - WebServer - INFO - Processing audio: clean_input_c183e6af-c8dc-4a8b-a5b7-4191d442746b.wav [Mode: auto]
-2026-02-18 19:36:45,416 - ASR_Provider - INFO - Transcribing clean_input_c183e6af-c8dc-4a8b-a5b7-4191d442746b.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:36:50,366 - WebServer - INFO - Processing audio: clean_input_41a5dc34-c800-41a1-b915-20a12d01a4aa.wav [Mode: auto]
-2026-02-18 19:36:50,391 - ASR_Provider - INFO - Transcribing clean_input_41a5dc34-c800-41a1-b915-20a12d01a4aa.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:36:53,403 - ASR_Provider - INFO - ASR Output: 
-2026-02-18 19:36:53,419 - WebServer - INFO - ASR Identified: 
-2026-02-18 19:36:56,998 - WebServer - INFO - Processing audio: clean_input_0789983e-4f96-4304-8074-48a9db77cea0.wav [Mode: auto]
-2026-02-18 19:36:57,025 - ASR_Provider - INFO - Transcribing clean_input_0789983e-4f96-4304-8074-48a9db77cea0.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:37:00,240 - ASR_Provider - INFO - ASR Output: ᱱᱚᱢᱠᱟ
-2026-02-18 19:37:00,271 - WebServer - INFO - ASR Identified: ᱱᱚᱢᱠᱟ
-2026-02-18 19:37:00,346 - MT_Provider - INFO - Translating: 'ᱱᱚᱢᱠᱟ' (sat_Olck -> eng_Latn)
-2026-02-18 19:37:04,393 - ASR_Provider - INFO - ASR Output: ᱡ ᱠᱮ ᱠᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢ ᱢ ᱟᱠᱟᱱ
-2026-02-18 19:37:04,404 - WebServer - INFO - ASR Identified: ᱡ ᱠᱮ ᱠᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢ ᱢ ᱟᱠᱟᱱ
-2026-02-18 19:37:04,405 - MT_Provider - INFO - Translating: 'ᱡ ᱠᱮ ᱠᱟᱢᱛᱤ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮ ᱟᱸᱡᱚᱢ ᱢ ᱟᱠᱟᱱ' (sat_Olck -> eng_Latn)
-2026-02-18 19:37:04,637 - MT_Provider - INFO - Translated: namka
-2026-02-18 19:37:04,655 - WebServer - INFO - MT (Sat->Eng): namka
-2026-02-18 19:37:05,721 - FAQ_DB - INFO - FAQ Cached: namka
-2026-02-18 19:37:05,722 - MT_Provider - INFO - Translating: 'Namka. Namka holo. Namka ek prakritik dharatiya jalasrot.' (eng_Latn -> sat_Olck)
-2026-02-18 19:37:06,696 - MT_Provider - INFO - Translated: JK Kamti was heard speaking to Jamini.
-2026-02-18 19:37:06,697 - WebServer - INFO - MT (Sat->Eng): JK Kamti was heard speaking to Jamini.
-2026-02-18 19:37:08,854 - FAQ_DB - INFO - FAQ Cached: jk kamti was heard speaking to jamini
-2026-02-18 19:37:08,855 - MT_Provider - INFO - Translating: 'JK Kamti is a person. 
-I do not know who Jamini is. 
-Please tell me more about this conversation.' (eng_Latn -> sat_Olck)
-2026-02-18 19:37:09,280 - MT_Provider - INFO - Translated: ᱱᱟᱢᱠᱟ ᱾ ᱱᱟᱢᱠᱟ ᱦᱳᱞᱳ ᱾ ᱱᱟᱢᱠᱟ ᱢᱤᱫ ᱯᱨᱚᱠᱤᱛᱤᱠ ᱫᱟᱨᱟᱛᱤᱭᱟ ᱡᱟᱞᱟᱥᱨᱳᱛ ᱾
-2026-02-18 19:37:09,280 - WebServer - INFO - AI Response (GROQ): Namka. Namka holo. Namka ek prakritik dharatiya jalasrot.
-2026-02-18 19:37:09,281 - WebServer - INFO - Response (Sat): ᱱᱟᱢᱠᱟ ᱾ ᱱᱟᱢᱠᱟ ᱦᱳᱞᱳ ᱾ ᱱᱟᱢᱠᱟ ᱢᱤᱫ ᱯᱨᱚᱠᱤᱛᱤᱠ ᱫᱟᱨᱟᱛᱤᱭᱟ ᱡᱟᱞᱟᱥᱨᱳᱛ ᱾
-2026-02-18 19:37:26,424 - WebServer - INFO - Processing audio: clean_input_907c0d5e-de68-4e40-9a7d-fa82e6986fa0.wav [Mode: auto]
-2026-02-18 19:37:26,429 - ASR_Provider - INFO - Transcribing clean_input_907c0d5e-de68-4e40-9a7d-fa82e6986fa0.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:37:33,455 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ ᱞᱮᱠᱷᱟᱱ ᱛᱤᱥ ᱦᱚᱸᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮᱭ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱫ
-2026-02-18 19:37:33,471 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ ᱞᱮᱠᱷᱟᱱ ᱛᱤᱥ ᱦᱚᱸᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮᱭ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱫ
-2026-02-18 19:37:33,481 - MT_Provider - INFO - Translating: 'ᱡᱚᱦᱟᱨ ᱞᱮᱠᱷᱟᱱ ᱛᱤᱥ ᱦᱚᱸᱚᱸ ᱡᱮᱢᱤᱱᱤ ᱵᱟᱨᱮᱛᱮᱭ ᱟᱸᱡᱚᱢᱟ ᱟᱠᱟᱫ' (sat_Olck -> eng_Latn)
-2026-02-18 19:37:33,539 - MT_Provider - INFO - Translated: ᱡᱮᱹᱠᱮ ᱠᱟᱢᱛᱤ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱾ ᱤᱧ ᱫᱚ ᱵᱟᱝ ᱵᱟᱰᱟᱭ ᱡᱮ ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱪᱮᱫ ᱾ ᱫᱟᱭᱟ ᱠᱟᱛᱮ ᱤᱧ ᱱᱚᱣᱟ ᱠᱟᱛᱷᱟ ᱠᱟᱛᱷᱟ ᱵᱟᱨᱮᱛᱮ ᱟᱨᱦᱚᱸ ᱞᱟᱹᱭ ᱤᱧᱢᱮ ᱾
-2026-02-18 19:37:33,599 - WebServer - INFO - AI Response (GROQ): JK Kamti is a person. 
-I do not know who Jamini is. 
-Please tell me more about this conversation.
-2026-02-18 19:37:33,619 - WebServer - INFO - Response (Sat): ᱡᱮᱹᱠᱮ ᱠᱟᱢᱛᱤ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱾ ᱤᱧ ᱫᱚ ᱵᱟᱝ ᱵᱟᱰᱟᱭ ᱡᱮ ᱡᱟᱢᱤᱱᱤ ᱫᱚ ᱪᱮᱫ ᱾ ᱫᱟᱭᱟ ᱠᱟᱛᱮ ᱤᱧ ᱱᱚᱣᱟ ᱠᱟᱛᱷᱟ ᱠᱟᱛᱷᱟ ᱵᱟᱨᱮᱛᱮ ᱟᱨᱦᱚᱸ ᱞᱟᱹᱭ ᱤᱧᱢᱮ ᱾
-2026-02-18 19:39:26,447 - TTS_Provider - INFO - Audio saved to temp_output_f80e9fed-53c1-4cd9-bc6b-4e419430e492.wav
-2026-02-18 19:39:26,616 - WebServer - INFO - Processing audio: clean_input_6e5c36d1-c1bc-4355-9bce-d31c67ecc2db.wav [Mode: auto]
-2026-02-18 19:39:26,617 - ASR_Provider - INFO - Transcribing clean_input_6e5c36d1-c1bc-4355-9bce-d31c67ecc2db.wav (Lang: sat, Decoding: ctc)...
-2026-02-18 19:39:27,493 - ASR_Provider - INFO - ASR Output: ᱷᱟᱥᱟ ᱢᱚᱱᱤᱥ ᱨ ᱵᱷᱵ ᱟᱫᱟᱱ ᱯᱨᱚᱫᱟᱱ ᱨ ᱢᱟᱫᱚᱢ ᱢᱚᱱᱨ ᱠᱟᱛ ᱠᱚ ᱫᱷᱱᱤ ᱡ ᱨᱮ ᱪᱚᱲᱮᱵᱟᱨ
-2026-02-18 19:39:27,516 - WebServer - INFO - ASR Identified: ᱷᱟᱥᱟ ᱢᱚᱱᱤᱥ ᱨ ᱵᱷᱵ ᱟᱫᱟᱱ ᱯᱨᱚᱫᱟᱱ ᱨ ᱢᱟᱫᱚᱢ ᱢᱚᱱᱨ ᱠᱟᱛ ᱠᱚ ᱫᱷᱱᱤ ᱡ ᱨᱮ ᱪᱚᱲᱮᱵᱟᱨ
-2026-02-18 19:39:27,520 - MT_Provider - INFO - Translating: 'ᱷᱟᱥᱟ ᱢᱚᱱᱤᱥ ᱨ ᱵᱷᱵ ᱟᱫᱟᱱ ᱯᱨᱚᱫᱟᱱ ᱨ ᱢᱟᱫᱚᱢ ᱢᱚᱱᱨ ᱠᱟᱛ ᱠᱚ ᱫᱷᱱᱤ ᱡ ᱨᱮ ᱪᱚᱲᱮᱵᱟᱨ' (sat_Olck -> eng_Latn)
-2026-02-18 19:39:27,535 - MT_Provider - INFO - Translated: I have never heard of Gemini.
-2026-02-18 19:39:27,587 - WebServer - INFO - MT (Sat->Eng): I have never heard of Gemini.
-2026-02-18 19:39:29,014 - FAQ_DB - INFO - FAQ Cached: i have never heard of gemini
-2026-02-18 19:39:29,014 - MT_Provider - INFO - Translating: 'I think it's Jamini, not Gemini. Jamini Raha is a Santali singer. He sings our traditional songs in our language.' (eng_Latn -> sat_Olck)
-2026-02-18 19:39:33,003 - MT_Provider - INFO - Translated: Asha Manish's contribution to VB Adan Pradan's Madam Man Kata is commendable.
-2026-02-18 19:39:33,004 - WebServer - INFO - MT (Sat->Eng): Asha Manish's contribution to VB Adan Pradan's Madam Man Kata is commendable.
-2026-02-18 19:39:34,693 - FAQ_DB - INFO - FAQ Cached: asha manish's contribution to vb adan pradan's madam man kata is commendable
-2026-02-18 19:39:34,694 - MT_Provider - INFO - Translating: 'I am not sure. I do not have information about VB Adan Pradan's song Madam Man Kata.' (eng_Latn -> sat_Olck)
-2026-02-18 19:39:40,359 - MT_Provider - INFO - Translated: ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱡᱮᱹᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱝ ᱡᱮᱹᱢᱤᱱᱤ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱥᱚᱱᱛᱚᱞᱤ ᱥᱮᱨᱮᱧᱤᱭᱟᱹ ᱾ ᱩᱱᱤ ᱫᱚ ᱤᱧᱟᱹᱜ ᱯᱟᱹᱨᱥᱤ ᱛᱮ ᱤᱧᱟᱹᱜ ᱥᱮᱨᱣᱟ ᱟᱱᱟᱜ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱥᱮᱹᱨᱮᱹᱧᱼᱟ ᱾
-2026-02-18 19:39:40,361 - WebServer - INFO - AI Response (GROQ): I think it's Jamini, not Gemini. Jamini Raha is a Santali singer. He sings our traditional songs in our language.
-2026-02-18 19:39:40,361 - WebServer - INFO - Response (Sat): ᱤᱧ ᱢᱚᱱᱮ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱡᱮᱹᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱝ ᱡᱮᱹᱢᱤᱱᱤ ᱾ ᱡᱟᱢᱤᱱᱤ ᱨᱟᱦᱟ ᱫᱚ ᱢᱤᱫ ᱦᱚᱲ ᱥᱚᱱᱛᱚᱞᱤ ᱥᱮᱨᱮᱧᱤᱭᱟᱹ ᱾ ᱩᱱᱤ ᱫᱚ ᱤᱧᱟᱹᱜ ᱯᱟᱹᱨᱥᱤ ᱛᱮ ᱤᱧᱟᱹᱜ ᱥᱮᱨᱣᱟ ᱟᱱᱟᱜ ᱥᱮᱹᱨᱮᱹᱧ ᱠᱚ ᱥᱮᱹᱨᱮᱹᱧᱼᱟ ᱾
-2026-02-18 19:40:41,385 - TTS_Provider - INFO - Audio saved to temp_output_41a5dc34-c800-41a1-b915-20a12d01a4aa.wav
-2026-02-20 00:31:38,096 - Translation - INFO - Translated 'ᱡᱚᱦᱟᱨ' (santali) -> 'Hello' (en)
-2026-02-20 00:31:39,311 - Translation - INFO - Translated 'My name is Assistant' (en) -> 'ᱤᱧᱟᱜ ᱧᱩᱛᱩᱢ ᱫᱚ ᱟᱥᱤᱥᱴᱮᱱᱴ' (santali)
-2026-02-20 00:42:28,864 - WebServer - INFO - --- Server Starting ---
-2026-02-20 00:42:37,216 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-20 00:42:37,216 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-20 00:42:37,217 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-20 00:42:38,956 - WebServer - INFO - CUDA Available: True
-2026-02-20 00:42:38,961 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-20 00:42:38,961 - WebServer - INFO - Initializing Models...
-2026-02-20 00:42:58,662 - WebServer - INFO - Imports successful, instantiating...
-2026-02-20 00:42:58,662 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-20 00:43:12,019 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-20 00:43:12,182 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-20 00:43:13,289 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-20 00:43:29,066 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-20 00:43:36,655 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-20 00:43:36,658 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-20 00:43:49,618 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-20 00:44:38,851 - WebServer - INFO - Chat history cleared.
-2026-02-20 00:44:54,374 - WebServer - INFO - Processing audio: clean_input_9ceadee7-39ed-41d0-82ef-30b1cbc3def1.wav [Mode: auto]
-2026-02-20 00:44:54,375 - ASR_Provider - INFO - Transcribing clean_input_9ceadee7-39ed-41d0-82ef-30b1cbc3def1.wav (Lang: sat, Decoding: ctc)...
-2026-02-20 00:45:04,034 - WebServer - INFO - Processing audio: clean_input_0375e886-2ff2-4ee8-8d3d-dd3f8cd2c23e.wav [Mode: auto]
-2026-02-20 00:45:04,042 - ASR_Provider - INFO - Transcribing clean_input_0375e886-2ff2-4ee8-8d3d-dd3f8cd2c23e.wav (Lang: sat, Decoding: ctc)...
-2026-02-20 00:45:05,653 - ASR_Provider - INFO - ASR Output: ᱡᱚᱦᱟᱨ
-2026-02-20 00:45:05,700 - WebServer - INFO - ASR Identified: ᱡᱚᱦᱟᱨ
-2026-02-20 00:45:09,007 - MT_Provider - INFO - Translating via Google: 'ᱡᱚᱦᱟᱨ' (santali -> eng)
-2026-02-20 00:45:09,028 - Translation - ERROR - Translation error: eng --> No support for the provided language.
-Please select on of the supported languages:
-{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
-2026-02-20 00:45:09,052 - WebServer - INFO - MT (Sat->Eng): ᱡᱚᱦᱟᱨ
-2026-02-20 00:45:12,328 - WebServer - INFO - Processing audio: clean_input_42a9baf4-7f2e-4911-9c73-64ffdd398d04.wav [Mode: auto]
-2026-02-20 00:45:12,333 - ASR_Provider - INFO - Transcribing clean_input_42a9baf4-7f2e-4911-9c73-64ffdd398d04.wav (Lang: sat, Decoding: ctc)...
-2026-02-20 00:45:14,584 - ASR_Provider - INFO - ASR Output: 
-2026-02-20 00:45:14,601 - WebServer - INFO - ASR Identified: 
-2026-02-20 00:45:15,101 - ASR_Provider - INFO - ASR Output: ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-20 00:45:15,128 - WebServer - INFO - ASR Identified: ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-20 00:45:15,167 - MT_Provider - INFO - Translating via Google: 'ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ' (santali -> eng)
-2026-02-20 00:45:15,202 - Translation - ERROR - Translation error: eng --> No support for the provided language.
-Please select on of the supported languages:
-{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
-2026-02-20 00:45:15,234 - WebServer - INFO - MT (Sat->Eng): ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-20 00:45:15,487 - FAQ_DB - INFO - FAQ Cached: ᱡᱚᱦᱟᱨ
-2026-02-20 00:45:15,496 - MT_Provider - INFO - Translating via Google: 'ᱡᱚᱦᱟᱨ ᱵᱟᱝ ᱮᱠᱷᱟᱱᱛᱟᱜ.' (eng -> santali)
-2026-02-20 00:45:15,499 - Translation - ERROR - Translation error: eng --> No support for the provided language.
-Please select on of the supported languages:
-{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
-2026-02-20 00:45:15,502 - WebServer - INFO - AI Response (GROQ): ᱡᱚᱦᱟᱨ ᱵᱟᱝ ᱮᱠᱷᱟᱱᱛᱟᱜ.
-2026-02-20 00:45:15,508 - WebServer - INFO - Response (Sat): ᱡᱚᱦᱟᱨ ᱵᱟᱝ ᱮᱠᱷᱟᱱᱛᱟᱜ.
-2026-02-20 00:45:16,731 - FAQ_DB - INFO - FAQ Cached: ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ
-2026-02-20 00:45:16,732 - MT_Provider - INFO - Translating via Google: 'ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+This is general information. Please consult a doctor or health worker.' (eng_Latn -> sat_Olck)
+2026-05-11 19:55:24,169 - MT_Provider - INFO - Translated: ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱟᱢᱟᱜ ꯍꯛꯆꯥꯡ ᱞᱟᱹᱜᱤᱫ ᱟᱹᱰᱤ ᱱᱟᱯᱟᱭ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱟᱢᱟᱜ ᱜᱩᱴ ᱠᱚ ᱱᱟᱯᱟᱭ ᱛᱮ ᱠᱟᱹᱢᱤ ᱞᱟᱹᱜᱤᱫ ᱛᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾ ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱦᱤᱫᱤᱡᱟᱱ ᱡᱮᱹᱱᱟᱹᱥ ᱟᱨ ᱢᱮᱲ ᱮ ᱵᱚᱱᱚᱫᱚᱞᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱰᱚᱭᱟᱨᱚᱱ ᱟᱨ ᱴᱟᱭᱯᱷᱟᱭᱰ ᱞᱮᱠᱟᱱ ᱨᱳᱜᱽ ᱠᱚ ᱵᱚᱱᱚᱫᱚᱞ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾ ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱟᱢᱟᱜ ᱪᱚᱞᱟᱹ ᱟᱨ ᱠᱟᱪ ᱠᱚ ᱱᱟᱯᱟᱭ ᱫᱚᱦᱚᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱱᱟᱢ ᱫᱤᱱ ᱜᱮ ᱢᱚᱱᱮ ᱫᱚᱦᱚ ᱟᱨ ᱡᱳᱨ ᱟᱱ ᱢᱚᱱᱮ ᱠᱚᱨᱟᱣ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ طبیب ᱥᱮ ᱜᱚᱭᱟᱨᱚᱱ ᱠᱟᱹᱢᱤᱭᱟᱹᱭᱟᱜ ᱯᱚᱨᱟᱢᱚᱥ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾
+2026-05-11 19:55:24,173 - WebServer - INFO - AI Response (GROQ): Drinking clean water is vital for our bodies.
 
-ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ' (eng -> santali)
-2026-02-20 00:45:16,732 - Translation - ERROR - Translation error: eng --> No support for the provided language.
-Please select on of the supported languages:
-{'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en', 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr', 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku', 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln', 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai', 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr', 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne', 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm', 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn', 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk', 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu', 'santali': 'sat'}
-2026-02-20 00:45:16,732 - WebServer - INFO - AI Response (GROQ): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+It helps keep our organs working correctly.
+Clean water removes harmful germs and dirt.
+This helps prevent diseases like diarrhea and typhoid.
 
-ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
-2026-02-20 00:45:16,733 - WebServer - INFO - Response (Sat): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+Drinking clean water also keeps our skin and hair healthy.
+It helps us focus and feel energetic throughout the day.
 
-ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
-2026-02-20 00:45:26,137 - TTS_Provider - INFO - Audio saved to temp_output_9ceadee7-39ed-41d0-82ef-30b1cbc3def1.wav
-2026-02-20 00:45:44,613 - TTS_Provider - INFO - Audio saved to temp_output_42a9baf4-7f2e-4911-9c73-64ffdd398d04.wav
-2026-02-20 00:52:24,300 - WebServer - INFO - --- Server Starting ---
-2026-02-20 00:52:42,694 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-20 00:52:42,695 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-20 00:52:42,696 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-20 00:52:44,635 - WebServer - INFO - CUDA Available: True
-2026-02-20 00:52:44,660 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-20 00:52:44,661 - WebServer - INFO - Initializing Models...
-2026-02-20 00:53:12,732 - WebServer - INFO - Imports successful, instantiating...
-2026-02-20 00:53:12,732 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-20 00:53:25,545 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-20 00:53:25,564 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-20 00:53:25,645 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-20 00:53:40,762 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-20 00:53:50,723 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-20 00:53:50,725 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-20 00:54:01,745 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-20 00:54:58,775 - WebServer - INFO - Chat history cleared.
-2026-02-20 00:55:21,282 - WebServer - INFO - Processing audio: clean_input_0f726de8-17ed-4e22-86b0-18e10effae63.wav [Mode: auto]
-2026-02-20 00:55:21,284 - ASR_Provider - INFO - Transcribing clean_input_0f726de8-17ed-4e22-86b0-18e10effae63.wav (Lang: sat, Decoding: ctc)...
-2026-02-20 00:55:30,507 - ASR_Provider - INFO - ASR Output: ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ
-2026-02-20 00:55:30,508 - WebServer - INFO - ASR Identified: ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ
-2026-02-20 00:55:30,718 - MT_Provider - INFO - Google MT Pipeline: 'ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵ...' [SANTALI -> EN]
-2026-02-20 00:55:32,425 - Translation - INFO - Translated 'ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ' (santali) -> 'j k kan t so listen about Jaemin' (en)
-2026-02-20 00:55:32,426 - WebServer - INFO - MT (Sat->Eng): j k kan t so listen about Jaemin
-2026-02-20 00:55:32,447 - FAQ_DB - INFO - FAQ Fuzzy Hit: 'ᱡ ᱠ ᱠᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱ ᱵᱟᱨᱚᱛ ᱛᱮ ᱟᱡᱚᱢ ᱢᱠᱟᱱ' ~= 'ᱟᱱ ᱛ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ'
-2026-02-20 00:55:32,448 - WebServer - INFO - AI Response (SQLITE_FAQ): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+This is general information. Please consult a doctor or health worker.
+2026-05-11 19:55:24,173 - WebServer - INFO - Response (Sat): ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱟᱢᱟᱜ ꯍꯛꯆꯥꯡ ᱞᱟᱹᱜᱤᱫ ᱟᱹᱰᱤ ᱱᱟᱯᱟᱭ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱟᱢᱟᱜ ᱜᱩᱴ ᱠᱚ ᱱᱟᱯᱟᱭ ᱛᱮ ᱠᱟᱹᱢᱤ ᱞᱟᱹᱜᱤᱫ ᱛᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾ ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱦᱤᱫᱤᱡᱟᱱ ᱡᱮᱹᱱᱟᱹᱥ ᱟᱨ ᱢᱮᱲ ᱮ ᱵᱚᱱᱚᱫᱚᱞᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱰᱚᱭᱟᱨᱚᱱ ᱟᱨ ᱴᱟᱭᱯᱷᱟᱭᱰ ᱞᱮᱠᱟᱱ ᱨᱳᱜᱽ ᱠᱚ ᱵᱚᱱᱚᱫᱚᱞ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾ ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱟᱢᱟᱜ ᱪᱚᱞᱟᱹ ᱟᱨ ᱠᱟᱪ ᱠᱚ ᱱᱟᱯᱟᱭ ᱫᱚᱦᱚᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱱᱟᱢ ᱫᱤᱱ ᱜᱮ ᱢᱚᱱᱮ ᱫᱚᱦᱚ ᱟᱨ ᱡᱳᱨ ᱟᱱ ᱢᱚᱱᱮ ᱠᱚᱨᱟᱣ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ طبیب ᱥᱮ ᱜᱚᱭᱟᱨᱚᱱ ᱠᱟᱹᱢᱤᱭᱟᱹᱭᱟᱜ ᱯᱚᱨᱟᱢᱚᱥ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾
+2026-05-11 19:55:24,223 - TTS_Provider - INFO - Generating audio for chunk: ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱟᱢᱟᱜ ꯍꯛꯆꯥꯡ ᱞᱟᱹᱜᱤᱫ ᱟᱹᱰᱤ ᱱᱟᱯᱟᱭ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱟᱢᱟᱜ ᱜᱩᱴ ᱠᱚ ᱱᱟᱯᱟᱭ ᱛᱮ ᱠᱟᱹᱢᱤ ᱞᱟᱹᱜᱤᱫ ᱛᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾
+2026-05-11 19:55:39,568 - TTS_Provider - INFO - Generating audio for chunk: ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱦᱤᱫᱤᱡᱟᱱ ᱡᱮᱹᱱᱟᱹᱥ ᱟᱨ ᱢᱮᱲ ᱮ ᱵᱚᱱᱚᱫᱚᱞᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱰᱚᱭᱟᱨᱚᱱ ᱟᱨ ᱴᱟᱭᱯᱷᱟᱭᱰ ᱞᱮᱠᱟᱱ ᱨᱳᱜᱽ ᱠᱚ ᱵᱚᱱᱚᱫᱚᱞ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾
+2026-05-11 19:55:58,742 - TTS_Provider - INFO - Generating audio for chunk: ᱱᱟᱯᱟᱭ ᱫᱟᱜ ᱫᱚ ᱟᱢᱟᱜ ᱪᱚᱞᱟᱹ ᱟᱨ ᱠᱟᱪ ᱠᱚ ᱱᱟᱯᱟᱭ ᱫᱚᱦᱚᱼᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱱᱟᱢ ᱫᱤᱱ ᱜᱮ ᱢᱚᱱᱮ ᱫᱚᱦᱚ ᱟᱨ ᱡᱳᱨ ᱟᱱ ᱢᱚᱱᱮ ᱠᱚᱨᱟᱣ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱼᱟ ᱾
+2026-05-11 19:56:25,291 - TTS_Provider - INFO - Generating audio for chunk: ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ طبیب ᱥᱮ ᱜᱚᱭᱟᱨᱚᱱ ᱠᱟᱹᱢᱤᱭᱟᱹᱭᱟᱜ ᱯᱚᱨᱟᱢᱚᱥ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾
+2026-05-11 19:57:21,878 - TTS_Provider - INFO - Chunked Audio saved to temp_output_8073a686-4ba5-45e2-ae4e-0f8de164e5d1.wav
+2026-05-11 19:58:14,951 - WebServer - INFO - Processing audio: clean_input_c78930c2-4e50-42f8-a822-6963777152ea.wav [Mode: auto]
+2026-05-11 19:58:14,952 - ASR_Provider - INFO - Transcribing clean_input_c78930c2-4e50-42f8-a822-6963777152ea.wav (Lang: sat, Decoding: ctc)...
+2026-05-11 19:58:15,426 - ASR_Provider - INFO - ASR Output: ᱢᱮᱞᱮᱨᱤᱭᱟ ᱨᱮᱭᱟᱜ ᱞᱚᱪᱷᱚᱱ ᱪᱮᱫ ᱠᱚ ᱠᱟᱱᱟ
+2026-05-11 19:58:15,427 - WebServer - INFO - ASR Identified: ᱢᱮᱞᱮᱨᱤᱭᱟ ᱨᱮᱭᱟᱜ ᱞᱚᱪᱷᱚᱱ ᱪᱮᱫ ᱠᱚ ᱠᱟᱱᱟ
+2026-05-11 19:58:15,427 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱢᱮᱞᱮᱨᱤᱭᱟ ᱨᱮᱭᱟᱜ ᱞᱚᱪᱷᱚᱱ ᱪᱮᱫ ᱠᱚ ᱠᱟᱱᱟ' (sat_Olck -> eng_Latn)
+2026-05-11 19:58:15,866 - MT_Provider - INFO - Translated: what are the symptoms of malaria
+2026-05-11 19:58:15,867 - WebServer - INFO - MT (Sat->Eng): what are the symptoms of malaria
+2026-05-11 19:58:15,871 - WebServer - INFO - Checking cache for English question: 'what are the symptoms of malaria' at 2026-05-11T19:58:15.871529
+2026-05-11 19:58:15,872 - WebServer - INFO - CACHE_MISS
+2026-05-11 19:58:15,874 - WebServer - INFO - Similarity Score: 0.00
+2026-05-11 19:58:15,875 - WebServer - INFO - Backend Originally Used: N/A
+2026-05-11 19:58:15,877 - WebServer - INFO - ASR confidence: N/A
+2026-05-11 19:58:17,118 - MT_Provider - INFO - Translating via IndicTrans2: 'Malaria symptoms are very important to know.
 
-ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
-2026-02-20 00:55:32,449 - WebServer - INFO - Response (Sat): ᱛᱤᱱ ᱛᱚᱦᱤᱥ ᱥᱚ ᱡᱮᱢᱤᱱᱤ ᱵᱷᱟᱨᱚᱛ ᱛᱮ ᱟᱸᱡᱚᱢ ᱟᱠᱟᱱ. ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱠᱟᱨᱚᱱ ᱡᱮᱢᱤᱱᱤ ᱫᱚ ᱵᱟᱱᱟᱨ ᱥᱚ ᱡᱮᱢᱤᱱᱤ. 
+First symptom is high fever, which can be very bad.
+You may feel tired, weak, and may have a headache.
+Body aches and chills are also common symptoms.
 
-ᱥᱚᱨᱚᱛ ᱡᱮᱢᱤᱱᱤ ᱟᱨᱵᱟᱝ ᱱ
-2026-02-20 00:55:56,496 - TTS_Provider - INFO - Audio saved to temp_output_0f726de8-17ed-4e22-86b0-18e10effae63.wav
-2026-02-20 01:01:42,642 - WebServer - INFO - Chat history cleared.
-2026-02-27 10:27:22,937 - SmartCache - INFO - Manual cache reset triggered.
-2026-02-27 10:27:22,939 - SmartCache - INFO - Cache DB does not exist, initializing fresh.
-2026-02-27 10:27:39,198 - Brain - WARNING - Gemini failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-27 10:28:15,174 - Brain - ERROR - Ollama Connection Failed: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=10)
-2026-02-27 10:28:15,174 - Brain - ERROR - All providers failed. Tried: ["Ollama(HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=10))"]
-2026-02-27 10:35:25,224 - SmartCache - INFO - Manual cache reset triggered.
-2026-02-27 10:35:25,257 - SmartCache - INFO - Cache reset successful. Table 'faq_cache' recreated.
-2026-02-27 10:35:33,029 - Brain - ERROR - Ollama Connection Failed: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002789C85B8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2026-02-27 10:35:33,029 - Brain - ERROR - All providers failed. Tried: ["Ollama(HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002789C85B8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))"]
-2026-02-27 10:38:13,838 - WebServer - INFO - --- Server Starting ---
-2026-02-27 10:39:20,169 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-27 10:39:20,169 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-27 10:39:20,169 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-27 10:39:22,119 - WebServer - INFO - CUDA Available: True
-2026-02-27 10:39:22,126 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-27 10:39:22,126 - WebServer - INFO - Initializing Models...
-2026-02-27 10:41:24,819 - WebServer - INFO - Imports successful, instantiating...
-2026-02-27 10:41:24,819 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-27 10:42:34,386 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-27 10:42:34,386 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-27 10:42:34,464 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-27 10:42:56,513 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-27 10:43:07,252 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-27 10:43:07,270 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-27 10:43:24,019 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-27 10:48:05,871 - WebServer - INFO - --- Server Starting ---
-2026-02-27 10:52:07,877 - WebServer - INFO - --- Server Starting ---
-2026-02-27 11:01:05,330 - WebServer - INFO - --- Server Starting ---
-2026-02-27 11:01:25,814 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-27 11:01:25,815 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-27 11:01:25,817 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-27 11:01:26,797 - WebServer - INFO - CUDA Available: True
-2026-02-27 11:01:26,875 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-27 11:01:26,885 - WebServer - INFO - Initializing Models...
-2026-02-27 11:02:15,706 - WebServer - INFO - Imports successful, instantiating...
-2026-02-27 11:02:15,707 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-27 11:02:35,301 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-27 11:02:35,413 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-27 11:02:35,577 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-27 11:02:56,745 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-27 11:03:18,194 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-27 11:03:18,204 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-27 11:04:02,744 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-27 11:09:53,182 - WebServer - INFO - --- Server Starting ---
-2026-02-27 11:10:05,607 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-27 11:10:05,608 - WebServer - INFO - TorchVision: 0.21.0+cu124
-2026-02-27 11:10:05,608 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-27 11:10:06,482 - WebServer - INFO - CUDA Available: True
-2026-02-27 11:10:06,490 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-27 11:10:06,490 - WebServer - INFO - Initializing Models...
-2026-02-27 11:10:39,378 - WebServer - INFO - Imports successful, instantiating...
-2026-02-27 11:10:39,378 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-27 11:11:00,013 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-27 11:11:00,014 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-27 11:11:00,028 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-27 11:11:27,363 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-27 11:11:51,733 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-27 11:11:51,801 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-27 11:12:23,113 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-27 22:23:10,284 - WebServer - INFO - --- Server Starting ---
-2026-02-27 22:23:18,522 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-27 22:23:18,523 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-27 22:23:20,185 - WebServer - INFO - CUDA Available: True
-2026-02-27 22:23:20,190 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-27 22:23:20,190 - WebServer - INFO - Initializing Models...
-2026-02-27 22:23:54,149 - WebServer - INFO - Imports successful, instantiating...
-2026-02-27 22:23:54,150 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-27 22:24:08,301 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-27 22:24:08,390 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-27 22:24:08,693 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-27 22:24:21,168 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-27 22:24:30,009 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-27 22:24:30,015 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-27 22:24:40,634 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-28 20:10:34,339 - WebServer - INFO - --- Server Starting ---
-2026-02-28 20:10:38,489 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-02-28 20:10:38,489 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-02-28 20:10:40,133 - WebServer - INFO - CUDA Available: True
-2026-02-28 20:10:40,140 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-02-28 20:10:40,140 - WebServer - INFO - Initializing Models...
-2026-02-28 20:10:54,360 - WebServer - INFO - Imports successful, instantiating...
-2026-02-28 20:10:54,360 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-02-28 20:11:03,369 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-02-28 20:11:03,370 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-02-28 20:11:03,525 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-02-28 20:11:14,096 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-02-28 20:11:20,941 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-02-28 20:11:20,943 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-02-28 20:11:28,547 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-02-28 20:12:13,666 - WebServer - INFO - Processing audio: clean_input_7035c274-5ac4-41a2-b195-5ee02efc81fa.wav [Mode: auto]
-2026-02-28 20:12:13,666 - ASR_Provider - INFO - Transcribing clean_input_7035c274-5ac4-41a2-b195-5ee02efc81fa.wav (Lang: sat, Decoding: ctc)...
-2026-02-28 20:12:18,112 - ASR_Provider - INFO - ASR Output: ᱡ ᱪ
-2026-02-28 20:12:18,130 - WebServer - INFO - ASR Identified: ᱡ ᱪ
-2026-02-28 20:12:18,131 - MT_Provider - INFO - Translating via IndicTrans2: 'ᱡ ᱪ' (sat_Olck -> eng_Latn)
-2026-02-28 20:12:19,517 - MT_Provider - INFO - Translated: J.C.
-2026-02-28 20:12:19,518 - WebServer - INFO - MT (Sat->Eng): J.C.
-2026-02-28 20:12:19,536 - WebServer - INFO - Checking cache for English question: 'J.C.' at 2026-02-28T20:12:19.536321
-2026-02-28 20:12:19,536 - WebServer - INFO - CACHE_MISS
-2026-02-28 20:12:19,536 - WebServer - INFO - Similarity Score: 0.00
-2026-02-28 20:12:19,537 - WebServer - INFO - Backend Originally Used: N/A
-2026-02-28 20:12:19,537 - WebServer - INFO - ASR confidence: N/A
-2026-02-28 20:12:27,924 - MT_Provider - INFO - Translating via IndicTrans2: 'J.C. do bang bujhawa.
-Onare mone do chet kana?
-Arho sapha-sapha le katha me.' (eng_Latn -> sat_Olck)
-2026-02-28 20:12:29,318 - MT_Provider - INFO - Translated: ᱡᱮᱹᱥᱤ ᱵᱳᱭᱝ ᱵᱳᱭᱡᱟᱣᱟ ᱢᱮ ᱾ ᱳᱱᱟᱹᱨᱮ ᱢᱳᱭ ᱰᱳᱴ ᱪᱮᱴ ᱠᱟᱱᱟ? ᱟᱨᱦᱳ ᱥᱟᱯᱷᱟᱼᱥᱟᱯᱷᱟ ᱞᱮ ᱠᱟᱛᱷᱟ ᱢᱮ ᱾
-2026-02-28 20:12:29,324 - WebServer - INFO - AI Response (GEMINI): J.C. do bang bujhawa.
-Onare mone do chet kana?
-Arho sapha-sapha le katha me.
-2026-02-28 20:12:29,324 - WebServer - INFO - Response (Sat): ᱡᱮᱹᱥᱤ ᱵᱳᱭᱝ ᱵᱳᱭᱡᱟᱣᱟ ᱢᱮ ᱾ ᱳᱱᱟᱹᱨᱮ ᱢᱳᱭ ᱰᱳᱴ ᱪᱮᱴ ᱠᱟᱱᱟ? ᱟᱨᱦᱳ ᱥᱟᱯᱷᱟᱼᱥᱟᱯᱷᱟ ᱞᱮ ᱠᱟᱛᱷᱟ ᱢᱮ ᱾
-2026-02-28 20:12:47,453 - TTS_Provider - INFO - Audio saved to temp_output_7035c274-5ac4-41a2-b195-5ee02efc81fa.wav
-2026-03-14 23:05:12,873 - WebServer - INFO - --- Server Starting ---
-2026-03-14 23:06:15,306 - WebServer - INFO - Torch: 2.6.0+cu124
-2026-03-14 23:06:15,306 - WebServer - INFO - TorchAudio: 2.6.0+cu124
-2026-03-14 23:06:15,329 - WebServer - INFO - CUDA Available: True
-2026-03-14 23:06:15,333 - WebServer - INFO - CUDA Device: NVIDIA GeForce RTX 4060 Laptop GPU
-2026-03-14 23:06:15,333 - WebServer - INFO - Initializing Models...
-2026-03-14 23:07:07,751 - WebServer - INFO - Imports successful, instantiating...
-2026-03-14 23:07:07,751 - ASR_Provider - INFO - Loading ASR Model: ai4bharat/indic-conformer-600m-multilingual...
-2026-03-14 23:07:18,061 - ASR_Provider - INFO - ASR Model loaded successfully.
-2026-03-14 23:07:18,086 - MT_Provider - INFO - Initializing IndicTrans2 System...
-2026-03-14 23:07:18,191 - MT_Provider - INFO - Loading Indic-En Model: ai4bharat/indictrans2-indic-en-1B
-2026-03-14 23:07:30,220 - MT_Provider - INFO - Loading En-Indic Model: ai4bharat/indictrans2-en-indic-1B
-2026-03-14 23:07:37,488 - MT_Provider - INFO - IndicTrans2 Models loaded successfully.
-2026-03-14 23:07:37,494 - TTS_Provider - INFO - Loading TTS Model: ai4bharat/indic-parler-tts on cuda...
-2026-03-14 23:07:45,097 - TTS_Provider - INFO - TTS Model loaded successfully.
-2026-03-14 23:08:01,356 - WebServer - INFO - Chat history cleared.
+Some people experience nausea, vomiting, and diarrhea.
+In severe cases, malaria can cause seizures and coma.
+
+If you have these symptoms, please seek medical help quickly.
+
+This is general information. Please consult a doctor or health worker.' (eng_Latn -> sat_Olck)
+2026-05-11 19:58:19,961 - MT_Provider - INFO - Translated: ᱢᱮᱞᱮᱨᱤᱭᱟ ᱨᱮᱭᱟᱜ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱵᱟᱰᱟᱭ ᱟᱹᱰᱤ ᱞᱟᱹᱠᱛᱤ ᱠᱟᱱᱟ ᱾ ᱯᱳᱭᱞᱳ ᱪᱤᱱᱦᱟᱹ ᱫᱚ ᱦᱚᱭᱩᱜ ᱠᱟᱱᱟ ᱟᱹᱰᱤ ᱵᱟᱹᱲᱛᱤ ᱜᱮᱢᱮᱧ, ᱡᱟᱦᱟᱸ ᱫᱚ ᱟᱹᱰᱤ ᱵᱟᱝ ᱜᱮ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱦᱚᱭᱩᱜ ᱟ, ᱠᱚᱢ ᱫᱟᱲᱮ ᱵᱟᱝ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ, ᱟᱨ ᱢᱮᱲᱮᱡ ᱦᱚᱸ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱜᱷᱟᱹᱞ ᱟᱨ ᱜᱷᱟᱹᱞ ᱦᱚᱸ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱪᱤᱱᱦᱟᱹ ᱠᱟᱱᱟ ᱾ ᱠᱤᱪᱷᱩᱠ ᱦᱚᱲ ᱠᱚ ᱚᱵᱷᱟᱵ, ᱚᱵᱷᱟᱵ ᱟᱨ ᱰᱚᱭᱟᱨᱚᱜ ᱮ ᱧᱮᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱟᱹᱰᱤ ᱜᱟᱱ ᱴᱷᱟᱶᱨᱮ, ᱢᱮᱞᱮᱨᱤᱭᱟ ᱜᱮᱢᱮᱧ ᱟᱨ ᱠᱳᱢᱟ ᱨᱮᱭᱟᱜ ᱚᱡᱮ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱟᱢᱟᱜ ᱡᱩᱫᱤ ᱱᱚᱶᱟ ᱪᱤᱱᱦᱟᱹᱠᱚ ᱛᱟᱦᱮᱸᱱᱟ, ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱞᱚᱜᱚᱱ طبیب ᱟᱜ ᱜᱚᱲᱚ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ طبیب ᱥᱮ ᱜᱚᱭᱟᱨᱚᱱ ᱠᱟᱹᱢᱤᱭᱟᱹᱭᱟᱜ ᱯᱚᱨᱟᱢᱚᱥ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾
+2026-05-11 19:58:19,966 - WebServer - INFO - AI Response (GROQ): Malaria symptoms are very important to know.
+
+First symptom is high fever, which can be very bad.
+You may feel tired, weak, and may have a headache.
+Body aches and chills are also common symptoms.
+
+Some people experience nausea, vomiting, and diarrhea.
+In severe cases, malaria can cause seizures and coma.
+
+If you have these symptoms, please seek medical help quickly.
+
+This is general information. Please consult a doctor or health worker.
+2026-05-11 19:58:19,966 - WebServer - INFO - Response (Sat): ᱢᱮᱞᱮᱨᱤᱭᱟ ᱨᱮᱭᱟᱜ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱵᱟᱰᱟᱭ ᱟᱹᱰᱤ ᱞᱟᱹᱠᱛᱤ ᱠᱟᱱᱟ ᱾ ᱯᱳᱭᱞᱳ ᱪᱤᱱᱦᱟᱹ ᱫᱚ ᱦᱚᱭᱩᱜ ᱠᱟᱱᱟ ᱟᱹᱰᱤ ᱵᱟᱹᱲᱛᱤ ᱜᱮᱢᱮᱧ, ᱡᱟᱦᱟᱸ ᱫᱚ ᱟᱹᱰᱤ ᱵᱟᱝ ᱜᱮ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱦᱚᱭᱩᱜ ᱟ, ᱠᱚᱢ ᱫᱟᱲᱮ ᱵᱟᱝ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ, ᱟᱨ ᱢᱮᱲᱮᱡ ᱦᱚᱸ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱜᱷᱟᱹᱞ ᱟᱨ ᱜᱷᱟᱹᱞ ᱦᱚᱸ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱪᱤᱱᱦᱟᱹ ᱠᱟᱱᱟ ᱾ ᱠᱤᱪᱷᱩᱠ ᱦᱚᱲ ᱠᱚ ᱚᱵᱷᱟᱵ, ᱚᱵᱷᱟᱵ ᱟᱨ ᱰᱚᱭᱟᱨᱚᱜ ᱮ ᱧᱮᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱟᱹᱰᱤ ᱜᱟᱱ ᱴᱷᱟᱶᱨᱮ, ᱢᱮᱞᱮᱨᱤᱭᱟ ᱜᱮᱢᱮᱧ ᱟᱨ ᱠᱳᱢᱟ ᱨᱮᱭᱟᱜ ᱚᱡᱮ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱟᱢᱟᱜ ᱡᱩᱫᱤ ᱱᱚᱶᱟ ᱪᱤᱱᱦᱟᱹᱠᱚ ᱛᱟᱦᱮᱸᱱᱟ, ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱞᱚᱜᱚᱱ طبیب ᱟᱜ ᱜᱚᱲᱚ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱰᱚᱜᱚᱨ ᱠᱟᱱᱟ ᱾ ᱚᱱᱩᱢᱟᱹᱱ ᱠᱟᱛᱮ ᱢᱤᱫ ᱦᱚᱲ طبیب ᱥᱮ ᱜᱚᱭᱟᱨᱚᱱ ᱠᱟᱹᱢᱤᱭᱟᱹᱭᱟᱜ ᱯᱚᱨᱟᱢᱚᱥ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾
+2026-05-11 19:58:19,967 - TTS_Provider - INFO - Generating audio for chunk: ᱢᱮᱞᱮᱨᱤᱭᱟ ᱨᱮᱭᱟᱜ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱵᱟᱰᱟᱭ ᱟᱹᱰᱤ ᱞᱟᱹᱠᱛᱤ ᱠᱟᱱᱟ ᱾ ᱯᱳᱭᱞᱳ ᱪᱤᱱᱦᱟᱹ ᱫᱚ ᱦᱚᱭᱩᱜ ᱠᱟᱱᱟ ᱟᱹᱰᱤ ᱵᱟᱹᱲᱛᱤ ᱜᱮᱢᱮᱧ,
+2026-05-11 19:58:30,790 - TTS_Provider - INFO - Generating audio for chunk: ᱡᱟᱦᱟᱸ ᱫᱚ ᱟᱹᱰᱤ ᱵᱟᱝ ᱜᱮ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱟᱢ ᱦᱚᱭᱩᱜ ᱟ,
+2026-05-11 19:58:34,617 - TTS_Provider - INFO - Generating audio for chunk: ᱠᱚᱢ ᱫᱟᱲᱮ ᱵᱟᱝ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ, ᱟᱨ ᱢᱮᱲᱮᱡ ᱦᱚᱸ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾
+2026-05-11 19:58:40,456 - TTS_Provider - INFO - Generating audio for chunk: ᱜᱷᱟᱹᱞ ᱟᱨ ᱜᱷᱟᱹᱞ ᱦᱚᱸ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱪᱤᱱᱦᱟᱹ ᱠᱟᱱᱟ ᱾ ᱠᱤᱪᱷᱩᱠ ᱦᱚᱲ ᱠᱚ ᱚᱵᱷᱟᱵ,

@@ -2,7 +2,7 @@ import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from IndicTransToolkit.processor import IndicProcessor
 from src.utils import setup_logger
-from src.config_hf import Config
+from src.config import Config
 
 logger = setup_logger("MT_Provider")
 
@@ -62,7 +62,9 @@ class SantaliTranslator:
             return ""
 
         if model_type == "google":
-             from src.translation import translate_text
+             from deep_translator import GoogleTranslator
+             from deep_translator.constants import GOOGLE_LANGUAGES_TO_CODES
+             GOOGLE_LANGUAGES_TO_CODES['santali'] = 'sat'
              
              # STRICT PIPELINE ENFORCEMENT FOR GOOGLE TRANSLATE
              # 1. Santali -> English (for Brain Input)
@@ -84,7 +86,12 @@ class SantaliTranslator:
                  logger.warning(f"Google Translate requested for non-standard pair: {s_lang} -> {t_lang}. Proceeding, but this is outside the primary Santali pipeline.")
 
              logger.info(f"Google MT Pipeline: '{text[:20]}...' [{s_lang.upper()} -> {t_lang.upper()}]")
-             return translate_text(text, source_lang=s_lang, target_lang=t_lang)
+             try:
+                 translator = GoogleTranslator(source=s_lang, target=t_lang)
+                 return translator.translate(text)
+             except Exception as e:
+                 logger.error(f"Google Translation error: {e}")
+                 return text
 
         # --- IndicTrans2 (Default) ---
         
