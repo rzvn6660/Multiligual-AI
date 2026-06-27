@@ -21,7 +21,3 @@ onnxruntime
 onnxruntime-gpu
 numpy<2.0.0
 IndicTransToolkit
-SpeechRecognition
-pyaudio
-gTTS
-playsound==1.2.2
