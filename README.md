@@ -49,23 +49,25 @@ TRIEM AI is an advanced, multilingual voice assistant designed specifically to b
 
 ## 📸 Screenshots & Demo
 
-*(Note: Save the following screenshots inside the `docs/images/` directory in this repository.)*
-
-### 🏠 Home Dashboard
-*The main landing page providing an intuitive interface for users.*
-![Home Dashboard](docs/images/home.png)
-
 ### 🎙️ Voice Recording & Speech Recognition
-*Real-time audio visualization as the user speaks in Santali.*
-![Voice Recording](docs/images/voice_recording.png)
+*Real-time intuitive audio interface optimizing engagement for non-technical users.*
+![Voice Recording](docs/images/voice-recording.png)
 
-### 🤖 AI Conversation & Translation Output
-*The AI provides translated English context, generates a response, and translates it back to Santali.*
-![AI Conversation](docs/images/ai_conversation.png)
+### 🤖 AI Conversation Result
+*The full conversation pipeline breakdown showing translation context and the final generated AI response.*
+![Conversation Result](docs/images/conversation-result.png)
 
-### ⚡ Docker Running
-*Seamless deployment using Docker containers.*
-![Docker Running](docs/images/docker_running.png)
+### 🧠 Model Selection
+*Dropdown UI for seamlessly selecting the preferred generative AI brain (Groq, Gemini, or Offline).*
+![Model Selection](docs/images/model-selection.png)
+
+### 🔄 Translation Output
+*Real-time translation provider selection between IndicTrans2 and standard fallbacks.*
+![Translation Output](docs/images/translation-output.png)
+
+### ⚡ Docker Console
+*Backend server logs running flawlessly in a Docker container, detailing pipeline latency and RAG caching hits.*
+![Docker Console](docs/images/docker-console.png)
 
 ---
 
