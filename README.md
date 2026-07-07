@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/images/logo.png" alt="TRIEM AI Logo" width="200" /> <!-- Placeholder for Logo -->
+  
   
   # 🌍 TRIEM – Multilingual AI Voice Assistant for Tribal Communities
   
