@@ -362,8 +362,8 @@ This project is open-source. Models used (IndicConformer, IndicTrans2, ParlerTTS
 ## 📫 Contact
 
 For business inquiries, AI research collaborations, or support:
-- **Project Maintainer:** [Your Name / Email]
-- **GitHub Issues:** Open an issue in this repository.
+- **Project Maintainer:** rizvinmk@gmail.com
+- **GitHub Issues:** Open an issue in this repository.:https://github.com/rzvn6660/Multilingual-AI
 
 <div align="center">
   <b>Built with ❤️ to empower tribal voices through AI.</b>
